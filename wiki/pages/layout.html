@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+
+    <title>{% block title %}{% endblock %} | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      {% include 'menu.html' %}
+
+      <main class="page-wrapper">
+        <div class="names">
+          {% block pre_page %}{% endblock %}
+        </div>
+
+        <div class="container">
+          {% block page_content %}{% endblock %}
+        </div>
+      </main>
+
+      {% include 'footer.html' %}
+    </div>
+
+    <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>

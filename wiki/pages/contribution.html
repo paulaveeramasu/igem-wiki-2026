@@ -1,0 +1,440 @@
+{% extends "layout.html" %}
+  
+{% include "heros/contributions-hero.html"%}
+
+{% block page_content %}
+
+<!-- ============================ -->
+<!-- Section: Page Title & Intro  -->
+<!-- ============================ -->
+<div class="head cols">
+  <h1>Contributions</h1>
+</div>
+
+<div class="head cols">
+  <h2>Acknowledging the Legacy</h2>
+</div>
+<div class="cols">
+  <p>The contributions of the Metlock team are made possible through the efforts of fellow iGEMers globally. The work of past teams has laid a strong foundation of biological parts, software tools, and collaborative knowledge that continues to inspire and enable innovation in synthetic biology. This year's contributions are possible with gratitude to those who came before, whose efforts have shaped the opportunities available today.</p>
+</div>
+
+<div class="head cols">
+  <h2>Summary of Contributions</h2>
+</div>
+<div class="cols">
+  <p>The 2025 Metlock team has made four primary contributions to the iGEM Registry and community: </p>
+  <ol>
+    <li>Biological Part: ZnuABC high-affinity zinc transporter [Zur Knockout] </li>
+    <li>Biological Part: AHL-LuxR induced ZnuABC high-affinity zinc transporter</li>
+    <li>Library of Biological Parts: ZnuABC[Zur Knockout]-Anderson Promoter Collection</li>
+    <li>A Custom Software Tools: Plot2Curve, a simulation that predicts mRNA and protein concentration over time under <i>AHL induction</i> and with <i>Anderson family of promoters</i></li>
+  </ol>
+</div>
+
+<hr />
+
+<!-- ============================================== -->
+<!-- Section: Genetic Part — ZnuABC [Zur Knockout]  -->
+<!-- ============================================== -->
+<div class="head cols">
+  <h2>Genetic Part: ZnuABC Transporter System [Zur Knockout]</h2>
+</div>
+
+<div class="cols">
+  <figure>
+    <img src="https://static.igem.wiki/teams/5759/ppfigs/fig33.webp" alt="ZnuABC zinc transporter operon schematic">
+    <figcaption>Figure 1: ZnuABC high-affinity zinc transporter operon (ZnuA/ZnuB/ZnuC) used in Metlock.</figcaption>
+  </figure>
+</div>
+
+<div class="head cols">
+  <h3>Description</h3>
+</div>
+<div class="cols">
+  <p>
+    The Metlock team has designed, constructed, and submitted a new composite BioBrick part encoding the
+    ZnuABC high-affinity zinc transporter system. This three-gene transporter is naturally found in
+    <em>Escherichia coli</em> and is essential for zinc uptake supporting many Zn<sup>2+</sup>-dependent proteins.
+    We assembled the operon as a single cassette under a constitutive promoter for baseline
+    characterization; the cassette is compatible with swapping to alternative promoters or inducible gates.
+  </p>
+  <ul>
+    <li><strong>ZnuA:</strong> periplasmic zinc-binding protein</li>
+    <li><strong>ZnuB:</strong> transmembrane permease</li>
+    <li><strong>ZnuC:</strong> cytoplasmic ATPase that powers transport</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Design Rationale (Zur knockout &amp; modular control)</h3>
+</div>
+<div class="cols">
+  <p>
+    In <em>E. coli</em>, ZnuABC expression is normally governed by Zur, a zinc-responsive repressor that
+    shuts down import once intracellular Zn<sup>2+</sup> is sufficient. Disabling Zur control allows us to
+    drive ZnuABC with synthetic regulators instead of the cell’s native sensor. This derepressed design
+    decouples uptake from homeostatic feedback, enabling sustained, high-level import rather than automatic shutoff as zinc
+    accumulates—ideal for biomining from dilute streams (e.g., industrial effluents, contaminated water). Once freed from
+    native regulation, the cassette is modular: it can be placed under any Anderson promoter or an inducible
+    scheme (e.g., LuxR/pLuxR), creating a versatile platform for tuning and future optimization.
+  </p>
+</div>
+
+<div class="head cols">
+  <h3>Significance</h3>
+</div>
+<div class="cols">
+  <p>
+    Zinc is a vital cofactor for many enzymes, and its transport is tightly regulated. By providing the ZnuABC transporter
+    as a ready-to-use BioBrick, we empower future teams to:
+  </p>
+  <ul>
+    <li>Improve zinc uptake in engineered strains</li>
+    <li>Design more efficient biosensors or bioaccumulation systems</li>
+    <li>Study zinc transport dynamics under various environmental conditions</li>
+    <li>Compare <em>constitutive</em> vs <em>inducible</em> control using a promoter ladder and AHL mapping to balance burden and performance</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Registry Information</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li><strong>Part Name:</strong> BBa_25V6WTD7 </li>
+    <li><strong>Status:</strong> Submitted and available on the iGEM Registry</li>
+    <li><strong>Characterization:</strong> Still pending </li>
+  </ul>
+</div>
+
+<hr />
+
+<!-- ========================================================= -->
+<!-- Section: Biological Part — AHL-LuxR induced ZnuABC (Title) -->
+<!-- ========================================================= -->
+<div class="cols">
+  <h2>Genetic Part: AHL-LuxR induced ZnuABC high-affinity zinc transporter</h2>
+</div>
+<div class="cols">
+  <figure>
+    <img src="https://static.igem.wiki/teams/5759/ppfigs/fig32.webp" alt="AHL-inducible ZnuABC schematic">
+    <figcaption>Figure 2: BBa_K1893004 constitutively expressed LuxR, which then binds AHL, and finally interacts with pLuxR
+      to drive expression of downstream coding sequences
+    </figcaption>
+  </figure> 
+</div>
+
+<!-- Normalized content blocks for the AHL-inducible ZnuABC part -->
+<div class="head cols">
+  <h3>Description</h3>
+</div>
+<div class="cols">
+  <p>
+    This part is our tunable zinc-uptake module and the core innovation of Metlock. We place the Zur-knockout ZnuABC operon under the BBa_K1893004 LuxR/pLuxR induction system, so ZnuABC expression is driven by AHL (acyl-homoserine lactone). Instead of one fixed uptake level, teams can dial expression up or down by changing AHL concentration. That makes it possible to find a “sweet spot” where zinc import is high without triggering zinc-induced stress.
+  </p>
+  <p><strong>Operon components:</strong></p>
+  <ul>
+    <li>ZnuA: periplasmic zinc-binding protein</li>
+    <li>ZnuB: membrane permease</li>
+    <li>ZnuC: cytoplasmic ATPase that powers import</li>
+    <li>BBa_K1893004: AHL-responsive LuxR/pLux induction cassette that drives the operon</li> 
+    <li>LuxR: AHL-dependent transcriptional activator for pLux</li> 
+    <li>AHL: small-molecule inducer that activates LuxR</li> 
+    <li>BBa_B0034: standard strong RBS placed before each ORF</li> 
+    <li>BBa_B0015: strong double terminator to stop transcription</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Design Rationale (LuxR/pLuxR induction &amp; tunability)</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li><strong>Why ditch Zur?:</strong> In <em>E. coli</em>, Zur represses ZnuABC when intracellular Zn<sup>2+</sup> is sufficient. Removing Zur decouples the transporter from native feedback so we can control uptake externally.</li>
+    <li><strong>Why LuxR/pLuxR?:</strong> The system responds dose-dependently to AHL, giving a smooth input–output curve (Hill-type). By titrating AHL, teams can map inducer → expression and pick operating points tailored to their media or wastewater stream.</li>
+    <li><strong>Operational flexibility:</strong> Grow cells to high density uninduced (low burden), then add AHL only when you enter zinc-rich feed. This timing reduces stress during growth and maximizes metal capture during the production phase.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Significance</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li><strong>Practical tuning instead of guesswork:</strong> AHL lets you adjust ZnuABC in small steps to match variable zinc availability across sites or days.</li>
+    <li><strong>Safety margin against toxicity:</strong> You can back off induction if cells show stress, or push higher when conditions allow.</li>
+    <li><strong>Comparable, reusable, modular:</strong> Any team can reuse the same inducible control, characterize their own AHL–response curve, and share conditions that work.</li>
+    <li><strong>Drop-in compatibility:</strong> The cassette slots into standard chassis and workflows, and can be paired with promoter ladders or additional logic if needed.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Registry Information</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li><strong>Part Name:</strong> BBa_25J2UUD0</li>
+    <li><strong>Status:</strong> Submitted and available on the iGEM Registry</li>
+    <li><strong>Characterization:</strong> Still pending</li>
+  </ul>
+</div>
+
+<hr />
+
+<!-- ==================================================== -->
+<!-- Section: Library — ZnuABC[Zur KO] Anderson Promoters -->
+<!-- ==================================================== -->
+<div class="cols">
+  <h2>Library of Genetic Parts: ZnuABC[Zur Knockout]-Anderson Promoter Collection</h2>
+</div>
+<div class="cols">
+  <figure>
+    <img src="https://static.igem.wiki/teams/5759/ppfigs/fig31.webp" alt="ZnuABC promoter library">
+    <figcaption>Figure 3: The Anderson Promoter Family is modular in this case, J213XX can be replaced with any given promoter
+      for testing
+    </figcaption>
+  </figure>
+</div>
+
+<!-- Added detailed content for the Anderson promoter collection (keeps existing figure) -->
+<div class="head cols">
+  <h3>Description</h3>
+</div>
+<div class="cols">
+  <p>
+    This library pairs the Zur-knockout ZnuABC zinc-uptake operon with the standardized Anderson promoter panel to create a constitutive “expression ladder.”
+    It will come with a teachable, extensible measurement workflow: plate maps, SOPs (transform, grow, read), OD/fluorescence normalization steps, and analysis notebooks.
+    This will allow teams to rerun the same pipeline on their strains and directly compare against our ladder once fully developed.
+  </p>
+</div>
+
+<div class="head cols">
+  <h3>Design Rationale (what we will develop - constitutive ladder &amp; measurement workflow)</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li><strong>Teachable, extensible measurement workflow:</strong> A ready-to-run template (plate maps, SOPs, normalization, notebooks) lets teams repeat the assay consistently and compare results across the ladder or across labs.</li>
+    <li><strong>Standardized benchmark for burden vs. benefit:</strong> Driving the Zur-KO ZnuABC cassette from weak → strong promoters yields fixed, reproducible transcription rates. Any team can quantify growth cost vs. uptake benefit on a shared scale, producing portable, comparable data.</li>
+    <li><strong>Inducer-free option for field deployments:</strong> Many deployments can’t rely on added inducers. Showing when constitutive ZnuABC is safe and effective provides a drop-in, no-inducer architecture for environmental or point-of-use devices.</li>
+    <li><strong>Direct bridge to inducible systems:</strong> Running the same cassette under AHL/LuxR and under Anderson promoters creates a clean constitutive vs inducible map (e.g., “expression for J23106 ≈ AHL at X nM”). Teams can choose between simplicity (constitutive) and control (inducible) and validate model predictions across both modes.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Model-Ready Quantitative Parameters</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li>With an sfGFP calibrant under each promoter, plate-reader units convert to relative promoter units (RPU) and then to absolute transcription rate (<code>k_tx</code>; RNAs·s⁻¹·cell⁻¹) for the chassis and media used.</li>
+    <li>These calibrated rates slot directly into our promoter→mRNA→protein modeling tools, enabling dynamic-range predictions and recommended measurement windows for zinc assays.</li>
+    <li>We will simulate in DBTL cycle 2, then verify in wet-lab cycles to produce reliable biological parameters for the models.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Predicted Expression Ladder - Uptake vs Burden</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li><strong>Low (e.g., J23118–J23110):</strong> safe baseline capture, minimal burden.</li>
+    <li><strong>Mid (J23106–J23104):</strong> improved uptake with acceptable growth cost.</li>
+    <li><strong>High (J23100):</strong> maximum uptake; watch for membrane/assembly stress or cytotoxicity.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Context &amp; Interoperability Testing [Planned for Cycle 2]</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li>Characterize across at least two plasmid backbones (low-copy <em>pSC101</em>, mid-copy <em>p15A</em>) and note chassis/media effects.</li>
+    <li>Package data by promoter &times; backbone so results are reusable across common iGEM build contexts.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Registry Value &amp; Re-use</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li>Each “J231xx-ZnuABC [Zur Knockout]” part will include upon completed characterization: sequence, assembly notes, growth/uptake plots, RPU→<code>k_tx</code> calibration, and recommended use cases (e.g., “use J23110 for low-burden sensing”).</li>
+    <li>We are publishing this library early as we troubleshoot our wet lab workflows so other teams can reuse the framework, 
+      extend it to related transporters, or collaborate on shared datasets.</li>
+  </ul>
+</div>
+
+<div class="head cols">
+  <h3>Comparative Dataset for the Community</h3>
+</div>
+<div class="cols">
+  <p>
+    Upon completion, we intent to release a set of final deliverables that will include a matched constitutive vs. AHL dataset 
+    (same cassette, same chassis),providing a rare, high-quality reference set for testing circuit models, 
+    codon-usage effects, and transporter stoichiometry hypotheses.
+  </p>
+</div>
+
+<div class="head cols">
+  <h3>Significance</h3>
+</div>
+<div class="cols">
+  <p>
+    Collectively, these deliverables turn the Anderson–ZnuABC panel into more than another set of parts.
+    It becomes a calibrated, field-relevant design space that teams can navigate to balance uptake performance against 
+    cellular health with clear guidance on when to choose constitutive vs. inducible control.
+  </p>
+</div>
+
+<div class="head cols">
+  <h3>Registry Information</h3>
+</div>
+<div class="cols">
+  <ul>
+    <li>
+      <strong>Part Names:</strong>
+      <ul>
+        <li>J23100 – Synthetic ZnuABC [Zur Knockout] — BBa_25XGUUO0</li>
+        <li>J23101 – Synthetic ZnuABC [Zur Knockout] — BBa_25TMLF47</li>
+        <li>J23102 – Synthetic ZnuABC [Zur Knockout] — BBa_25325554</li>
+        <li>J23103 – Synthetic ZnuABC [Zur Knockout] — BBa_25GYPG97</li>
+        <li>J23104 – Synthetic ZnuABC [Zur Knockout] — BBa_252BBFCI</li>
+        <li>J23105 – Synthetic ZnuABC [Zur Knockout] — BBa_25Y94R5Y</li>
+        <li>J23106 – Synthetic ZnuABC [Zur Knockout] — BBa_25H1HJ61</li>
+        <li>J23107 – Synthetic ZnuABC [Zur Knockout] — BBa_25I8U9K2</li>
+        <li>J23108 – Synthetic ZnuABC [Zur Knockout] — BBa_25H1HJ61</li>
+        <li>J23109 – Synthetic ZnuABC [Zur Knockout] — BBa_25K3K03L</li>
+        <li>J23110 – Synthetic ZnuABC [Zur Knockout] — BBa_25WE9PXB</li>
+        <li>J23111 – Synthetic ZnuABC [Zur Knockout] — BBa_252U1CYF</li>
+        <li>J23113 – Synthetic ZnuABC [Zur Knockout] — BBa_25W2L367</li>
+        <li>J23114 – Synthetic ZnuABC [Zur Knockout] — BBa_25AIF769</li>
+        <li>J23115 – Synthetic ZnuABC [Zur Knockout] — BBa_25IFFIAD</li>
+        <li>J23116 – Synthetic ZnuABC [Zur Knockout] — BBa_25F5H5CX</li>
+        <li>J23117 – Synthetic ZnuABC [Zur Knockout] — BBa_25QJ5B1Z</li>
+        <li>J23118 – Synthetic ZnuABC [Zur Knockout] — BBa_25E3BDTN</li>
+      </ul>
+    </li>
+    <li><strong>Status:</strong> Submitted and available on the iGEM Registry</li>
+    <li><strong>Characterization:</strong> Still pending</li>
+  </ul>
+</div>
+
+<hr />
+
+<!-- ==================================== -->
+<!-- Section: Plot2Curve AHL Induction Simulation    -->
+<!-- ==================================== -->
+<div>
+  <div class="head cols">
+    <h2>Plot2Curve: AHL Induction Simulation</h2>
+  </div>
+
+  <div class="head cols">
+    <h3>Why this helps other teams</h3>
+  </div>
+  <div class="cols">
+    <ul>
+      <li>Narrow your wet-lab search space by starting with a small, sensible grid of AHL doses and induction times rather than guessing. This cuts plates, reagent use, and time.</li>
+      <li>Plan measurements that matter by simulating how LuxR, AHL, mRNA, and GFP change over time, so early, mid, and near-steady read windows are informative, not redundant.</li>
+      <li>See “hidden” biology by tracking quantities that are hard to measure directly (for example, LuxR and mRNA) to help interpret OD600 and GFP curves.</li>
+      <li>Swap components easily thanks to a modular design, allowing teams to replace LuxR/AHL with their own activator/inducer pair and reuse the workflow.</li>
+      <li>Make experiments reproducible with clear inputs and assumptions (cell volume, collision estimates, decay rates) and versioned outputs that teams can share and compare.</li>
+      <li>Train new teammates faster with a transparent chain from induction → activation → transcription → translation → fluorescence.</li>
+    </ul>
+  </div>
+
+  <div class="head cols">
+    <h3>What it includes</h3>
+  </div>
+  <div class="cols">
+    <p><strong>Description.</strong> A tool for analyzing sGFP production in the Metlock system and other AHL-induction systems. It helps teams narrow AHL (and related) dose ranges to test when trying to keep protein output within a target band. The system is modular so teams can adapt it and deepen it over time.</p>
+    <p><strong>Features.</strong></p>
+    <ul>
+      <li>Accounts for physical parameters such as cell volume, interaction chance, and molecular decay.</li>
+      <li>Modular and easy to modify.</li>
+      <li>Produces detailed data for observable signals (OD600, GFP) and harder-to-measure states (mRNA counts).</li>
+    </ul>
+    <p><strong>Impact.</strong> Enables more efficient AHL-induction experiments by focusing initial wet-lab tests on the most promising conditions.</p>
+  </div>
+
+
+
+<hr />
+</div>
+<!-- ==================================== -->
+<!-- Section: Plot2Curve Simulator        -->
+<!-- ==================================== -->
+<div>
+  <div class="head cols">
+    <h2>Plot2Curve Gene: Anderson Promoter Family Simulation</h2>
+  </div>
+
+  <div class="head cols">
+    <h3>Why this helps other teams</h3>
+  </div>
+  <div class="cols">
+    <ul>
+      <li>Pick promoters with confidence using a ranked k_tx ladder (Anderson J231xx plus customs) to shortlist strong, medium, and weak swaps that span your desired range.</li>
+      <li>Schedule plate-reader runs using t80 (time to 80% of final fluorescence) and detection time to capture the rise and near-steady phase without babysitting plates.</li>
+      <li>Catch RBS issues early with a quick Shine–Dalgarno match and spacing check to flag risky designs before cloning.</li>
+      <li>Plan for multi-gene loads with optional ribosome throttling that shows how total mRNA load can slow translation across parts.</li>
+      <li>Plug in your gene via custom CDS support (FASTA, raw sequence, or file path) to reuse the same promoter/RBS context for different proteins.</li>
+      <li>Reuse, compare, and share tidy CSVs (dynamics and per-promoter summaries) and a single figures PDF for DBTL “Learn” steps.</li>
+      <li>Zero-friction setup: runs headless on Windows, macOS, and Linux with simple environment-variable toggles.</li>
+    </ul>
+  </div>
+
+  <div class="head cols">
+    <h3>What your team gets out of the box</h3>
+  </div>
+  <div class="cols">
+    <ul>
+      <li>A ranked promoter ladder and PNG/PDF figures suitable for reports.</li>
+      <li><code>promoter_summary.csv</code> with k_tx, m_eq, protein_eq (steady mature GFP), plus timing metrics (t50, t80, detection time) and maturation lag.</li>
+      <li><code>promoter_dynamics.csv</code> with full timecourses for mRNA, immature protein, and mature protein.</li>
+      <li>A small, readable codebase that is easy to extend (swap promoter libraries, refine the RBS model, or change kinetics).</li>
+    </ul>
+  </div>
+
+  <div class="head cols">
+    <h3>When to reach for which model</h3>
+  </div>
+  <div class="cols">
+    <ul>
+      <li>Use the AHL Induction Simulation when designing induction conditions (dose and timing) and when you want to see the full activation-to-fluorescence chain.</li>
+      <li>Use Plot2Curve when selecting constitutive promoters and RBS context, scheduling measurement windows, or running a quick, reproducible promoter screen with a clean k_tx ladder and timing metrics.</li>
+    </ul>
+  </div>
+
+  <div class="cols">
+    <p>Both tools are intentionally lightweight and transparent. They will not replace detailed biophysical models, but they can save days of pilot work, help avoid uninformative experiments, and produce clean artifacts (CSVs and figures) that slot directly into a team’s DBTL cycle.</p>
+  </div>
+</div>
+
+
+<!--<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Bronze Medal Criterion #3</h4>
+      <p>Make a useful contribution for future iGEM teams and document it on this page.</p>
+      <hr />
+      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <h2>What Should this Page Contain?</h2>
+    <hr />
+    <p>Teams must document their contribution and explain why their effort is a contribution to fellow iGEMers. There is no single definition of what a contribution should be. We invite teams to be creative and generous in the knowledge, data or tools they may provide to the community.</p>
+    <p>A few examples of contributions are:</p>
+    <ul>
+      <li>Creating a new BioBrick part or significantly improving an existing one in the iGEM Registry.</li>
+      <li>Developing software, tools, or resources that can considerably assist future iGEM teams.</li>
+      <li>Sharing optimized protocols, experimental techniques, or methodologies.</li>
+      <li>Any other contributions that provide a clear benefit to future iGEM teams.</li>
+    </ul>
+  </div>
+</div>-->
+
+{% endblock %}

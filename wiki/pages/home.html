@@ -1,0 +1,232 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block page_content %}
+<section class="hero-home">
+  <div class="hero-overlay"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="hero-kicker">Modular biomining platform</div>
+      <h1>Metlock turns zinc recovery into a programmable biological workflow.</h1>
+      <p>
+        Metlock is an iGEM project that explores how engineered bacteria could help capture zinc more selectively and more sustainably than conventional recovery methods alone.
+      </p>
+      <p>
+        Instead of treating biomining as one isolated experiment, we built Metlock as a modular platform: one module controls zinc uptake, one calibrates gene expression predictively, and one is designed for external capture with on-demand release.
+      </p>
+      <div class="hero-actions">
+        <a class="button-primary" href="#modules">Explore Modules</a>
+        <a class="button-secondary" href="{{ url_for('pages', page='engineering') }}">View Engineering</a>
+        <a class="button-secondary" href="{{ url_for('pages', page='human-practices') }}">View Human Practices</a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="metric-card">
+          <span class="hero-metric-value">3</span>
+          <span class="hero-metric-label">Coordinated modules</span>
+        </div>
+        <div class="metric-card">
+          <span class="hero-metric-value">Zn2+</span>
+          <span class="hero-metric-label">Initial metal focus</span>
+        </div>
+        <div class="metric-card">
+          <span class="hero-metric-value">AHL</span>
+          <span class="hero-metric-label">Shared control backbone</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="hero-side-panel">
+      <h2>Why it matters</h2>
+      <p class="mb-3">Recovering valuable metals is essential, but current methods can be energy intensive, chemically harsh, and difficult to tune with precision.</p>
+      <ul class="hero-list">
+        <li>Targets zinc as a high-value proof of concept for biomining</li>
+        <li>Connects wet-lab engineering with predictive modeling</li>
+        <li>Builds toward reusable tools, not just a single assay result</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="content-panel mb-4">
+  <div class="section-label">Plain-English Overview</div>
+  <h2 class="section-title">What Metlock is, in simple terms.</h2>
+  <div class="card-grid two-column">
+    <div>
+      <p class="lead-copy">
+        Metlock is a synthetic biology platform designed to help cells interact with zinc in more controlled ways. One part of the system helps bring zinc into the cell, another helps us predict and tune how strongly the system turns on, and a third is designed to capture zinc outside the cell and release it when needed.
+      </p>
+      <p>
+        Together, these modules frame Metlock as a flexible biomining toolkit rather than a one-off construct. The platform is meant to support future redesign, comparison, and extension to other metals or deployment settings.
+      </p>
+    </div>
+    <div class="front-summary-grid">
+      <div class="data-highlight">
+        <div class="data-highlight-label">Problem</div>
+        <div class="data-highlight-value">Metal recovery is resource intensive</div>
+        <div class="data-highlight-copy">Traditional recovery methods often trade efficiency for environmental cost. Metlock explores whether biology can add selectivity and control.</div>
+      </div>
+      <div class="data-highlight">
+        <div class="data-highlight-label">Platform logic</div>
+        <div class="data-highlight-value">Three modules, one workflow</div>
+        <div class="data-highlight-copy">Import, calibration, and external capture are designed as interoperable pieces of one modular biomining concept.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-panel mb-4">
+  <div class="section-label">Quick Navigation</div>
+  <h2 class="section-title">Start from the path that fits your audience.</h2>
+  <div class="quick-links-grid">
+    <a class="quick-link-card" href="#modules">
+      <span class="quick-link-icon">M</span>
+      <h3>Explore Modules</h3>
+      <p>See the three-part architecture of Metlock before diving into technical details.</p>
+      <span class="quick-link-meta">Platform overview</span>
+    </a>
+    <a class="quick-link-card" href="{{ url_for('pages', page='engineering') }}">
+      <span class="quick-link-icon">E</span>
+      <h3>Engineering Success</h3>
+      <p>Follow the design-build-test-learn logic behind the zinc uptake work.</p>
+      <span class="quick-link-meta">Wet-lab pathway</span>
+    </a>
+    <a class="quick-link-card" href="{{ url_for('pages', page='software') }}">
+      <span class="quick-link-icon">D</span>
+      <h3>Dry Lab and Software</h3>
+      <p>View the predictive modeling and simulation ideas that support the platform.</p>
+      <span class="quick-link-meta">Modeling and data</span>
+    </a>
+    <a class="quick-link-card" href="{{ url_for('pages', page='human-practices') }}">
+      <span class="quick-link-icon">H</span>
+      <h3>Human Practices</h3>
+      <p>Understand how context, sustainability, and real-world impact shape the project.</p>
+      <span class="quick-link-meta">Front-facing context</span>
+    </a>
+  </div>
+</section>
+
+<section class="content-panel mb-4" id="modules">
+  <div class="section-label">Three Modules</div>
+  <h2 class="section-title">A modular architecture built for control, prediction, and capture.</h2>
+  <p class="lead-copy mb-4">
+    The homepage introduces the platform simply; each module page then opens into a more structured space for results, figures, notebook content, contributions, and software.
+  </p>
+
+  <div class="module-grid">
+    <article class="module-card">
+      <div class="module-card-number">Module 1</div>
+      <h3>Tunable Zinc Uptake</h3>
+      <p>
+        Module 1 focuses on bringing zinc into the cell using an AHL-inducible LuxR / pLux system that drives ZnuABC. In plain English: this module is about making zinc uptake adjustable instead of always on.
+      </p>
+      <ul class="module-card-list">
+        <li>Shared LuxR / pLux control backbone</li>
+        <li>ZnuABC as the uptake machinery</li>
+        <li>Built to study controllable zinc import</li>
+      </ul>
+      <a class="module-card-link" href="{{ url_for('pages', page='module-1') }}">Open Module 1</a>
+    </article>
+
+    <article class="module-card">
+      <div class="module-card-number">Module 2</div>
+      <h3>Predictive Gene Expression Calibration</h3>
+      <p>
+        Module 2 uses the same AHL-LuxR-pLux backbone with sfGFP to help predict how strongly the system turns on. It supports a simulation and database concept so design choices can be guided by calibration, not guesswork.
+      </p>
+      <ul class="module-card-list">
+        <li>sfGFP-based calibration concept</li>
+        <li>Simulation-guided expression tuning</li>
+        <li>Foundation for reusable design rules</li>
+      </ul>
+      <a class="module-card-link" href="{{ url_for('pages', page='module-2') }}">Open Module 2</a>
+    </article>
+
+    <article class="module-card">
+      <div class="module-card-number">Module 3</div>
+      <h3>External Zinc Capture + On-Demand Release</h3>
+      <p>
+        Module 3 extends the platform outside the cell using an Ag43 surface-display scaffold with zinc-binding peptides. This module explores capture at the cell surface and controlled release when recovery is needed.
+      </p>
+      <ul class="module-card-list">
+        <li>External capture strategy</li>
+        <li>Ag43 display scaffold</li>
+        <li>Designed for bind-and-release workflows</li>
+      </ul>
+      <a class="module-card-link" href="{{ url_for('pages', page='module-3') }}">Open Module 3</a>
+    </article>
+  </div>
+</section>
+
+<section class="card-grid two-column mb-4">
+  <div class="graph-card">
+    <div class="graph-header">
+      <div>
+        <p class="section-label mb-2">Platform Preview</p>
+        <h3 class="graph-title">How the modules work together</h3>
+      </div>
+      <span class="graph-badge">Concept view</span>
+    </div>
+    <div class="platform-flow">
+      <div class="platform-step">
+        <strong>1</strong>
+        <span>Bring zinc in with tunable transport</span>
+      </div>
+      <div class="platform-arrow">-&gt;</div>
+      <div class="platform-step">
+        <strong>2</strong>
+        <span>Calibrate gene expression predictively</span>
+      </div>
+      <div class="platform-arrow">-&gt;</div>
+      <div class="platform-step">
+        <strong>3</strong>
+        <span>Capture and release zinc externally</span>
+      </div>
+    </div>
+    <div class="caption-box">
+      <strong>Front-facing takeaway</strong>
+      Metlock is designed as a platform where tuning, calibration, and capture can inform one another instead of existing as disconnected experiments.
+    </div>
+  </div>
+
+  <div class="figure-card">
+    <div class="section-label">Reusable Preview</div>
+    <div class="figure-card-media">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+    </div>
+    <div class="figure-card-copy">
+      <h3 class="graph-title mb-2">A homepage that routes users before it overwhelms them</h3>
+      <p class="mb-3">
+        This front page is intentionally written for first-time visitors. It explains the project in plain English, then hands off to module pages and technical sections where deeper details, figures, and data can live cleanly.
+      </p>
+      <div class="caption-box">
+        <strong>Reusable component</strong>
+        Use this figure-card pattern for diagrams, device schematics, timeline visuals, or module-specific illustrations across the wiki.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-panel">
+  <div class="section-label">Why the platform matters</div>
+  <h2 class="section-title">Useful beyond a single experiment.</h2>
+  <div class="card-grid three-column">
+    <div class="data-highlight">
+      <div class="data-highlight-label">Reusable backbone</div>
+      <div class="data-highlight-value">Common control logic</div>
+      <div class="data-highlight-copy">The AHL-LuxR-pLux backbone creates a shared language across modules, making comparison and redesign easier.</div>
+    </div>
+    <div class="data-highlight">
+      <div class="data-highlight-label">Scalable concept</div>
+      <div class="data-highlight-value">More than one assay</div>
+      <div class="data-highlight-copy">Metlock is framed as a platform that could eventually support broader biomining or biorecovery applications.</div>
+    </div>
+    <div class="data-highlight">
+      <div class="data-highlight-label">Competition-ready</div>
+      <div class="data-highlight-value">Clear story architecture</div>
+      <div class="data-highlight-copy">Visitors can begin with the plain-English story, then move naturally into engineering, software, notebook, and contribution content.</div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block title %}Module 1{% endblock %}
+
+{% block page_content %}
+<section class="module-page-hero">
+  <div class="section-label">Metlock Module 1</div>
+  <h1 class="section-title">Tunable Zinc Uptake</h1>
+  <p class="lead-copy">
+    Module 1 is the entry point for zinc into the Metlock platform. In plain English, this module is about helping cells pull in zinc in a way that can be adjusted instead of left permanently on.
+  </p>
+  <p>
+    More specifically, Module 1 uses an AHL-inducible LuxR / pLux control system to drive ZnuABC, the transporter responsible for zinc uptake. This makes Module 1 the core import layer that the rest of the platform can build around.
+  </p>
+  <div class="module-page-links">
+    <a class="button-primary" href="{{ url_for('pages', page='engineering') }}">View Engineering Success</a>
+    <a class="button-secondary module-page-secondary" href="{{ url_for('pages', page='lab-notebook') }}">Open Lab Notebook</a>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="content-panel mb-4">
+    <div class="section-heading">
+      <div class="section-label">Description</div>
+      <h2 class="section-title">What this module is designed to do.</h2>
+    </div>
+    <p>
+      The purpose of Module 1 is to test whether zinc uptake can be made controllable. Instead of relying on a fixed transport state, the system is designed so that zinc import responds to an external induction signal and can be studied across a range of conditions.
+    </p>
+    <p>
+      At the technical level, this module places ZnuABC under the LuxR / pLux backbone so the team can compare expression strength, transport behavior, and practical assay outcomes as induction changes.
+    </p>
+    <div class="module-route-grid">
+      <a class="quick-link-card" href="{{ url_for('pages', page='description') }}">
+        <span class="quick-link-icon">D</span>
+        <h3>Description</h3>
+        <p>See how controllable zinc import fits into the broader Metlock platform story.</p>
+        <span class="quick-link-meta">Project framing</span>
+      </a>
+      <a class="quick-link-card" href="{{ url_for('pages', page='engineering') }}">
+        <span class="quick-link-icon">E</span>
+        <h3>Engineering</h3>
+        <p>Follow the design-build-test-learn logic behind the inducible ZnuABC construct.</p>
+        <span class="quick-link-meta">Design logic</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="card-grid two-column mb-4">
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Results</div>
+        <h2 class="section-title">Where transport performance will be shown.</h2>
+      </div>
+      <p>
+        This section is designed to hold the main evidence for Module 1, including uptake assays, induction-response trends, controls, and comparisons between expected and observed behavior.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Results placeholder</strong>
+        Add uptake curves, transport assay summaries, validation plots, and interpretation for Module 1 here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='results') }}">Go to Results</a>
+    </div>
+
+    <div class="graph-card">
+      <div class="graph-header">
+        <div>
+          <p class="section-label mb-2">Graph Space</p>
+          <h3 class="graph-title">Module 1 uptake and induction preview</h3>
+        </div>
+        <span class="graph-badge">Placeholder</span>
+      </div>
+      <div class="graph-plot">
+        <div class="graph-line"></div>
+        <div class="graph-line-secondary"></div>
+        <div class="graph-line-tertiary"></div>
+      </div>
+      <div class="caption-box">
+        <strong>Reusable graph slot</strong>
+        Use this card for zinc uptake plots, induction-response comparisons, or control-versus-test transport data.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="module-stack">
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Contributions</div>
+        <h2 class="section-title">What this module contributes to the platform.</h2>
+      </div>
+      <p>
+        Module 1 can contribute reusable parts, assay logic, and design lessons for anyone interested in controllable metal uptake systems.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Contribution placeholder</strong>
+        Add reusable constructs, workflow improvements, transport assay lessons, or part-level takeaways here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='contribution') }}">Go to Contribution</a>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Wet Lab / Lab Notebook</div>
+        <h2 class="section-title">Bench work and experimental record.</h2>
+      </div>
+      <p>
+        This is the right place for cloning workflow, transformation outcomes, assay setup, photos, troubleshooting, and notebook summaries connected to Module 1.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Wet-lab placeholder</strong>
+        Add protocol notes, transformation images, assay setup diagrams, and notebook checkpoints here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='lab-notebook') }}">Go to Lab Notebook</a>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Dry Lab / Software</div>
+        <h2 class="section-title">How modeling supports the uptake module.</h2>
+      </div>
+      <p>
+        Module 1 also benefits from dry-lab support, especially when comparing expected induction behavior to experimental uptake trends and identifying useful operating ranges.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Dry-lab placeholder</strong>
+        Add fitted curves, parameter comparisons, transport model notes, and software outputs for Module 1 here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='software') }}">Go to Software</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

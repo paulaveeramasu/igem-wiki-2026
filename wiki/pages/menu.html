@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="{{ url_for('home') }}">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="{{ url_for('home') }}">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='module-1') }}">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='module-2') }}">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='module-3') }}">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='members') }}">Members</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Project Description</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='lab-notebook') }}">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='critical_mineral_conference') }}">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

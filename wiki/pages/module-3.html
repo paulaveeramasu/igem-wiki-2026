@@ -1,0 +1,128 @@
+{% extends "layout.html" %}
+
+{% block title %}Module 3{% endblock %}
+
+{% block page_content %}
+<section class="module-page-hero">
+  <div class="section-label">Metlock Module 3</div>
+  <h1 class="section-title">External Zinc Capture + On-Demand Release</h1>
+  <p class="lead-copy">
+    Module 3 extends Metlock beyond import into the cell. In plain English, this module explores whether zinc can first be captured outside the cell and then released in a controlled way when recovery is needed.
+  </p>
+  <p>
+    The concept centers on an Ag43 surface-display scaffold paired with zinc-binding peptides, creating a front-facing capture layer that broadens how the platform could be used in future biomining workflows.
+  </p>
+  <div class="module-page-links">
+    <a class="button-primary" href="{{ url_for('pages', page='description') }}">View Project Description</a>
+    <a class="button-secondary module-page-secondary" href="{{ url_for('pages', page='human-practices') }}">View Human Practices</a>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="content-panel mb-4">
+    <div class="section-heading">
+      <div class="section-label">Description</div>
+      <h2 class="section-title">Why surface capture expands the platform.</h2>
+    </div>
+    <p>
+      If Module 1 is about transport into the cell, Module 3 asks whether zinc can be managed at the surface first. That matters because external capture may offer different practical advantages for handling, recovery, and downstream processing.
+    </p>
+    <p>
+      At a more technical level, this module explores how an Ag43 display scaffold and zinc-binding peptides could enable a bind-and-release strategy that complements the rest of the Metlock architecture.
+    </p>
+    <div class="module-route-grid">
+      <a class="quick-link-card" href="{{ url_for('pages', page='description') }}">
+        <span class="quick-link-icon">D</span>
+        <h3>Description</h3>
+        <p>Read how external capture fits into the larger modular biomining concept.</p>
+        <span class="quick-link-meta">Project framing</span>
+      </a>
+      <a class="quick-link-card" href="{{ url_for('pages', page='human-practices') }}">
+        <span class="quick-link-icon">H</span>
+        <h3>Human Practices</h3>
+        <p>Connect Module 3 to deployment questions, sustainability, and responsible use.</p>
+        <span class="quick-link-meta">Impact context</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="card-grid two-column mb-4">
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Results</div>
+        <h2 class="section-title">Where capture and release data will appear.</h2>
+      </div>
+      <p>
+        This section is designed for peptide-binding comparisons, display validation, release-condition testing, microscopy, and proof-of-concept performance figures.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Results placeholder</strong>
+        Add binding data, release tests, construct validation, and interpretation for Module 3 here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='results') }}">Go to Results</a>
+    </div>
+
+    <div class="figure-card">
+      <div class="section-label">Figure Space</div>
+      <div class="figure-card-media module-figure-placeholder">
+        <div class="module-figure-placeholder-copy">Surface-display diagram or capture workflow figure</div>
+      </div>
+      <div class="caption-box">
+        <strong>Reusable figure slot</strong>
+        Use this card for scaffold diagrams, peptide schematics, release logic, or microscopy panels tied to Module 3.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="module-stack">
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Contributions</div>
+        <h2 class="section-title">What this module could contribute.</h2>
+      </div>
+      <p>
+        Module 3 can contribute design thinking around external capture, release workflows, and surface-display strategies that may be reusable beyond this first zinc-focused implementation.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Contribution placeholder</strong>
+        Add scaffold choices, peptide design lessons, and reusable bind-and-release workflow notes here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='contribution') }}">Go to Contribution</a>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Wet Lab / Lab Notebook</div>
+        <h2 class="section-title">Experimental build and validation record.</h2>
+      </div>
+      <p>
+        This section can collect construct assembly, display validation, microscopy, peptide testing, and notebook checkpoints linked to the external capture concept.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Wet-lab placeholder</strong>
+        Add cloning notes, validation images, surface-display checks, and notebook evidence here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='lab-notebook') }}">Go to Lab Notebook</a>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Dry Lab / Software</div>
+        <h2 class="section-title">Modeling and selection support.</h2>
+      </div>
+      <p>
+        Module 3 also benefits from dry-lab support, whether for peptide comparison, selection rationale, release modeling, or future interface design for capture workflows.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Dry-lab placeholder</strong>
+        Add screening rationale, peptide comparison visuals, release models, and software outputs for Module 3 here.
+      </div>
+      <a class="module-inline-link" href="{{ url_for('pages', page='software') }}">Go to Software</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

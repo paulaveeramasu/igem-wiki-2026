@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+  
+{% include "heros/experiments-hero.html"%}
+
+{% block page_content %}
+
+<div class="head cols">
+  <h1>Lab Notebook</h1>
+</div>
+
+<div class="cols">
+  <!-- Stock preparation -->
+  <h3>Resuspended DNA for Stock Solution (7/30/2025)</h3>
+  <p>
+    Resuspended DNA in appropriate buffer for stock solution
+    <span>[nuclease-free Tris-EDTA, pH 8.0, or 10 mM Tris-HCl, pH 8.0]</span>.
+  </p>
+  <ul>
+    <li>Pulse-centrifuged new DNA before suspension.</li>
+    <li>Target concentration: <strong>10 ng/µl</strong>.</li>
+    <li><strong>1,403 ng</strong> resuspended in ~<strong>140 µl</strong>.</li>
+  </ul>
+
+  <!-- 7/30/2025 -->
+  <h3>Transformations — TOP10 &amp; DH5α (7/30/2025)</h3>
+  <p>Prepare aliquots for transformation:</p>
+  <ul>
+    <li>25 µl TOP10 with 2 µl <em>synthetic ZnuABC</em> / clonal vector (7/30/25)</li>
+    <li>25 µl DH5α with 2 µl <em>synthetic ZnuABC</em> / clonal vector (7/30/25)</li>
+    <li>25 µl TOP10 with 2 µl pUC19 (T10 on top) (7/30/25)</li>
+    <li>25 µl DH5α with 2 µl pUC19 (7/30/25)</li>
+  </ul>
+
+  <p>Perform transformation:</p>
+  <ul>
+    <li>Ice: 15 minutes.</li>
+    <li>Heat shock: 42&nbsp;°C for 1 minute (water bath).</li>
+    <li>Return to ice: 5 minutes.</li>
+    <li>Add 100 µl SOC (≈4× cell volume for recovery media).</li>
+    <li>37&nbsp;°C incubation: 45 minutes.</li>
+    <li>Plate and spread with <strong>glass beads</strong>.</li>
+    <li>Incubate at 37&nbsp;°C; check next morning.</li>
+  </ul>
+
+  <figure class="centered-figure">
+    <img src="https://static.igem.wiki/teams/5759/labnotebook/7302025-transformation.webp">
+    <figcaption>  <em>Figure 1:</em> (top left) very successful pUC19 control; (bottom left) few colonies present; (top and bottom right) unsuccessful transformations of the synthetic ZnuABC construct.</figcaption>
+  </figure>
+
+  <!-- 8/2/2025 -->
+  <h3>Transformation — DH5α Retry (8/2/2025)</h3>
+  <p>Prepare aliquot for transformation:</p>
+  <ul>
+    <li>25 µl DH5α with 2 µl <em>synthetic ZnuABC</em> / clonal vector (8/2/25)</li>
+  </ul>
+
+  <p>Perform transformation:</p>
+  <ul>
+    <li>Ice: 15 minutes.</li>
+    <li>Heat shock: 42&nbsp;°C for 1 minute (water bath).</li>
+    <li>Return to ice: 5 minutes.</li>
+    <li>Add 100 µl SOC (≈4× cell volume).</li>
+    <li>37&nbsp;°C incubation: 45 minutes.</li>
+    <li>Plate and spread with <strong>glass beads</strong>.</li>
+    <li>Incubate at 37&nbsp;°C; check next morning.</li>
+  </ul>
+
+
+  <figure class="centered-figure">
+    <img src="https://static.igem.wiki/teams/5759/labnotebook/8022025-transformation.webp">
+    <figcaption>  <em>Figure 2:</em> Unsuccessful transformations of the synthetic ZnuABC construct.</figcaption>
+  </figure>
+  <!-- 8/4/2025 -->
+  <h3>Transformations — BL21 (8/4/2025)</h3>
+  <p>
+    Used NanoDrop to measure DNA concentration; tested two plasmid input volumes for BL21 transformations.
+  </p>
+
+  <p>Prepare aliquots for transformation:</p>
+  <ul>
+    <li>
+      BL21 with <em>synthetic ZnuABC</em> (8/4/2025)
+      <ul>
+        <li>Volume: <strong>1 µl</strong> plasmid DNA</li>
+        <li>Concentration: <strong>4 ng/µl</strong></li>
+      </ul>
+    </li>
+    <li>
+      BL21 with <em>synthetic ZnuABC</em> (8/4/2025)
+      <ul>
+        <li>Volume: <strong>10.5 µl</strong> plasmid DNA</li>
+        <li>Concentration: <strong>4 ng/µl</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Perform transformation:</p>
+  <ul>
+    <li>Ice: 15 minutes.</li>
+    <li>Heat shock: 42&nbsp;°C for 1 minute (water bath).</li>
+    <li>Return to ice: 5 minutes.</li>
+    <li>Add 100 µl SOC (≈4× cell volume).</li>
+    <li>37&nbsp;°C incubation: 45 minutes.</li>
+    <li>Plate and spread with <strong>glass beads</strong>.</li>
+    <li>Incubate at 37&nbsp;°C; check next morning.</li>
+  </ul>
+
+  <figure class="centered-figure">
+    <img src="https://static.igem.wiki/teams/5759/labnotebook/8042025-transformation.webp" style="width: 100%;">
+    <figcaption><em>Figure 3:</em> unsuccessful transformations of synthetic ZnuABC construct.</figcaption>
+  </figure>
+</div>
+<!--<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>What Should this Page Contain?</h2>
+    <hr />
+    <p>Provide comprehensive, step-by-step protocols for all experiments conducted. Include a list of materials, reagents, and equipment used. Specify concentrations, volumes, incubation times, temperatures, and other critical parameters. Document any modifications or optimizations made to standard protocols.</p>
+    <p>Explain the purpose of each experiment and its relevance to your project goals. Describe the experimental design, including controls and replicates. Provide a clear rationale for the chosen methods and approaches.</p>
+    <p>Document any troubleshooting steps taken and optimizations made during the experimental process. Share any lessons learned that could benefit future teams.</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr />
+    <ul>
+      <li><a href="https://2024.igem.wiki/heidelberg/experiments">2024 Heidelberg</a></li>
+      <li><a href="https://2024.igem.wiki/marburg/experiments">2024 Marburg</a></li>
+      <li><a href="https://2024.igem.wiki/epfl/experiments">2024 EPFL</a></li>
+      <li><a href="https://2023.igem.wiki/estonia-tuit/experiments">2023 Estonia-TUIT</a></li>
+    </ul>
+  </div>
+</div>-->
+
+{% endblock %}
