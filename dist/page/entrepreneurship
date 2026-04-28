@@ -1,0 +1,237 @@
+<div class="hero entrepreneurship">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<div class="head cols">
+  <h1>Entrepreneurship</h1>
+</div>
+<div class="head cols">
+  <h2>Value Proposition</h2>
+</div>
+<div class="cols">
+  <p>Metlock isn't just another water treatment system - it's a dual-purpose zinc recovery + environmental compliance tool. It allows mining and metal processing companies to: </p>
+  <ul>
+    <li>Recover additional zinc from wastewater and tailings streams that would otherwise be lost. </li>
+    <li>Reduce environmental discharge penalties by sequestering zinc before effluent release. </li>
+    <li>Meet tightening ESG (Environmental, Social, Governance) standards and demonstrate sustainable practices to regulators, investors, and communities. </li>
+    <li>Turn “waste treatment” into a revenue stream. </li>
+  </ul>
+</div>
+<div class="head cols">
+  <h1>Target Customers</h1>
+</div>
+<div class="cols">
+  <p><b>Primary Market:</b></p>
+  <ul>
+    <li>Mining companies extracting zinc (or polymetallic ores with zinc byproducts). </li>
+    <li>Zinc smelters and refiners. </li>
+  </ul>
+  <p><b>Secondary Market:</b></p>
+  <ul>
+    <li>Industrial wastewater treatment plants dealing with heavy metal discharges. </li>
+    <li>Municipal/regional water authorities in mining-heavy regions.</li>
+    <li>Companies aiming for ESG certifications who need “green” water treatment solutions.</li>
+    <li>Electronics/chip manufacturers who need specific zinc concentrations for batching during production. </li>
+  </ul>
+</div>
+<div class="head cols">
+  <h2>Possible Revenue Streams</h2>
+</div>
+<div class="cols">
+  <p><b>Hardware + Installation: </b></p>
+  <ul>
+    <li>Sell the Metlock system (bioreactor + media + strains) as a capital investment with installation fees. </li>
+    <li>Tiered system sizes (small, medium, large) depending on wastewater throughput.</li>
+  </ul>
+  <p><b>Recurring Service Contracts: </b></p>
+  <ul>
+    <li>Maintenance & Monitoring Subscriptions: Offer monthly or annual contracts for upkeep, microbial recharge, and system optimization. </li>
+    <li>Performance-based Contracts: Customers pay a % of the value of zinc recovered (aligns incentives, makes Metlock low-risk to adopt). </li>
+  </ul>
+  <p><b>Licensing the Technology</b></p>
+  <ul>
+    <li>Partner with large industrial equipment providers or water treatment companies and license Metlock tech. Revenue through royalties. </li>
+  </ul>
+  <p><b>Sale of Secondary Zinc: </b></p>
+  <ul>
+    <li>Operate Metlock systems as a toll recovery service (e.g., on-site or regional plants) where Metlock recovers zinc from wastewater, sells it on the metals market, and shares profits with the client. </li>
+  </ul>
+</div>
+<div class="head cols">
+  <h1>Competitive Advantage</h1>
+</div>
+<div class="cols">
+  <ul>
+    <li>Unlike traditional bioreactors, Metlock is integrated into the zinc flotation circuit rather than just an afterthought treatment. </li>
+    <li>Higher zinc recovery rates = more revenue for clients and investor interest. </li>
+    <li>Lower environmental liability costs = less risk for clients and compliance with regulations. </li>
+    <li>Strong ESG/green branding = marketable advantage. </li>
+  </ul>
+</div>
+<!--The doc on the share has more info-->
+<!--<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Best Entrepreneurship</h4>
+      <p>The Best Entrepreneurship Prize recognizes exceptional effort to build a business case and commercialize an iGEM project. This award can go to a new project, or to a previous project that a team has aimed to commercialize. Successful teams will (1) construct a business plan based on customer needs and expert knowledge on feasibility and (2) create a minimum viable product.</p>
+      <hr />
+      <p>Visit the <a href="https://competition.igem.org/judging/special-prizes">Special Prizes page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <h2>Inspirations</h2>
+    <hr />
+    <ul>
+      <li><a href="https://2024.igem.wiki/utoronto/entrepreneurship">2024 UToronto</a></li>
+      <li><a href="https://2024.igem.wiki/ionis-paris/entrepreneurship">2024 Ionis-Paris</a></li>
+      <li><a href="https://2023.igem.wiki/leiden/entrepreneurship">2023 Leiden</a></li>
+    </ul>
+  </div>
+</div>-->
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

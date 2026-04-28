@@ -1,0 +1,178 @@
+<div class="hero pulse-check">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+<div class="names">
+    <div class="cols head">
+        <h1>Pulse Check</h1>
+    </div>
+    <div class="cols">
+        <p>On May 2nd, 2025, Missouri S&T's International Genetically Engineered Machines (iGEM) team hosted an 
+            event with a direct impact on the health of Missouri S&T's campus. Working with the campus's Student 
+            Union Board, a free cardiac screening called “Pulse Check” was organized for students. From 8 a.m to 
+            6 p.m., free electrocardiogram (ECG) tests were offered to over 200 students. ECGs are quick, painless, 
+            and incredibly valuable as they can detect heart arrhythmias that could lead to chronic heart failure,
+            stroke, heart attack, and sudden cardiac arrest. While these are less likely in college aged students,
+            arrhythmias can be diagnosed decades in advance and allow preventative action to be taken by those affected.
+            Participants' weight, height, waist circumference, and blood pressure were measured, 
+            providing an overall assessment of their heart health. </p>
+        <img src="https://static.igem.wiki/teams/5759/logos/pulsecheck/pulse-check.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p style="text-align: center;"><b>Figure 1:</b> <i>The pamphlet that was circulated to students</i></p>
+        <p>These simple checks provide the basis for heart health, helping students understand their overall 
+            cardiovascular risk. The goal was to ensure that friends and classmates had access to early detection 
+            without costs or hassle. Volunteers from the iGEM team and other campus organizations worked to run the 
+            event. Participants were checked in, questions were answered, and the ECG testing was conducted—all 
+            while ensuring the well-being of participants and overall event operations.  For many participants, it was 
+            their first experience having an ECG. Given this, it was a priority to guarantee a stress-free 
+            process. The Ruth Lee Miller Heart Research Foundation provided the event with board-certified 
+            medical doctors to read all ECGs. This ensured that students received professional, reliable results. In 
+            fact, one participant had an A-Fib and was referred to the local hospital. Seven others were found to have 
+            cardiac dysrhythmias and encouraged to follow up with their primary care providers. Collaborating with other 
+            associations to expand health access and health literacy on campus was highly rewarding. </p>
+        <p>This event sparked more health-focused projects on campus, allowing a difference to be made not just in 
+            the lab, but in the community where learning takes place. S&T's iGEM team is proud to have played a 
+            role in protecting the heart of our campus, one beat at a time. </p>
+    </div>
+</div>
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

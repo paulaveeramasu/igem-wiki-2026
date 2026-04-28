@@ -1,0 +1,447 @@
+<div class="hero results">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<div class="cols head">
+  <h1>Results</h1>
+</div>
+
+
+<div class="cols">
+  <h2>Wet-Lab Results</h2>
+
+  <h3>What we did (Build &rarr; Test)</h3>
+  <ul>
+    <li>
+      Initial transformations (7/30):
+      We transformed synthetic ZnuABC (clonal vector) into TOP10 and DH5α alongside pUC19 controls using a
+      standard heat-shock workflow (15 min ice &rarr; 42&nbsp;°C 1 min &rarr; 5 min ice &rarr; SOC at 4&times; volume
+      &rarr; 37&nbsp;°C 45 min outgrowth).
+      <em>Result:</em> pUC19 produced strong colonies; synthetic ZnuABC plates yielded few to no colonies (mostly failed).
+    </li>
+
+    <li>
+      Retry (8/2):
+      We repeated DH5α + iZnuABC with the same conditions.
+      <em>Result:</em> no colonies.
+    </li>
+
+    <li>
+      BL21 attempt (8/4):
+      We tested BL21 + iZnuABC at two DNA inputs (1&nbsp;µL and 10.5&nbsp;µL at 4&nbsp;ng/µL) with the same heat-shock and
+      45 min outgrowth.
+      <em>Result:</em> no colonies.
+    </li>
+  </ul>
+
+  <h3>How this aligns with our Engineering Success plan</h3>
+  <ul>
+    <li>
+      Our plan notes pUC19 success but no colonies for pUPD3::synthetic ZnuABC on chloramphenicol (Cam) plates,
+      pinpointing Cam selection as the failure point.
+    </li>
+    <li>
+      We flagged that bacteriostatic Cam is sensitive to outgrowth time and recommend ~60 min SOC with shaking
+      (we ran 45 min), plus a Cam gradient (12.5/25/34/50&nbsp;µg/mL) to test selection pressure.
+    </li>
+  </ul>
+
+  <h3>Interpretation</h3>
+  <ul>
+    <li>
+      The positive control verifies that our competent cells and workflow are sound; the systematic failure is
+      specific to synthetic ZnuABC under Cam selection. The most likely causes are (a) Cam selection/outgrowth parameters and/or
+      (b) vector integrity/quality, rather than a general transformation issue.
+    </li>
+    <li>
+      Our 45 min outgrowth was likely insufficient for Cam (requires time for <em>cat</em> expression).
+      Increasing to ~60 min with shaking is the evidence-based adjustment. Switching to BL21 did not rescue transformation,
+      consistent with our guidance to stick with DH5α/TOP10 until the build is verified.
+    </li>
+  </ul>
+
+  <h3>What this means for Engineering Success</h3>
+  <p>We completed a Build–Test–Learn cycle:</p>
+  <ul>
+    <li>Build: We ordered pUPD3::iZnuABC and performed transformations in multiple strains.</li>
+    <li>Test: Controls worked; ZnuABC failed specifically under Cam selection.</li>
+    <li>
+      Learn: Extend Cam outgrowth, tune Cam concentration, verify plasmid integrity, and, if needed, electroporate.
+      Then we can move to the Zincon uptake assay once we have confirmed colonies.
+    </li>
+  </ul>
+
+  <h3>Next steps to unblock the assay</h3>
+  <ol>
+    <li>
+      Re-transform pUPD3::iZnuABC with SOC 60 min outgrowth (shaking); plate a
+      Cam gradient (12.5/25/34/50&nbsp;µg/mL) plus a no-antibiotic recovery plate.
+    </li>
+    <li>Perform colony PCR across backbone/insert junctions on 2–4 colonies; archive glycerol stocks.</li>
+    <li>
+      If efficiency remains low, electroporate high-quality DNA (validated by digest/gel), then repeat step 1.
+    </li>
+    <li>
+      With verified colonies, run the Zincon supernatant-depletion assay (AHL gradient; ZnSO₄ 25–50&nbsp;µM; read 620&nbsp;nm; no EDTA),
+      including ΔznuB and empty-vector controls.
+    </li>
+  </ol>
+
+  <h3>Bottom line</h3>
+  <p>
+    Our controls succeeded, but the Cam-selected synthetic ZnuABC build did not. Our planned fixes include longer Cam outgrowth,
+    a Cam gradient, vector quality control, and potential electroporation. Once the build is stable, the Zincon assay will quantify
+    AHL-tunable Zn²⁺ uptake and complete our experimental validation.
+  </p>
+
+  <p>
+    <em>Source: Lab Notebook, iGEM - <i>Metlock</i> 2025
+  </p>
+</div>
+
+<hr>
+
+<div class="cols">
+  <h2>Dry-Lab Results</h2>
+</div>
+
+<div class="cols">
+  <h2>Plot2Curve: Anderson Family Overview</h2>
+</div>
+
+<p> Our iterative design process will be further developed by closely integrating computational 
+  modeling with laboratory data acquisition. We will generate a series of predictive time-course 
+  graphs from our model and systematically compare and contrast these outputs with experimental 
+  results, specifically focusing on the kinetics of GFP variants due to their simplicity and 
+  well-documented characterization. This baseline will allow us to accurately model various expression 
+  rates. By iteratively incorporating new literature values and experimental data (e.g., promoter 
+  strengths, RBS efficiencies, and fluorescent protein maturation rates) back into the model, we will 
+  refine its parameters to achieve a strong relationship between graphical and numerical predictions. 
+  This process will enable us to draw conclusions on the functional trade-offs and optimal use of 
+  various promoters in genetic parts. </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/overlaycomparison-8figs.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 1:</b> This figure presents our dynamic overlay comparison of the gene expression kinetics 
+driven by 8 different BBa_J23XX promoters over a 5000 second time course. The graph monitors the 
+accumulation of mRNA (solid lines, left y-axis) alongside the protein (dashed lines, right y-axis) 
+in molecules per cell. The data demonstrates the relative strengths of each promoter and matches 
+assumptions based off of literature regarding Anderson family promoters. J23100 exhibits the strongest 
+expression with a high steady state level for both mRNA (~10.5 molecules/cell) and protein (~12,000 
+molecules/cell) in the shortest time. Whereas J23113 exhibits the weakest and slowest expression of 
+both mRNA and protein. This data helps in developing synthetic circuits that require finely tuned 
+gene expression to help prevent leaky expression in downstream components or metabolic burden.  </p>
+
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/proteincomparisonmrna.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 2:</b> This figure provides a detailed side-by-side analysis of the J23100 and J23102 
+constitutive promoters. The Anderson J23100 promoter demonstrates a strong expression, reaching an 
+mRNA steady state of ~10.5 molecules/cell and a final protein level of ~12,000 molecules/cell. In 
+contrast, the J23102 promoter, a weaker variant, maxes out at a lower steady state of 
+~9 molecules/cell for mRNA and ~10,000 molecules/cell for protein. Both promoters quickly reach 
+steady state mRNA expression with a slower, sigmoidal accumulation of protein. These dynamics 
+match assumptions based off of literature regarding the dynamics of Anderson family promoters.  </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/proteinmaturationcomparison.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 3:</b> This figure represents a kinetic model to predict fluorescent protein maturation 
+under the control of the strong Anderson promoters J23100 and J23102. The model separates total 
+protein into immature protein (recently translated, non-fluorescent) and mature protein (fully 
+folded and fluorescent). For both promoters, the immature protein pool rapidly reaches a pseudo-steady 
+state (~3500 molecules/cell for J23100; ~3000 for J23102), reflecting a balance between translation 
+and maturation rates. The mature protein pool accumulates continuously, illustrating that the observed 
+fluorescence lags behind actual transcription and translation. This simulated data follows what we 
+predict might be observed in a wet lab experiment.  </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/globalribosome.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 4:</b> This figure shows how total mRNA levels and ribosome activity evolve over time 
+when the cell’s ribosomes are limited. Initially, the throttle factor (the fraction of free ribosomes 
+available for translation) starts high and drops rapidly — indicating that ribosomes quickly become 
+saturated by mRNA transcripts. As mRNA levels rise, ribosomes are increasingly burdened, causing a 
+global throttling effect where translation slows. Eventually, both the total mRNA and the throttle 
+factor reach steady-state; total mRNA near its equilibrium level, and global throttling near a low 
+value (~0.55–0.6), showing sustained ribosome competition. At KR=100, the system reaches a balance 
+where transcription continues but translation is limited by ribosome availability — a realistic 
+model for resource competition in cells.  </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/maturationlagvsbright.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 5:</b> This scatter plot is a characterization of the fluorescent reporter's behavior for 
+various Anderson family promoter constructs. The y-axis displays the steady-state mature protein level 
+(a proxy for final brightness, in molecules/cell), while the x-axis quantifies the maturation lag (in 
+seconds), calculated as the difference between the time required to reach 50% of the maximum mature 
+protein (t50_protein ) and the time required to reach 50% of the maximum mRNA (t50_mRNA ). The data 
+provided from literature values will create a clear positive correlation between promoter strength 
+(brightness) and the maturation lag time. This figure highlights the importance of using kinetic 
+models to accurately correct protein maturation time when performing instantaneous measurements of 
+gene expression. The simulated model will eventually be compared to our measured values.  </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/brightnessandflour.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 6:</b> Left: this panel confirms the ranking from the Maturation Lag vs. Brightness plot: 
+CustomStrong ≫ J23100 > J23102 > J23104, and so on. The CustomWeak and even weaker promoters 
+J23113–J23109 produce minimal brightness. Right: The bars look flat—and that can be misleading. 
+Time to reach 80% of each promoter’s own steady state is mostly set by the system’s built-in kinetics 
+(protein maturation and dilution by growth), not by how strong the promoter is, so strong promoters end brighter 
+but don’t reach “80%” much faster. Don’t read the flat bars as evidence of a translation or transcription bottleneck; 
+they reflect those shared time constants. For a speed comparison that does depend on promoter strength, use an absolute 
+threshold (e.g., “time to detectable fluorescence”), which will vary across promoters.  </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/detectiontimevsbrightness.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 7:</b> This figure graphs the time (in seconds) required for minimum fluorescence 
+detection (at 1562 mature copies of sfGFP) versus the number of steady-state mature protein copies 
+(those that fluoresce) in the cell. In effect, a negative saturation trend is established between 
+the time required for recordable fluorescence data and the number of sfGFP proteins there are in the 
+cell. While promoters expressing high amounts of steady state proteins such as J23100 are detectable 
+much earlier than others, they, due to high amounts of protein production and folding, burden cell 
+machinery significantly more.  </p>
+
+<div class="cols">
+  <h2>Plot2Curve: AHL-Induction Simulation Overview</h2>
+</div>
+<p> Our simulation framework was developed to explore the kinetics of quorum-sensing induction by 
+  systematically modeling the effects of AHL (acyl-homoserine lactone) dosing on gene expression. 
+  Using sfGFP and OD600 as a measurable output, we generate predictive time-course plots of inducer 
+  dynamics, fluorescence production, and bacterial growth. These simulations allow us to test both 
+  single-dose and scheduled-dose scenarios, providing a quantitative baseline for understanding EC50 
+  values, Hill slopes, and the overall robustness of induction systems. By iteratively comparing these 
+  computational predictions with experimental data, we refine the model to account for promoter 
+  activity, RBS efficiency, and protein maturation rates. This process ensures that the simulation 
+  not only captures general induction trends but also becomes a practical design tool for 
+  evaluating circuit performance, trade-offs, and optimization strategies in quorum-sensing 
+  applications. </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/1.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 1:</b> 
+This plot shows the single-well AHL potency simulation. The initial AHL concentration was set to 
+600,000 µM, and a scheduled dose of 1e10 µM was added when the optical density reached 1e-11. The 
+resulting curve demonstrates the sharp increase in AHL potency after dosing and its gradual decline 
+over time.
+ </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/2.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 2:</b> This figure represents sfGFP fluorescence output as a function of time for the 
+same experimental parameters. Following the initial AHL spike, GFP expression rises sharply and then 
+plateaus at around 31 × 10^6 units. This plateau reflects the system’s steady-state response, where 
+the gene circuit has reached its maximal GFP output given the AHL induction conditions.
+ </p>
+
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/3.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 3:</b> This panel tracks simulated bacterial growth as OD600 for the same run 
+(600,000 µM initial AHL; a 1×10¹⁰ µM dose injected when OD600 reaches 1×10⁻¹¹). The curve exhibits:
+ </p>
+<li><b>Extended lag phase (t < ~600)</b> – low apparent OD as the population establishes. </li>
+<li><b>Onset of exponential growth (~600–900)</b> – rapid, step-like increases as biomass accumulates. </li>
+<li><b>Late-stage surge (> ~900)</b> – approaching the model’s carrying-capacity 
+regime / non-linear growth limit by the end of the run. </li>
+
+<p> Together with Figures 1–2, this shows how AHL induction coincides with growth dynamics: dosing 
+  occurs at very low density, while sfGFP output rises as the culture enters exponential growth and 
+  then plateaus. </p>
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/4.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 4:</b> This figure shows the EC50 analysis for sfGFP as a function of the initial AHL 
+concentration, run over 100 time steps with no additional doses added. Each point represents the 
+final normalized GFP level for a given starting AHL value. A Hill curve is fitted to the data, shown 
+in black, with AHL concentrations displayed on a log scale (x-axis). The y-axis is normalized to 
+percentage of maximum GFP expression, illustrating the classic sigmoidal dose–response behavior 
+with a sharp transition around the EC50 point.
+</p>
+
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/5.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 5:</b> This figure presents EC50 analysis where the response is measured against scheduled 
+AHL dosing events. The dosing follows the activation rule: [(5e-10, 1e6), (1e-9, 1e6), (5e-9, 1e6), 
+(1e-8, 1e6)], where the first value in each pair is the OD600 threshold that triggers the dose, 
+and the second value is the dose magnitude. The resulting data points are normalized GFP outputs, 
+fitted with a Hill curve (black line). The x-axis is logarithmic (dose trigger thresholds), and the 
+y-axis shows the percentage of maximum GFP, emphasizing the graded activation pattern driven by 
+scheduled dosing events.
+ </p>
+
+
+<img src= "https://static.igem.wiki/teams/5759/ppfigs/6.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+<p><b>Figure 6:</b> This example shows AHL potency in a single well over 600 simulation steps. The 
+trace reflects step-like increases when doses are triggered, followed by plateaus as AHL is consumed 
+or diluted. This mode of visualization provides per-well insight: the same panel can be used to 
+retrieve sfGFP and OD600 dynamics as alternative readouts for the exact same well.
+ </p>
+</div>
+<!--
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>What Should this Page Contain?</h2>
+    <hr />
+    <ul>
+      <li>Clearly and objectively describe the results of your experiments and research.</li>
+      <li>Use tables, graphs, and images to visualize your data.</li>
+      <li>Discuss the implications of your findings in the context of your project goals.</li>
+      <li>Highlight any trends, patterns, or significant observations.</li>
+      <li>Include an analysis summary section to synthesize your findings and discuss their overall significance.</li>
+      <li>Outline your future plans for the project, including potential applications, further research, and development.</li>
+      <li>Explain what went wrong and what you learned from these experiences.</li>
+      <li>Discuss potential improvements or alternative approaches.</li>
+      <li>Emphasize the importance of scientific honesty and transparency.</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr />
+    <ul>
+      <li><a href="https://2024.igem.wiki/heidelberg/results">2024 Heidelberg</a></li>
+      <li><a href="https://2024.igem.wiki/marburg/results">2024 Marburg</a></li>
+      <li><a href="https://2024.igem.wiki/epfl/results">2024 EPFL</a></li>
+      <li><a href="https://2024.igem.wiki/utoronto/results">2024 UToronto</a></li>
+      <li><a href="https://2024.igem.wiki/marburg/results">2024 Marburg</a></li>
+      <li><a href="https://2024.igem.wiki/sydney-australia/results">2024 Sydney-Australia</a></li>
+      <li><a href="https://2024.igem.wiki/toulouse-insa-ups/results">2024 Toulouse-INSA-UPS</a></li>
+      <li><a href="https://2024.igem.wiki/bnds-china/results">2024 BNDS-China</a></li>
+      <li><a href="https://2024.igem.wiki/vilnius-lithuania/results">2024 Vilnius-Lithuania</a></li>
+      <li><a href="https://2024.igem.wiki/xmu-china/results">2024 XMU-China</a></li>
+      <li><a href="https://2023.igem.wiki/estonia-tuit/results">2023 Estonia-TUIT</a></li>
+    </ul>
+  </div>
+</div>
+-->
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<div class="hero engineering">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<!-- TODO Fix inconsisten margins-->
+<!-- TODO Link citations down to Sources-->
+  <!-- We can link to "id_field" and write id="id_field" for the linking item-->
+<div class="names">
+  <div class="cols head">
+    <h1>Engineering Success</h1>
+  </div>
+  <div class="cols head">
+    <h2>Introduction</h2>
+  </div>
+  <div class="cols">
+    <p>Mining and metal recovery are essential to modern industries, but conventional methods are energy-intensive, environmentally destructive, and generate toxic byproducts [1–3]. Metlock aims to develop a safe, efficient biomining system using engineered <i>E. coli</i> to selectively gather zinc from ores, industrial waste, and polluted environments/water sources. By synthetically regulating high-affinity zinc transport systems, Metlock demonstrates an iterative engineering approach to create a modular platform for sustainable metal recovery [4–6].</p>
+    <p>Metlock took on a challenging set of design goals: develop a library of synthetic genetic parts useful in biomining and remain modular for future contributions. Our final objective is for Metlock to expand to encompass several designer strains targeted for a variety of metals, accomadating both our current amount of talent and resources, this year we focused on the following design goal: design a fine-tunable system to maximize zinc influx while avoiding cytotoxicity. This will allow us to pilot workflows, develop our skills with the necessary molecular methods, and expand our dry lab skillset for our more advanced project goals. Following strain identification, this system could then be tuned for profitable yield in-lab and eventually deployed in simulated industrial settings.</p>
+  </div>
+  <div class="cols head">
+    <h2>Design</h2>
+  </div>
+  <div class="cols">
+    <p>To implement our goal of a tunable zinc uptake system, <i>E. coli</i>’s endogenous ZnuABC operon was redesigned in-silico to no longer be repressed by Zur and placed under the induction of the BBa_K1960004 cassette – a part originally designed by Shijia Qi 2016 [7,4,6]. This allows for the tuning of expression of ZnuABC across an AHL gradient to tune expression as well as across copy number in clonal vectors [8–9,10]. The individual components of ZnuABC serve the following functions: ZnuA is the periplasmic solute-binding protein that captures Zn²⁺, ZnuB is the inner-membrane permease that translocates Zn²⁺, and ZnuC is the cytosolic ATPase that powers transport by hydrolyzing ATP [5].</p> 
+    <figure class="centered-figure">
+      <img src="https://static.igem.wiki/teams/5759/engineering/fig-9.webp">
+      <figcaption>Figure 1: LuxR producing and binding ability of BBa_K1893004 functionally drives expression of the coding sequences present in the operon </figcaption>
+    </figure>
+    </div>
+    <p>Downstream of pLuxR, ZnuABC is expressed only in the presence of AHL, tying expression of this active metal transporting complex to the formation of AHL/LuxR complexes [8–9,10]. In this configuration, the titration of AHL into media containing bacteria transformed with this iteration of Metlock would theoretically lead to tunable expression of znuABC.</p>
+    <p>To validate the tunable zinc import system, we plan to utilize a colorimetric uptake assay using the Zn-specific dye Zincon (Z002), which forms a blue Zn–complex measurable at λ_max = 620 nm (ε ≈ 23,000 M⁻¹cm⁻¹) under alkaline conditions (pH ~9) [11].</p>
+    <h3>RECOMMENDED ASSAY: Zincon-based Zn²⁺ uptake (supernatant-depletion readout)</h3>
+  
+    <p><b>Goal:</b> Quantify Zn²⁺ import as a function of AHL induction of your Zur-independent iZnuABC cassette (LuxR/pLuxR control) using a colorimetric readout of residual extracellular Zn²⁺ with Zincon at λₘₐₓ ≈ 620 nm in pH 9 buffer [11,12,13,14].</p>
+    <p><b>Rationale:</b> ZnuA/B/C is the high-affinity ABC Zn²⁺ importer (ZnuA: periplasmic binder; ZnuB: permease; ZnuC: ATPase), and Δznu mutants show impaired Zn acquisition phenotypes under Zn limitation which is ideal for controls [15,16,17,5].</p>
+    <h3>Strains:</h3>
+    <ol>
+      <li>iZnuABC (LuxR/pLuxR-driven, Zur-independent znuABC).</li>
+      <li>ΔznuB knockout (negative control for transport, this would be a strain of synthetic ZnuABC which does not contain ZnuB).</li>
+      <li><p>Empty-vector control.</p>
+          <p>(pLuxR/LuxR cassette ref: BBa_K1960004 [7,8].)</p>
+      </li>
+    </ol>
+
+    <h3>Reagents & prep:</h3>
+    <ul>
+      <li>ZnSO₄ stock (e.g., 10 mM).</li>
+      <li>Metal-free water/buffers/media prepared by batch treatment with Chelex-100 and thorough rinsing [18–20].</li>
+      <li>AHL gradient (e.g., 0, 1, 3, 10, 30, 100, 300 nM) to span induction range [7,8].</li>
+      <li>Zincon reagents and pH 9 buffer for the spectrophotometric method (Standard Methods 3500-Zn B; λ = 620 nm; includes optional cyanide/cyclohexanone masking for interferences) [12,11,13].
+        <ul><p>For a cyanide-free workflow in clean matrices, use a straightforward microplate adaptation at pH 9 with calibration and spike-recovery checks [11,14].</p>
+            <p>Do not add EDTA to measurement tubes; it chelates Zn²⁺ and will depress the Zincon signal [21]. </p>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Culture & induction:</h3>
+    <p>Grow strains in Zn-depleted M9 (Chelex-treated) overnight; back-dilute 1:100 into fresh Zn-depleted M9 ± AHL; grow to OD₆₀₀ ≈ 0.3–0.4, then induce/express iZnuABC for ~90–120 min; wash and resuspend in Zn-free uptake buffer to OD₆₀₀ = 0.5 [7,8,18–20].</p>
+    
+    <h3>Uptake reaction (time-course):</h3>
+    <p>Mix cells with 25–50 µM ZnSO₄ in uptake buffer (e.g., 1.0 mL tubes or 200 µL wells at 30–37 °C).</p>
+    <p>Collect cell-free supernatant at 0, 2, 5, 10, 20, 30, 45, 60 min (quick pellet or filter). Keep on ice. <i>(No EDTA in these aliquots.)</i> [12,11,13,21]</p>
+
+    <h3>Zn²⁺ measurement (Zincon @ 620 nm):</h3>
+    <ul>
+      <li>Path A: Standard Methods 3500-Zn B (robust): buffered pH 9; sodium ascorbate to suppress Mn interference; CN⁻ to complex metals; cyclohexanone to release Zn selectively; read 620 nm. Use only in labs approved for cyanide handling [12,13]</li>
+      <li>Path B: Cyanide-free microplate (clean matrices): pH 9 buffer + Zincon; read 620 nm; verify matrix with spike-recovery ≥ 90% and note potential Cu interference [11,14].</li>
+    </ul>
+
+    <h3>Controls:</h3>
+    <p>ΔznuB knockout (low uptake), empty vector, heat-killed cells (adsorption), no-cell blank, Zn standards (5–100 µM; R² > 0.99), and spike-recovery samples; optional post-run EDTA “surface-strip” on pellets (not for Zincon readout) [12,11,13,16,17,5,21].</p>
+
+    <h3>Calculations & output:</h3>
+    <p>Convert A620 to [Zn] via the standard curve; compute Uptake(t) = ([Zn]₀ − [Zn]ₜ)×V; normalize by OD₆₀₀ (or mg protein). Report initial rate (0–10 min slope; pmol Zn·OD₆₀₀⁻¹·min⁻¹) and plot uptake vs AHL to obtain induction curves (Hill fit optional) [11,12,13,14].</p>
+
+    <h3>Hypothesized results:</h3>
+    <p>Induced iZnuABC shows AHL-dependent increases in uptake; ΔznuB remains near baseline; empty-vector minimal. This pattern reflects high-affinity ZnuABC transport under Zn limitation [5,15,16,17].</p>
+  </div> 
+
+  <div class="head cols">
+    <h2>Build</h2>
+  </div>
+  <div class="cols">
+    <p><b>Clonal Vector Ordering: </b>We ordered our parts using the clonal vectors offered by the Twist Bioscience iGEM Sponsorship, cloning our iZnuABC (LuxR/pLuxR-driven, Zur-independent znuABC) into the pUPD3 vector [15, 16].</p>
+    <p><b>Transformations: </b>We transformed the plasmid by heat-shock into <i>E. coli</i> BL21, DH5α, and TOP10 strains as test chassis; our pUC19 positive-control transformation succeeded, but we observed no expression from the ordered clonal vector from its antibiotic resistance cassette - resulting in no viable cells to continue our experiments with [17–23].</p>    
+  </div>  
+
+  <div class="head cols">
+    <h2>Test</h2>
+  </div class="cols">
+    <div class="cols">
+      <p><b>Objective: </b>Demonstrate that LuxR/pLuxR-induced, Zur-independent iZnuABC increases Zn²⁺ import, quantified by Zincon supernatant-depletion across an AHL gradient [11–14,5,15–17].</p>
+      <p><b>Observed block: </b>pUC19 transformed successfully, but no colonies from the pUPD3::synthetic ZnuABC clonal vector on chloramphenicol plates (correct selection for pUPD3 is Chloramphenicol) [22].</p>
+    </div>
+    
+    <div class="cols">
+    <h3>Most likely causes (with fixes):</h3>
+      <ol>
+        <li><b>Transformation workflow sensitivity (outgrowth):</b> Chloramphenicol is bacteriostatic; giving ~60 min outgrowth in SOC at 37 °C with shaking materially improves survival/expression of the cat (chloramphenicol acetyltransferase) marker before plating [30,34].</li>
+        <li><b>Antibiotic working range: </b>Plate a Chloramphenicol gradient (12.5 / 25 / 34 / 50 µg/mL) in parallel; 25 µg/mL is the standard recommendation for cat-based backbones like pUPD3 [22,31].</li>
+        <li><b>Plasmid size/quality: </b>Large assemblies or salt-contaminated DNA reduce chemical-transformation efficiency; try electroporation (1–2 mm cuvette, ~1.8 kV, ~5 ms pulse) which boosts efficiency for bigger plasmids [35,34].</li>
+        <li><b>Vector verification: </b>Run restriction digest/agarose on the clonal DNA and PCR across backbone and insert junctions after a small-scale no-antibiotic recovery (patch survivors to Chloramphenicol) to confirm integrity before concluding a build error [22,34].</li>
+        <li><b>Strain idiosyncrasies: </b>Keep DH5α/TOP10 as cloning strains; BL21 is fine but not necessary at this step. If chemical competence is borderline, prepare fresh Hanahan/Inoue-style competent cells or use commercial high-efficiency cells [36–38].</li>
+      </ol>
+    </div>
+
+    
+    <div class="cols">
+    <h3>QC gates to unlock the assay</h3>
+      <ol>
+        <li><b>Replica plating check: </b>Transform pUPD3::iZnuABC and plate across the Chloramphenicol gradient + a no-antibiotic plate; incubate 18–24 h. Positive hits should appear ≥12.5–25 µg/mL if the cat cassette is intact [22,31,30].</li>
+        <li><b>Colony PCR + Sanger: </b>Verify (1) backbone and insert and (2) znuA, znuB, and znuC junctions in 2–4 colonies. Archive glycerol stocks [22].</li>
+        <li><b>(Optional) Induction sanity-check: </b>Parallel strain carrying pLuxR-reporter to locate a clean AHL window before metal assays [8–10].</li>
+      </ol>
+    </div>
+    <div class="cols">
+      <p><b>Functional readout (after QC passes): </b>Perform the Zincon uptake assay as specified (Zn-depleted medium, AHL 0–300 nM, 25–50 µM ZnSO₄, supernatant @ 620 nm in pH 9 buffer; exclude EDTA from read tubes; include ΔznuB and empty-vector controls) and report initial uptake rate (0–10 min slope; pmol Zn·OD₆₀₀⁻¹·min⁻¹) and AHL dose–response [11–14,18–21].</p>
+      <p><b>Expected outcome: </b>With verified constructs on Chloramphenicol and a confirmed induction window, iZnuABC shows AHL-dependent increases in uptake; ΔznuB remains near baseline; empty-vector minimal [5,15–17].</p>
+    </div>
+  </div>
+  
+  
+  <div class="head cols">
+    <h2>Learn</h2>
+  </div>
+  <div class="cols">
+  <p><b>Why we modeled now: </b>While we troubleshoot the clonal build, we advanced learning by computationally characterizing our circuit, so the wet-lab assay starts with informed AHL set-points, promoter choices, and expected magnitudes. We used our Plot2Curve (P2C) workflows: the AHL induction model (LuxR/pLuxR Hill fit) and the Anderson-family promoter panel to turn sequences into predicted transcription rate (k_tx) to mRNA to protein output curves, then translate those outputs into assay-ready expectations for Zn-uptake readouts [46, 44–45].</p>
+    <ol>
+      <li>
+        <p><b>sfGFP-first baseline (establish instrument & model scale)</b></p>
+        <ol>
+          <li><b>Reporter known to express: </b>We first run Anderson Family-sfGFP in P2C to fit a Hill curve, extracting EC50, Hill n, and dynamic range for our chassis and reader settings (sfGFP is a robust, well-folded reporter) [39, 46].</li>
+          <li><b>Unit calibration: </b>We map fluorescence units to molecules·cell⁻¹ (or to a consistent AU/OD₆₀₀ scale) so that downstream CDS predictions are comparable across promoters and AHL doses.</li>
+          <li><b>AHL window lock-in: </b>The fitted sfGFP curve defines the practical induction window (e.g., a sub-EC50 point, mid-slope point, and near-saturation point) that we will use in the Zincon assay design [46].</li>
+        </ol>
+      </li>
+      <li>
+        <p><b>Sequence-aware CDS modeling</b></p>
+        <ol>
+          <li><b>Input = CDS + 5′ UTR context: </b>For each gene (sfGFP and later ZnuA/ZnuB/ZnuC), P2C evaluates the RBS/SD match and spacing to estimate initiation rate and an effective translation throughput (proteins·mRNA⁻¹·s⁻¹), with ribosome-traffic caps [42–43, 47, 41, 49].</li>
+          <li><b>mRNA/protein dynamics: </b> Using our standard bacterial parameters (mRNA half-life ~6 min; doubling time ~30–40 min), we compute m_eq = k_tx/mRNA_decay and protein_eq = β·m_eq/α, then simulate time courses for each AHL point to capture approach-to-steady-state behavior [40, 48].</li>
+        </ol>
+      </li>
+      <li>
+        <p><b>Promoter benchmarking with the Anderson panel</b></p>
+        <ul>
+          <li>We pass the same CDSs through the Anderson family panel in P2C (e.g., J23100–J23118) to compute relative transcription rate (k_tx) scaling. This provides a promoter ladder for future builds so we can step expression up/down without guesswork and place our AHL inducible systems in terms of an established baseline both in the lab and computationally [44–45].</li>
+        </ul>
+      </li>
+      <li>
+        <p><b>What we learned</b></p>
+        <ul>
+          <li><b>Anderson Family Setpoints: </b>The Anderson family of promoters will be modeled using metrics set by Bionumbers to [41, 48].</li>
+          <li><b>AHL set-points: </b>The sfGFP Hill fit gives three concrete induction levels (sub-EC50, mid-slope, near-max) to use as standard assay AHL points [46].</li>
+        </ul>
+      </li>
+      <li>
+        <p><b>Delierables we will generate alongside wet-lab</b></p>
+        <ul>
+          <li><b>P2C “AHL” report: </b>fitted EC50, Hill n, dynamic range for sfGFP to support eventual ZnuABC activity predictions at the same AHL points [39, 46].</li>
+          <li><b>P2C “Anderson” report: </b>predicted k_tx ladder for sfGFP with a shortlist of promoter swaps [44–45].</li>
+          <li><b>CSV exports: </b>per-condition k_tx, m_eq, and protein_eq to use in the Learn for Design-2.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <div class="head cols">
+    <h2>References</h2>
+  </div>
+  <div class="cols">
+  <ul>
+    <p>[1] Jaiswal, M., &amp; Srivastava, S. (2024). A review on sustainable approach of bioleaching of precious metals from electronic wastes. <em>Journal of Hazardous Materials Advances</em>, 14, 100435.</p>
+    <p>[2] Cozma, P., Simion, I.-M., Filote, C., Roșca, M., Hlihor, R. M., &amp; Gavrilescu, M. (2024). Bio-recovery of metals through biomining within circularity-based solutions. <em>Processes</em>, 12(9), 1793.</li>
+    <p>[3] Mervine, E. M., Valenta, R. K., Paterson, J. S., Mudd, G. M., Werner, T. T., Nursamsi, I., &amp; Sonter, L. J. (2025). Biomass carbon emissions from nickel mining have significant implications for climate action. <em>Nature Communications</em>, 16(1), 481.</p>
+    <p>[4] Patzer, S. I., &amp; Hantke, K. (2000). The zinc-responsive regulator Zur and its control of the znuACB zinc uptake system in <em>Escherichia coli</em>. <em>Journal of Biological Chemistry</em>, 275(32), 24321–24332.</p>
+    <p>[5] Ammendola, S., Pasquali, P., Pistoia, C., Petrucci, P., Petrarca, P., Rotilio, G., &amp; Battistoni, A. (2007). High-affinity Zn²⁺ uptake system ZnuABC is required for bacterial zinc homeostasis and virulence. <em>Infection and Immunity</em>, 75(12), 5867–5876.</p>
+    <p>[6] Kandari, D., Joshi, H., &amp; Bhatnagar, R. (2021). Zur: Zinc-sensing transcriptional regulator in a diverse set of bacterial species. <em>Pathogens</em>, 10(2), 165.</p>
+    <p>[7] Qi, S. (2016). Part: BBa_K1960004 (Low-level LuxR and lux pR cassette) [Web page]. <em>iGEM Parts Registry</em>.</p>
+    <p>[8] Part: BBa_R0062 (pLuxR promoter) [Web page]. (n.d.). <em>iGEM Parts Registry</em>.</p>
+    <p>[9] Part: BBa_C0062 (LuxR) [Web page]. (n.d.). <em>iGEM Parts Registry</em>.</p>
+    <p>[10] Shiner, E. K., Reddy, S., Timmons, C., Li, G., Williams, S. C., &amp; Rumbaugh, K. P. (2004). Construction of a bacterial autoinducer detection system in mammalian cells. <em>Biological Procedures Online</em>, 6, 268–276.</p>
+    <p>[11] Dojindo. (n.d.). Zincon (Z002) product page.</p>
+    <p>[12] National Environmental Methods Index. (n.d.). Standard Methods 3500-Zn B: Zinc by Zincon Method (method summary).</p>
+    <p>[13] American Public Health Association. (1992). Standard Methods for the Examination of Water and Wastewater: 3500-Zn ZINC (Zincon method) [EPA-hosted text].</p>
+    <p>[14] Hach Company. (2007). Zincon Method for Zinc (Method 8009) [PDF].</p>
+    <p>[15] Patzer, S. I., &amp; Hantke, K. (1998). The ZnuABC high-affinity zinc-uptake system and its regulator Zur in <em>Escherichia coli</em>. <em>Molecular Microbiology</em>, 28(6), 1199–1210.</p>
+    <p>[16] Yatsunyk, L. A., Easton, J. A., Kim, D., Sugar, F. J., Bennett, B., Breece, R. M., Hafeez, A. K., Gibney, B. R., &amp; Rosenzweig, A. C. (2008). Structure and metal-binding properties of ZnuA, a periplasmic zinc transporter from <em>E. coli</em>. <em>Journal of Biological Inorganic Chemistry</em>, 13(2), 271–288.</p>
+    <p>[17] Gabbianelli, R., Scotti, R., Ammendola, S., Petrarca, P., Nicolini, L., &amp; Battistoni, A. (2011). Role of ZnuABC and ZinT in <em>Escherichia coli</em> O157:H7 zinc acquisition and interaction with epithelial cells. <em>BMC Microbiology</em>, 11, 36.</p>
+    <p>[18] Bio-Rad Laboratories. (n.d.). Chelex® 100 and Chelex 20 chelating ion exchange resin (Technical Bulletin LIT200) [PDF].</p>
+    <p>[19] Bio-Rad Laboratories. (n.d.). Chelex® 100 Resin [Product page].</p>
+    <p>[20] Bio-Rad Laboratories. (n.d.). Sample preparation with Chelex® Resin (Bulletin 1825) [PDF].</p>
+    <p>[21] Nyborg, J. K., &amp; Peersen, O. B. (2004). That zincing feeling: The effects of EDTA on zinc-binding proteins. <em>Biochemical Journal</em>, 381(2), e3–e4.</p>
+    <p>[22] Addgene. (n.d.). pUPD3 (GoldenBraid/GB2.0 domestication vector), Plasmid #118043 [Vector description and map].</p>
+    <p>[23] Cooke, M. B., Ballinari, P., Goyal, N., Shetty, R., Giannella, P., Chevreux, B., Smedley, M., &amp; Glipsch, K. (2025). GoldenBraid2.0 <em>E. coli</em>: A comprehensive and characterized toolkit for enterics. <em>Synthetic Biology</em>, 10(1), ysaf015.</p>
+    <p>[24] New England Biolabs. (n.d.). Competent <em>E. coli</em>: High-efficiency transformation protocol.</p>
+    <p>[25] New England Biolabs. (n.d.). NEB® 5-alpha competent <em>E. coli</em> (high efficiency).</p>
+    <p>[26] Thermo Fisher Scientific. (n.d.). One Shot™ TOP10 chemically competent <em>E. coli</em>.</p>
+    <p>[27] Merck (Novagen). (n.d.). BL21(DE3) competent cells.</p>
+    <p>[28] New England Biolabs. (n.d.). pUC19 vector.</p>
+    <p>[29] Thermo Fisher Scientific. (n.d.). One Shot™ TOP10 chemically competent <em>E. coli</em>: Includes pUC19 control DNA [Product documentation].</p>
+    <p>[30] New England Biolabs. (n.d.). High-efficiency transformation protocol—Outgrowth recommendations.</p>
+    <p>[31] Barrick Lab. (n.d.). Antibiotic stock solutions and working concentrations.</p>
+    <p>[32] Addgene. (n.d.). pUPD3 (Plasmid #118043) details and selection (chloramphenicol).</p>
+    <p>[33] Sarrion-Perdigones, A., Vazquez-Vilar, M., Palací, J., Castelijns, B., Forment, J., Ziarsolo, P., Blanca, J., Granell, A., &amp; Orzaez, D. (2013). GoldenBraid 2.0: A comprehensive DNA assembly framework for plant synthetic biology. <em>Plant Physiology</em>, 162(3), 1618–1631.</p>
+    <p>[34] New England Biolabs. (n.d.). Tips for successful transformations (troubleshooting guide).</p>
+    <p>[35] Dower, W. J., Miller, J. F., &amp; Ragsdale, C. W. (1988). High efficiency transformation of <em>E. coli</em> by high voltage electroporation. <em>Nucleic Acids Research</em>, 16(13), 6127–6145.</p>
+    <p>[36] Hanahan, D. (1983). Studies on transformation of <em>Escherichia coli</em> with plasmids. <em>Journal of Molecular Biology</em>, 166(4), 557–580.</p>
+    <p>[37] American Society for Microbiology (ASM). (n.d.). Transformation of <em>E. coli</em> made competent by CaCl₂ [Protocol].</p>
+    <p>[38] Inoue, H., Nojima, H., &amp; Okayama, H. (1990). High efficiency transformation of <em>Escherichia coli</em> with plasmids. <em>Gene</em>, 96(1), 23–38.</p>
+    <p>[39] Pédelacq, J.-D., Cabantous, S., Tran, T., Terwilliger, T. C., &amp; Waldo, G. S. (2006). Engineering and characterization of a superfolder green fluorescent protein. <em>Nature Biotechnology</em>, 24(1), 79–88.</p>
+    <p>[40] Bernstein, J. A., Khodursky, A. B., Lin, P.-H., Lin-Chao, S., &amp; Cohen, S. N. (2002). Global analysis of mRNA decay and abundance in <em>Escherichia coli</em> at single-gene resolution using two-color fluorescent DNA microarrays. <em>Proceedings of the National Academy of Sciences</em>, 99(15), 9697–9702.</p>
+    <p>[41] BioNumbers. (n.d.). Rate of translation by ribosome—<em>E. coli</em> (BNID 100059).</p>
+    <p>[42] Salis, H. M., Mirsky, E. A., &amp; Voigt, C. A. (2009). Automated design of synthetic ribosome binding sites to control protein expression. <em>Nature Biotechnology</em>, 27(10), 946–950.</p>
+    <p>[43] Laursen, B. S., Sørensen, H. P., Mortensen, K. K., &amp; Sperling-Petersen, H. U. (2005). Initiation of protein synthesis in bacteria. <em>Microbiology and Molecular Biology Reviews</em>, 69(1), 101–123.</p>
+    <p>[44] Kelly, J. R., Rubin, A. J., Davis, J. H., Ajo-Franklin, C. M., Cumbers, J., Czar, M. J., de Mora, K., Glieberman, A. L., Monie, D. D., &amp; Endy, D. (2009). Measuring the activity of BioBrick promoters using an in vivo reference standard. <em>Journal of Biological Engineering</em>, 3, 4.</p>
+    <p>[45] iGEM Registry. (n.d.). Anderson promoter collection.</p>
+    <p>[46] Bintu, L., Buchler, N. E., Garcia, H. G., Gerland, U., Hwa, T., Kondev, J., &amp; Phillips, R. (2005). Transcriptional regulation by the numbers: Models. <em>Current Opinion in Genetics &amp; Development</em>, 15(2), 116–124.</p>
+    <p>[47] MacDonald, C. T., Gibbs, J. H., &amp; Pipkin, A. C. (1968). Kinetics of biopolymerization on nucleic acid templates. <em>Biopolymers</em>, 6(1), 1–25.</p>
+    <p>[48] BioNumbers. (n.d.). Cell dry weight at doubling time of 30 min—<em>E. coli</em> (BNID 100009); Cell dry weight—<em>E. coli</em> (BNID 100008).</p>
+    <p>[49] Tomuro, K., Mito, M., Toh, H., Kawamoto, N., Miyake, T., Chow, S. Y. A., Doi, M., Ikeuchi, Y., Shichino, Y., &amp; Iwasaki, S. (2024). Calibrated ribosome profiling assesses the dynamics of ribosomal flux on transcripts. <em>Nature Communications</em>, 15, 7061.</p>
+  </ul>
+
+  </div>
+</div>
+<!--<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Silver Medal Criterion #1</h4>
+      <p>Demonstrate engineering success in a technical aspect of your project by going through at least one iteration of the engineering design cycle.</p>
+      <hr />
+      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <h2>Tips for Success</h2>
+    <hr />
+    <p>Engineering success can be achieved by documenting your effort to follow the engineering design cycle: Design → Build → Test → Learn</p>
+    <p>We invite you to think about ways to tackle and solve one or more of your project's problems and use synthetic biology tools and/or experimental techniques to generate expected results.</p>
+    <p>When you have completed the cycle once, think about and document what changes in design you would make for the next iteration(s) of the cycle.</p>
+    <p>For example, you can design and build a new Part, measure its performance, document whether it worked or not, and propose how the results would inform the next design or steps (documentation must be on the Part's Pages on the Registry).</p>
+    <p>Visit the <a href="https://technology.igem.org/engineering" target="_blank">Engineering pages</a> for additional guidance on engineering success.</p>
+  </div>
+</div>-->
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

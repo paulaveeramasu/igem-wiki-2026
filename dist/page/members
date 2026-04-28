@@ -1,0 +1,394 @@
+<div class="hero members">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<!-- TODO redo page to improve so it looks good for next year-->
+
+<div class="teamMargins"></div>
+
+  <h1 style="font-size:50px" class="centered"> Meet the Team </h1>
+   <h2> The PI's</h2>
+   <hr> 
+   <table class = "table table-bordered">
+   <thead class="table-dark"> 
+     <tr> 
+       <th class="centered" width="22%">Primary Investigator</th>
+       <th class="centered">Description</th>
+     </tr>
+       </thead>
+       <tbody class="table-light"> 
+     <tr> 
+       <td> <img src="https://static.igem.wiki/teams/5759/team/pis/katie-shannon-headshot-2014-smaller.webp" alt="image of shannon" style="width: 90%;"></td>
+       <td class="centerall">
+         <p style="font-size:300%"> <b>Name:</b> Dr. Shannon</p>
+         <!--<p style="font-size:175%"> Bio goes here</p>-->
+       </td>
+     </tr>
+     <tr> 
+       <td> <img src="https://static.igem.wiki/teams/5759/team/pis/dr-westenberg.webp" alt="image of westenberg" style="width: 90%;"></td>
+       <td class="centerall">
+         <p style="font-size:300%"> <b>Name:</b> Dr. Westenberg</p>
+         <!--<p style="font-size:175%"> Bio goes here</p>-->
+       </td>
+     </tr>
+     <tr> 
+       <td> <img src="https://static.igem.wiki/teams/5759/team/pis/20241001-hunter-schroer-1-1536x1024.webp" alt="image of schroer" style="width: 90%;"></td>
+       <td class="centerall">
+         <p style="font-size:300%"> <b>Name:</b> Dr. Schroer</p>
+         <!--<p style="font-size:175%"> Bio goes here</p>-->
+       </td>
+     </tr>
+     <tr> 
+       <td> <img src="https://static.igem.wiki/teams/5759/team/pis/amber-pete.webp" alt="image of pete" style="width: 90%;"></td>
+       <td class="centerall">
+         <p style="font-size:300%"> <b>Name:</b> Dr. Pete</p>
+         <!--<p style="font-size:175%"> Bio goes here</p>-->
+       </td>
+     </tr>
+ </tbody>
+ </table>
+ <h2> The Student Leaders</h2>
+ <hr>
+  <table class = "table table-bordered">
+   <thead class="table-dark">
+     <th  width="22%" height="100%" class="centered"> Leader </th>
+     <th class="centered">Description</th>
+   </thead>
+   <tbody class="table-light">
+     <tr> 
+       <td> <img src="https://static.igem.wiki/teams/5202/officers/tristan.jpeg" width="100%"> </td>  
+       <td class="centerall"><p style="font-size:300%"><b>Name:</b> Tristan Crawford</p>
+       <p style="font-size:250%"><b>Job:</b> President</p>
+       </td>
+     </tr>
+     <tr> 
+        <td> <img src="https://static.igem.wiki/teams/5202/officers/jenna-mueller.png" width="100%"> </td>  
+        <td class="centerall"><p style="font-size:300%"><b>Name:</b> Jenna Mueller</p>
+        <p style="font-size:250%"><b>Job:</b> Vice President</p>
+       </td>
+     </tr>
+     <tr>
+       <td> <img src="https://static.igem.wiki/teams/5202/officers/lindsay.png" class="image" width="100%"> </td> 
+       <td class="centerall"> 
+         <p style="font-size:300%"><b>Name:</b> Lindsay Schneider</p>
+        <p style="font-size:250%"><b>Job:</b> PR Chair</p>
+       </td>
+     </tr>
+     <tr>
+       <td> <img src="https://static.igem.wiki/teams/5202/officers/elena-zobel.jpg" width="100%"> </td>
+       <td class="centerall"> <p style="font-size:300%"><b>Name:</b> Elena Zobel</p>
+       <p style="font-size:250%"><b>Job:</b> Wet Lab Chair</p>
+      </td>
+     </tr>
+     <tr>
+       <td> <img src="https://static.igem.wiki/teams/5759/team/ethanfixed.webp" width="100%"> </td>
+       <td class="centerall"> <p style="font-size:300%"><b>Name:</b> Ethan Beane</p>
+       <p style="font-size:250%"><b>Job:</b> Dry Lab Chair </p>
+      </td>
+     </tr>
+     <tr> 
+      <td> <img src="https://static.igem.wiki/teams/5202/officers/lucas-professional-11.jpg" width="100%"> </td>  
+      <td class="centerall"><p style="font-size:300%"><b>Name:</b> Lucas Navarro</p>
+      <p style="font-size:250%"><b>Job:</b> Web Chair</p>
+     </td>
+     </tr>
+     <tr> 
+       <td> <img src="https://static.igem.wiki/teams/5202/officers/julian.jpg" width="100%"> </td>  
+       <td class="centerall"><p style="font-size:300%"><b>Name:</b> Julian Foat</p>
+       <p style="font-size:250%"><b>Job:</b> Secretary </p>
+      </td>
+      </tr>
+      
+   </tbody>
+ </table>
+ <h2>The Team Members</h2>
+ <hr>
+ 
+  <table class = "table table-bordered" class="centered" > 
+   <thead class="table-dark"> 
+   <tr> 
+     <th class="centered"> General Members</th>
+   </tr>
+ </thead>
+  <tbody class="table-light">
+   <tr> 
+     <td>Abdelmenam Oun</td>
+   </tr>
+   <tr>
+     <td>Abigial Leipholtz</td>
+   </tr>
+   <tr>
+     <td>Addi Imhof </td>
+   </tr>
+   <tr>
+     <td>Adrianna Sasser </td>
+   </tr>
+   <tr>
+     <td>Aiden Casey</td>
+   </tr>
+   <tr>
+     <td>Alana Cross</td>
+   </tr>
+   <tr>
+     <td>Ann Harvey</td>
+   </tr>
+   <tr>
+     <td>Audrey Brzezinski</td>
+   </tr>
+   <tr>
+     <td>Ava Buerk</td>
+   </tr>
+   <tr>
+     <td>Brady Scarlett</td>
+   </tr>
+   <tr>
+     <td>Carson Miller</td>
+   </tr>
+   <tr>
+     <td>Chey Campos </td>
+   </tr>
+   <tr>
+     <td>Corinne Bale</td>
+   </tr>
+   <tr>
+     <td>Drake O'Leary </td>
+   </tr>
+   <tr>
+     <td>Ella Hanlin</td>
+   </tr>
+   <tr>
+     <td>Elle Hamilton</td>
+   </tr>
+   <tr>
+     <td>Emily Johannes </td>
+   </tr>
+   <tr>
+     <td>Erica Hunke</td>
+   </tr>
+   <tr>
+     <td>Gavin Wivvenmeyer </td>
+   </tr>
+   <tr>
+     <td>Grace Chandler </td>
+   </tr>
+   <tr>
+     <td>Isabella Andrus</td>
+   </tr>
+   <tr>
+     <td>Jacob Penn</td>
+   </tr>
+   <tr>
+     <td>Jadyn Hopper </td>
+   </tr>
+   <tr>
+     <td>Jillian Mayer</td>
+   </tr>
+   <tr>
+     <td>Joe Basse </td>
+   </tr>
+   <tr>
+     <td>Jonathan Zelkovich</td>
+   </tr>
+   <tr>
+     <td>Kaiden Baer </td>
+   </tr>
+   <tr>
+     <td>Karley Butts</td>
+   </tr>
+   <tr>
+     <td>Kate Zipprich </td>
+   </tr>
+   <tr>
+     <td>Katie McCormick </td>
+   </tr>
+   <tr>
+     <td>Kylie Reiner</td>
+   </tr>
+   <tr>
+     <td>Lee Scheidt </td>
+   </tr>
+   <tr>
+     <td>Marevena Kaliny</td>
+   </tr>
+   <tr>
+     <td>Matthew Martin </td>
+   </tr>
+   <tr>
+     <td>Nicole Militante </td>
+   </tr>
+   <tr>
+     <td>Noah Misukonis </td>
+   </tr>
+   <tr>
+     <td>Osiel Martinez </td>
+   </tr>
+   <tr>
+     <td>Paula Veeramasu</td>
+   </tr>
+   <tr>
+     <td>Preston Zuber</td>
+   </tr>
+   <tr>
+     <td>Quincy Primeau </td>
+   </tr>
+   <tr>
+     <td>Sabastian Ubinger</td>
+   </tr>
+   <tr>
+     <td>Seagal Giradot</td>
+   </tr>
+   <tr>
+     <td>Sindhu Jaiganesh</td>
+   </tr>
+   <tr>
+     <td>Sophia Thomassy</td>
+   </tr>
+   <tr>
+     <td>Ty Humbard </td>
+   </tr>
+ </tbody>
+ </table >
+ 
+ 
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

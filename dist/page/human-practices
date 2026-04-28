@@ -1,0 +1,421 @@
+<div class="hero human-practices">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<!--TODO add links to sources-->
+
+<div class="names">
+  <div class="cols head">
+    <h1>Human Practices</h1>
+  </div>
+
+  <div class="cols">
+    <p>
+      As the global demand for critical minerals continues to rise, so does the need for sustainable
+      and environmentally friendly methods of extraction. Traditional mining of resources, such as zinc,
+      often causes disruption in ecosystems, generates toxic waste, and exposes communities to harmful
+      contaminants [1][2]. Furthermore, industries reliant on these resources are facing growing supply
+      chain pressures and environmental scrutiny [3][4]. The goal of the Metlock project is to
+      provide a more sustainable, scalable, and ecologically safe solution to protect our environment and
+      address economic needs.
+    </p>
+
+    <p>
+      Instead of waiting for resource scarcity or environmental crises to worsen, this project emphasizes
+      preventative action. The objective is to design a biological system that not only reduces the need
+      for destructive mining practices but also creates a more effective and less intrusive method of
+      bioremediation for contaminated environments [5][6]. This is being accomplished through the genetic
+      engineering of <i>E. coli</i> to express zinc transport proteins under inducible control
+      [7][8][9][10]. The team envisions adapting this approach to toxic metals, such as lead and cadmium,
+      to resolve larger environmental issues. For example, polluted water of the lead belt in southeast
+      Missouri has affected drinking water in numerous counties [11].
+    </p>
+
+    <p>
+      Environmental responsibility remains a central value of the project. Engineered microbes, including
+      those developed through Metlock, could pose risks if unintentionally released. To address
+      this, initial experiments are being maintained under strict in vitro conditions, while strategies for
+      biocontainment are being explored for future scaled applications. Additionally, a non-pathogenic
+      strain of <i>E. coli</i> will be used to minimize hazards [7][9]. Within the next five years, the
+      project aims to expand from laboratory scale to environmental, incorporating additional safety
+      measures for larger applications. An inducible system is being developed to toggle activation with AHL induction.
+    </p>
+
+    <p>
+      Development of the project begins locally. Consultations have been held with Missouri University of
+      Science and Technology faculty from a broad range of departments, including Biological Sciences,
+      Chemical Engineering, Mining Engineering, Chemistry, and Environmental Sciences. Additional
+      collaboration with experts in Environmental Engineering, industry stakeholders, and community
+      representatives is planned to examine potential investments. The aim is to refine the project into a
+      resource that is efficient for bioremediators, environmental engineers, biomining researchers, other
+      iGEM teams, and municipalities for applications ranging from cleaning water supplies to extracting
+      profitable amounts of metal from ore.
+    </p>
+
+    <p>
+      Based on feedback from Mining Engineering depeartment and conference participants, we prioritized
+      four practical design targets: (1) orienting the biology toward dilute zinc streams up to ~1 g/L,
+      (2) aligning Metlock with existing froth-flotation workflows as a bypass/polishing step to 
+      improve water quality, (3) moving bench experiments into controlled bioreactor
+      formats to tune residence time, mixing, and oxygen demand, and (4) quantifying uptake capacity and
+      kinetics (e.g., q<sub>max</sub> in mg Zn per g dry cell weight and half-saturation parameters) to
+      credibly size units and inform design decisions. This guidance is reflected in our near-term plan: batch and chemostat trials
+      spanning 10–1,000 mg/L Zn, closed-loop mass-balance reporting of zinc removal efficiency, and side-by-side
+      comparisons with incumbent reagents and methods. These priorities will directly inform future computational modeling and currently
+      inform the development of our zinc-transport toolkit (ZnuABC) as we build for integration into industrially
+      relevant contexts [5][7][8][9][10][12].
+    </p>
+
+    <p>
+      Further outreach has been pursued on both the university campus and in professional settings.
+      Metlock has been presented to hundreds of students enrolled in biological, ecological, and chemistry
+      courses to increase participation and gather new perspectives for research. In addition, the project
+      was presented at the 5th Annual NSF-funded Critical Minerals Conference held in Rolla, Missouri, in August
+      2025. During this conference, our team took home 1st place for the conference's NSF poster contest [12].
+      This resulted in connections with professionals able to provide further guidance, and connections in academia
+      who encouraged us to apply for federal grants. Feedback from these groups will support optimization of the engineered
+      system to address bioremediation and biomining needs simultaneously, while also guiding future
+      research toward industrial biomining and environmental remediation. Input from these experts is
+      essential for ensuring that Metlock not only succeeds scientifically but also meets real-world
+      demands.
+    </p>
+
+    <p>
+      Throughout the project, we have stayed true to our commitment to fostering a diverse team. Our group
+      of students are from a variety of personal and academic backgrounds in chemical and biochemical
+      engineering, chemistry, environmental sciences, biological sciences, computer science, computer
+      engineering, and more. Each member brings a unique perspective to further guide this project in being
+      scientifically rigorous and provide input on how to express our system across various modalities. For
+      example, we utilized the strengths of our computer science and engineering members to build a
+      simulation that models the expression of the Anderson Family promoters and our AHL induction model for
+      simulated data collection purposes to develop a computational model that leverages the strength of
+      multiple disciplines on our team. The diverse perspectives of our group have been essential in problem
+      solving, going through the iterative design process, and pivoting the project when needed throughout
+      the design, build, test, and learn phases.
+    </p>
+
+    <p>
+      Through Metlock, the team hopes to contribute toward a future where critical mineral supply and
+      environmental responsibility can coexist, reacting to both the crisis of scarcity and mineral
+      pollution. The project strives to maintain environmental responsibility in design, reflect on the
+      values guiding development, and remain responsive to the world beyond the lab in deployment.
+    </p>
+  </div>
+</div>
+
+<div class="head cols">
+  <h2>References</h2>
+</div>
+
+<div class="cols">
+  <p>
+    [1] “How Can Metal Mining Impact the Environment?” American Geosciences Institute Critical Issues Program,
+    2022,
+    <a href="https://www.americangeosciences.org/critical-issues/faq/how-can-metal-mining-impact-environment/">
+      https://www.americangeosciences.org/critical-issues/faq/how-can-metal-mining-impact-environment/
+    </a>
+  </p>
+
+  <p>
+    [2] “Metal Mining Waste Could Impact Millions.” Chemical &amp; Engineering News, 21 Sept. 2023,
+    <a href="https://cen.acs.org/environment/pollution/Toxic-metal-mining-waste-impact/101/web/2023/09">
+      https://cen.acs.org/environment/pollution/Toxic-metal-mining-waste-impact/101/web/2023/09
+    </a>
+  </p>
+
+  <p>
+    [3] “Zinc - All Ecosystems.” Air Pollution Information System (APIS), UK Centre for Ecology &amp; Hydrology,
+    2023,
+    <a href="https://www.apis.ac.uk/zinc-all-ecosystems">
+      https://www.apis.ac.uk/zinc-all-ecosystems
+    </a>
+  </p>
+
+  <p>
+    [4] “Zinc Group Element: Toxicity of the Elements.” Encyclopædia Britannica, 2023,
+    <a href="https://www.britannica.com/science/zinc-group-element/Toxicity-of-the-elements">
+      https://www.britannica.com/science/zinc-group-element/Toxicity-of-the-elements
+    </a>
+  </p>
+
+  <p>
+    [5] “Bioremediation of Zinc Using <i>Desulfotomaculum nigrificans</i>: Bioprecipitation and Characterization
+    Studies.” PubMed, National Library of Medicine, 2006,
+    <a href="https://pubmed.ncbi.nlm.nih.gov/16904158/">
+      https://pubmed.ncbi.nlm.nih.gov/16904158/
+    </a>
+  </p>
+
+  <p>
+    [6] Kaksonen, Anna H., et al. “Removal of High Concentrations of Zinc, Cadmium, and Nickel Heavy Metals by
+    <i>Bacillus</i> and <i>Comamonas</i> through Microbially Induced Carbonate Precipitation.”
+    <i>Frontiers in Microbiology</i>, vol. 15, 2024, Article 1383878. PMC,
+    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12053368/">
+      https://pmc.ncbi.nlm.nih.gov/articles/PMC12053368/
+    </a>
+  </p>
+
+  <p>
+    [7] Foster, James W., and Hans Spector. “The ZnuABC High-Affinity Zinc Uptake System and Its Regulator Zur in
+    <i>Escherichia coli</i>.” <i>Journal of Bacteriology</i>, vol. 180, no. 10, 1998, pp. 2857–64. PubMed,
+    <a href="https://pubmed.ncbi.nlm.nih.gov/9680209/">
+      https://pubmed.ncbi.nlm.nih.gov/9680209/
+    </a>
+  </p>
+
+  <p>
+    [8] Grass, Gregor, and Christopher Rensing. “ZupT Is a Zn(II) Uptake System in <i>Escherichia coli</i>.”
+    <i>Journal of Bacteriology</i>, vol. 184, no. 3, 2002, pp. 864–66. American Society for Microbiology,
+    <a href="https://journals.asm.org/doi/10.1128/jb.184.3.864-866.2002">
+      https://journals.asm.org/doi/10.1128/jb.184.3.864-866.2002
+    </a>
+  </p>
+
+  <p>
+    [9] Hantke, Klaus. “The Zinc-Responsive Regulator Zur and Its Control of the <i>znu</i> Gene Cluster Encoding
+    the ZnuABC Zinc Uptake System in <i>Escherichia coli</i>.” <i>Journal of Bacteriology</i>, vol. 182, no. 20,
+    2000, pp. 5767–74. PubMed,
+    <a href="https://pubmed.ncbi.nlm.nih.gov/10816566/">
+      https://pubmed.ncbi.nlm.nih.gov/10816566/
+    </a>
+  </p>
+
+  <p>
+    [10] Ilari, Andrea, et al. “Role of ZnuABC and ZinT in <i>Escherichia coli</i> O157:H7 Zinc Acquisition and
+    Interaction with Epithelial Cells.” <i>BMC Microbiology</i>, vol. 11, 2011, Article 36. PubMed,
+    <a href="https://pubmed.ncbi.nlm.nih.gov/21338480/">
+      https://pubmed.ncbi.nlm.nih.gov/21338480/
+    </a>
+  </p>
+
+  <p>
+    [11] “Zinc and Lead Poisoning in Wild Birds in the Tri-State Mining District (Oklahoma, Kansas, Missouri).”
+    U.S. Geological Survey Publications Warehouse, 2004,
+    <a href="https://www.usgs.gov/publications/zinc-and-lead-poisoning-wild-birds-tri-state-m...">
+      https://www.usgs.gov/publications/zinc-and-lead-poisoning-wild-birds-tri-state-mining-district-oklahoma-kansas-missouri
+    </a>
+  </p>
+
+  <p>
+    [12] Missouri S&amp;T Mining Engineering faculty and industry stakeholders. Stakeholder consultations and
+    feedback on Metlock design (personal communications at Missouri S&amp;T and the 5th NSF Critical
+    Minerals Conference, Aug 2025).
+  </p>
+
+  <p>
+    [13] “McArthur River Zinc Mine.” Wikipedia, Wikimedia Foundation, 2024,
+    <a href="https://en.wikipedia.org/wiki/McArthur_River_zinc_mine">
+      https://en.wikipedia.org/wiki/McArthur_River_zinc_mine
+    </a>
+  </p>
+</div>
+
+<!--
+<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Silver Medal Criterion #2</h4>
+      <p>Explain how you have determined your work is responsible and good for the world.</p>
+      <hr />
+      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
+    </div>
+
+    <div class="bd-callout bd-callout-info">
+      <h4>Best Integrated Human Practices</h4>
+      <p>
+        How does your project affect society and how does society influence the direction of your project?
+        How might ethical considerations and stakeholder input guide your project purpose, design and the
+        experiments you conduct in the lab? How did this feedback enter into the process of your work throughout
+        the iGEM Competition? Document a thoughtful and creative approach to exploring these questions and how your
+        project evolved in the process, to compete for this award.
+      </p>
+      <hr />
+      <p>Visit the <a href="https://competition.igem.org/judging/special-prizes">Special Prizes page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>Overview</h2>
+    <hr />
+    <p>
+      At iGEM, Human Practices is about more than just outreach. It's about actively considering the societal
+      implications of your synthetic biology project and demonstrating how those considerations have shaped your work.
+      This page documents our team's Human Practices activities and their impact on our project.
+    </p>
+    <div class="bd-callout bd-callout-info">
+      <p>
+        For more information, visit the
+        <a href="https://responsibility.igem.org/human-practices/what-is-human-practices">Human Practices Hub</a>.
+      </p>
+    </div>
+    <ul>
+      <li>You should demonstrate how you have thoughtfully and creatively addressed the question: "Is our project responsible and good for the world?"</li>
+      <li>Clearly identify the ethical, social, safety, security, and sustainability issues relevant to your project.</li>
+      <li>Document all interactions with experts, stakeholders, and the public.</li>
+      <li>Explain how the insights gained from your Human Practices activities influenced your project's purpose, design, and execution.</li>
+      <li>Discuss any ethical dilemmas or challenges encountered during your project.</li>
+      <li>Assess the potential social impact of your project, both positive and negative.</li>
+      <li>Consider the perspectives of diverse stakeholders.</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr />
+    <ul>
+      <li><a href="https://2024.igem.wiki/ju-krakow/human-practices">2024 JU-Krakow</a></li>
+      <li><a href="https://2024.igem.wiki/epfl/human-practices">2024 EPFL</a></li>
+      <li><a href="https://2024.igem.wiki/freiburg/human-practices">2024 Freiburg</a></li>
+      <li><a href="https://2024.igem.wiki/marburg/human-practices">2024 Marburg</a></li>
+      <li><a href="https://2024.igem.wiki/cjuh-jlu-china/human-practices">2024 CJUH-JLU-China</a></li>
+      <li><a href="https://2024.igem.wiki/stanford/human-practices">2024 Stanford</a></li>
+    </ul>
+  </div>
+</div>
+-->
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

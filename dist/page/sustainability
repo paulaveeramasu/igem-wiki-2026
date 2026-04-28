@@ -1,0 +1,203 @@
+<div class="hero sustainability">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<!-- TODO Replace the image of the globe-->
+
+<div class="head cols"> <h1>Sustainability of Metlock</h1> </div> <div class="cols"> <p>Across the world, 
+  communities face linked challenges: chemical contamination of water by metals such as arsenic, lead, cadmium, 
+  and zinc <span class="nowrap">[<a href="#sustainability-1">1</a>]</span>, the energy and cost burden of producing critical 
+  minerals <span class="nowrap">[<a href="#sustainability-3">3</a>]</span>, and growing waste streams that demand better recovery of nonferrous 
+  metals <span class="nowrap">[<a href="#sustainability-4">4</a>]</span>. Metlock proposes a biology-enabled approach: using engineered <em>E. coli</em> 
+  to selectively capture zinc (Zn²⁺) from dilute waters and process streams so it can be recovered and reused.</p> 
+  <p>Heavy-metal pollution in water arises from both geogenic sources (e.g., arsenic-rich aquifers) and human activities
+  (mining, industry), and metals can also enter water through corrosion of water-contact materials (e.g., galvanized coatings 
+  or brass components). WHO notes that inorganic arsenic is among the most significant chemical contaminants of drinking-water 
+  globally <span class="nowrap">[<a href="#sustainability-1">1</a>]</span>. For zinc, EPA sets a <em>secondary</em> (aesthetic) drinking-water standard 
+  of 5&nbsp;mg/L to limit taste/appearance issues, underscoring why reducing dissolved Zn in distribution/treatment contexts 
+  is desirable <span class="nowrap">[<a href="#sustainability-2">2</a>]</span>. By tuning uptake with inducible control, Metlock is designed to remove excess 
+  dissolved zinc in a contained, treatment-plant-compatible module and return the captured metal to productive use.</p> 
+  <p>Mining and mineral processing are energy-intensive. According to CEEC’s 2021 analysis, comminution alone accounts for 
+  roughly one-quarter of a typical mine site’s final energy use and may consume up to ~1% of global final 
+  energy <span class="nowrap">[<a href="#sustainability-3">3</a>]</span>. Metlock is not a replacement for primary mining, but it can complement 
+  it by recovering zinc from low-grade leachates, tailings waters, and industrial effluents under ambient conditions. 
+  This technology has the potential to lower energy per kilogram recovered in those dilute contexts. (Like all biological 
+  systems, it still requires nutrients and process energy for operation.)</p> 
+  
+  <p>Improving circularity matters. EPA data 
+  show significant flows of nonferrous metals in municipal waste, with very high recovery of some (e.g., battery lead), 
+  highlighting the opportunity to increase recovery of others <span class="nowrap">[<a href="#sustainability-4">4</a>]</span>. Deploying selective 
+  biosorption/uptake modules at landfills, recycling centers, and industrial sites could help divert zinc from disposal 
+  while generating a reusable product.</p> <p>Metlock’s sustainability value is therefore two-fold: first, it protects 
+  water quality by reducing dissolved zinc loads where aesthetics and operational performance matter 
+  <span class="nowrap">[<a href="#sustainability-2">2</a>]</span> while supporting broader public-health safeguards in areas where metal 
+  contamination is a concern <span class="nowrap">[<a href="#sustainability-1">1</a>]</span>; second, it enhances resource efficiency by harvesting a useful 
+  metal from dilute, previously uneconomic streams 
+  <span class="nowrap">[<a href="#sustainability-3">3</a>][<a href="#sustainability-4">4</a>]</span>.</p> </div> <div class="cols head"> 
+    <h2>Sources Cited</h2> </div> <div class="cols"> 
+      <p id="sustainability-1">[1] World Health Organization. (2022). <em>Arsenic: Fact sheet</em>. <a href="https://www.who.int/news-room/fact-sheets/detail/arsenic">https://www.who.int/news-room/fact-sheets/detail/arsenic</a></p> 
+      <p id="sustainability-2">[2] U.S. EPA. (2025). <em>Drinking Water Regulations and Contaminants</em> — National Secondary Drinking Water Regulations (Zinc 5&nbsp;mg/L). <a href="https://www.epa.gov/sdwa/drinking-water-regulations-and-contaminants">https://www.epa.gov/sdwa/drinking-water-regulations-and-contaminants</a></p> 
+      <p id="sustainability-3">[3] Allen, M. (2021). <em>Mining Energy Consumption 2021</em>. CEEC (Coalition for Energy Efficient Comminution). <a href="https://www.ceecthefuture.org/resources/mining-energy-consumption-2021">https://www.ceecthefuture.org/resources/mining-energy-consumption-2021</a></p> 
+      <p id="sustainability-4">[4] U.S. Environmental Protection Agency. (2024). <em>Other Nonferrous Metals: Material-Specific Data</em>. <a href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/other-nonferrous-metals-material-specific">https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/other-nonferrous-metals-material-specific</a></p> 
+      
+      </div> <!--<div class="row mt-4"> 
+        <div class="col"> 
+          <div class="bd-callout bd-callout-info"> 
+            <h4>Best Sustainable Development Impact</h4> 
+            <p>The Sustainable Development Goals (SDGs) are a call to action to integrally address global environmental, 
+              social, and economic challenges. iGEM teams can answer this call with this prize. Demonstrate how you have 
+              evaluated your project ideas against one or more of the SDGs, how you’ve consulted with SDG stakeholders, and 
+              how you’ve begun to form collaborations with other iGEM teams around the SDGs. You’re encouraged to look back at 
+              previous iGEM projects to evaluate them against the SDGs, and build upon them.</p> <hr /> <p>Visit 
+                the <a href="https://competition.igem.org/judging/special-prizes">Special Prizes page</a> for more 
+                information.</p> </div> </div> </div> <div class="row mt-4"> <div class="col"> <h2>Inspirations</h2> 
+                <hr /> <ul> <li><a href="https://2024.igem.wiki/hangzhou-biox/sustainable">2024 Hangzhou-BioX</a></li> 
+                <li><a href="https://2024.igem.wiki/uzurich/sustainable">2024 UZurich</a></li> 
+                <li><a href="https://2024.igem.wiki/ulink-sz/sustainable">2024 Ulink-SZ</a></li> 
+                <li><a href="https://2024.igem.wiki/gec-beijing/sustainable">2024 GEC-Beijing</a></li> 
+                <li><a href="https://2023.igem.wiki/thessaloniki/sustainable">2023 Thessaloniki</a></li> 
+                </ul> </div> </div>-->
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

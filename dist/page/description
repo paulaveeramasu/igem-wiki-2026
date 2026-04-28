@@ -1,0 +1,223 @@
+<div class="hero description">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="module-1">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="module-2">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="module-3">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="engineering">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="human-practices">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="members">Members</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="description">Project Description</a></li>
+            <li><a class="dropdown-item" href="results">Results</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="lab-notebook">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+            <li><a class="dropdown-item" href="critical_mineral_conference">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+
+<div class="head cols">
+  <h1>Project Descriptions</h1>
+</div>
+<div class="cols"> 
+  <p><i>Metlock</i> targets the environmental and energy burdens of conventional metal recovery by engineering 
+    <i>E. coli</i> to selectively capture Zn²⁺ from ores, industrial waste, and polluted waters. 
+    The project's central objective is a modular, fine-tunable zinc-import system that maximizes 
+    uptake while avoiding cytotoxicity and can be extended to other metals in future iterations. 
+    Our design detaches the native high-affinity ZnuABC transporter from Zur repression and places it under 
+    LuxR/pLuxR control (BBa_K1960004), enabling AHL-dose-dependent expression. Functionally, ZnuA binds Zn²⁺ 
+    in the periplasm, ZnuB translocates it across the inner membrane, and ZnuC powers transport via ATP hydrolysis, 
+    yielding a programmable uptake system for Zn²⁺ influx across an AHL gradient.  
+
+    In parallel, we deploy Plot2Curve (P2C) computational workflows: (i) an AHL induction model calibrated with sfGFP 
+    and (ii) an Anderson-promoter benchmark to set assay AHL set-points, select promoter strengths, and predict 
+    transcription rate, mRNA, and protein trajectories and steady states. These analyses produce pre-registered 
+    deliverables (AHL fit, promoter ladder, and per-condition CSVs) that tighten the design-build-test-learn loop 
+    for our synthetic ZnuABC platform.  </p>
+</div>
+<!--<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Bronze Medal Criterion #1: Wiki</h4>
+      <p>Describe how and why you chose your iGEM project.</p>
+      <hr />
+      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>What Should this Page Contain?</h2>
+    <hr />
+    <ul>
+      <li>Explain the problem your project addresses and its potential impact.</li>
+      <li>Provide a clear and concise summary of your project's goals and objectives.</li>
+      <li>Detail the specific reasons why your team chose this project.</li>
+      <li>Explain the inspiration behind your project, including any prior research or real-world problems that motivated your team.</li>
+      <li>Use illustrations, diagrams, and other visual aids to enhance understanding.</li>
+      <li>Include relevant scientific background, technical details, and experimental approaches.</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr />
+    <ul>
+      <li><a href="https://2024.igem.wiki/heidelberg/description">2024 Heidelberg</a></li>
+      <li><a href="https://2024.igem.wiki/marburg/description">2024 Marburg</a></li>
+      <li><a href="https://2024.igem.wiki/epfl/description">2024 EPFL</a></li>
+      <li><a href="https://2024.igem.wiki/ju-krakow/description">2024 JU-Krakow</a></li>
+      <li><a href="https://2024.igem.wiki/utoronto/description">2024 UToronto</a></li>
+      <li><a href="https://2023.igem.wiki/estonia-tuit/description">2023 Estonia-TUIT</a></li>
+    </ul>
+  </div>
+</div>
+ 
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>Tips for Success</h2>
+    <hr />
+    <ul>
+      <li>While providing detailed information, strive for clarity and conciseness.</li>
+      <li>Use summaries and subheadings to organize your content.</li>
+      <li>Utilize visuals to enhance understanding and engagement.</li>
+      <li>Document your research process and sources thoroughly.</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h2>References</h2>
+    <hr />
+    <p>Cite all relevant research papers, scientific articles, and other sources that informed your project.</p>
+    <p>Create a dedicated "References" section at the end of the page, and use a consistent citation style.</p>
+  </div>
+</div>-->
+
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="description">Project Description</a>
+            <a href="software">Software</a>
+            <a href="human-practices">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
