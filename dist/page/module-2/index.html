@@ -92,12 +92,12 @@
           
 <section class="module-page-hero">
   <div class="section-label">Metlock Module 2</div>
-  <h1 class="section-title">Predictive Gene Expression Calibration</h1>
+  <h1 class="section-title">sfGFP Calibration and 96-Well Expression Tracker</h1>
   <p class="lead-copy">
-    Module 2 is the calibration layer of Metlock. In plain English, it asks a simple question: if the platform is turned on with the same LuxR / pLux signaling logic, can we predict how strongly it will respond?
+    Module 2 is the calibration and comparability layer of Metlock. In plain English, it helps the team learn how strongly the shared control system turns on before switching to functional proteins that may be harder on the cells.
   </p>
   <p>
-    This module uses the same AHL-LuxR-pLux backbone with sfGFP as a readable output, creating a bridge between experiment, simulation, and a possible database of design behavior for future decisions.
+    The module uses sfGFP together with an Anderson promoter ladder and an AHL dose series to map induction conditions onto predictable expression strengths. That gives Metlock a common measurement language before the platform moves into higher-stakes functional outputs.
   </p>
   <div class="module-page-links">
     <a class="button-primary" href="../software/index.html">View Software</a>
@@ -109,25 +109,25 @@
   <div class="content-panel mb-4">
     <div class="section-heading">
       <div class="section-label">Description</div>
-      <h2 class="section-title">Why calibration matters for a modular platform.</h2>
+      <h2 class="section-title">Why Metlock calibrates expression before switching proteins.</h2>
     </div>
     <p>
-      Module 2 helps Metlock move beyond trial-and-error. By measuring how the shared control backbone behaves, the team can compare conditions, estimate response strength, and make more informed choices about how the rest of the platform should be tuned.
+      Module 2 exists because a platform is only useful if its outputs can be compared safely and consistently. Instead of moving directly from promoter logic to functional zinc-handling proteins, Metlock first uses sfGFP as a readable proxy for expression level.
     </p>
     <p>
-      In technical terms, this module uses sfGFP as a readout for LuxR / pLux-driven behavior and pairs that experimental logic with simulation and database-oriented thinking.
+      The technical idea is to combine an AHL dose series with an Anderson promoter ladder and a 96-well tracking workflow. That allows the team to ask where the inducible system behaves like a weak, medium, or strong constitutive promoter and to identify expression windows that are predictable enough to reuse across experiments.
     </p>
     <div class="module-route-grid">
       <a class="quick-link-card" href="../description/index.html">
         <span class="quick-link-icon">D</span>
         <h3>Description</h3>
-        <p>See how calibration supports the shared logic of all three modules.</p>
+        <p>See how calibration supports the full Metlock pipeline by making expression easier to compare across modules.</p>
         <span class="quick-link-meta">Platform context</span>
       </a>
       <a class="quick-link-card" href="../software/index.html">
         <span class="quick-link-icon">S</span>
         <h3>Software</h3>
-        <p>Follow the current simulation and analysis ideas tied to induction and expression behavior.</p>
+        <p>Follow the simulation, data-tracking, and mapping logic behind the sfGFP calibration framework.</p>
         <span class="quick-link-meta">Modeling route</span>
       </a>
     </div>
@@ -139,14 +139,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Results</div>
-        <h2 class="section-title">Where calibration evidence will live.</h2>
+        <h2 class="section-title">Where expression mapping and comparability will be shown.</h2>
       </div>
       <p>
-        This section is structured for induction curves, promoter comparisons, simulation-to-data overlays, and other outputs that show how well the platform can be predicted and tuned.
+        This section is designed to hold the central outputs of Module 2: sfGFP dose-response curves, plate-based tracking summaries, Anderson-equivalent strength mappings, and plots that connect AHL concentration to safe and predictable expression.
+      </p>
+      <p>
+        Future results here can show how the team identifies expression regimes that are strong enough to be useful but controlled enough to preserve cell health, creating a calibration framework that later modules can inherit instead of rebuilding from scratch.
       </p>
       <div class="placeholder-panel">
         <strong>Results placeholder</strong>
-        Add induction fits, promoter benchmarking, calibration figures, and summary interpretations here.
+        Add sfGFP dose curves, 96-well summaries, Anderson-equivalent mappings, and calibration interpretations here.
       </div>
       <a class="module-inline-link" href="../results/index.html">Go to Results</a>
     </div>
@@ -155,7 +158,7 @@
       <div class="graph-header">
         <div>
           <p class="section-label mb-2">Graph Space</p>
-          <h3 class="graph-title">Module 2 calibration preview</h3>
+          <h3 class="graph-title">AHL dose versus calibrated expression preview</h3>
         </div>
         <span class="graph-badge">Placeholder</span>
       </div>
@@ -166,7 +169,34 @@
       </div>
       <div class="caption-box">
         <strong>Reusable graph slot</strong>
-        Use this card for induction-response plots, calibration ladders, or model-versus-experiment comparisons.
+        Use this card for sfGFP response curves, promoter ladder comparisons, or AHL-to-expression mapping visuals.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid two-column">
+    <div class="figure-card">
+      <div class="section-label">Figure Space</div>
+      <div class="figure-card-media module-figure-placeholder">
+        <div class="module-figure-placeholder-copy">96-well workflow diagram or promoter ladder calibration figure</div>
+      </div>
+      <div class="caption-box">
+        <strong>Reusable figure slot</strong>
+        Use this card for assay schematics, plate layouts, promoter ladder diagrams, or data-tracking workflows.
+      </div>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Interpretation Space</div>
+        <h2 class="section-title">What this module helps standardize.</h2>
+      </div>
+      <p>
+        Module 2 gives Metlock a common way to interpret expression strength before switching into functional systems. That means different modules can be compared against the same calibration logic instead of relying only on nominal inducer concentration.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Interpretation placeholder</strong>
+        Add summaries of safe expression windows, promoter-equivalent ranges, and how the calibration framework informs later modules here.
       </div>
     </div>
   </div>
@@ -177,14 +207,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Contributions</div>
-        <h2 class="section-title">Reusable outputs from calibration work.</h2>
+        <h2 class="section-title">What Module 2 contributes to the platform.</h2>
       </div>
       <p>
-        Module 2 can contribute design rules, reusable datasets, and analysis workflows that help future teams reason about inducible expression more systematically.
+        Module 2 contributes more than a reporter assay. It gives the project a measurement framework for mapping AHL doses onto comparable promoter-like strengths, making later experiments more interpretable and easier to share.
+      </p>
+      <p>
+        This module can also contribute reusable calibration datasets, 96-well workflows, comparison methods, and software-backed reasoning for teams that need to benchmark inducible systems before moving into functional outputs.
       </p>
       <div class="placeholder-panel">
         <strong>Contribution placeholder</strong>
-        Add datasets, calibration workflows, promoter comparisons, or reusable modeling notes here.
+        Add calibration datasets, shared measurement logic, plate-tracking workflows, and reusable comparison methods here.
       </div>
       <a class="module-inline-link" href="../contribution/index.html">Go to Contribution</a>
     </div>
@@ -192,14 +225,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Wet Lab / Lab Notebook</div>
-        <h2 class="section-title">Experimental setup and notebook evidence.</h2>
+        <h2 class="section-title">Plate setup, induction workflow, and notebook record.</h2>
       </div>
       <p>
-        This is the space for sfGFP assay setup, induction conditions, measurement workflow, troubleshooting, and notebook records connected to calibration experiments.
+        This section can collect the practical experimental details behind Module 2, including plate layout, AHL series preparation, sfGFP measurements, replicate structure, and the team’s notebook-level record of how the calibration system was assembled and tested.
+      </p>
+      <p>
+        It is also the best place to document how the team connects raw plate-reader behavior to repeatable experimental logic that can later support import and binding modules.
       </p>
       <div class="placeholder-panel">
         <strong>Wet-lab placeholder</strong>
-        Add assay timelines, plate layouts, notebook snapshots, and experimental figures here.
+        Add plate maps, induction schedules, measurement workflows, notebook snapshots, and troubleshooting notes here.
       </div>
       <a class="module-inline-link" href="../lab-notebook/index.html">Go to Lab Notebook</a>
     </div>
@@ -207,14 +243,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Dry Lab / Software</div>
-        <h2 class="section-title">Modeling and database concept space.</h2>
+        <h2 class="section-title">How software turns raw fluorescence into design guidance.</h2>
       </div>
       <p>
-        This is where simulation outputs, fitted parameters, comparison tables, and database-oriented structures can be presented in a clean and reusable way.
+        Module 2 depends strongly on dry-lab support because its value comes from interpretation as much as measurement. Software can help fit dose-response curves, normalize plate outputs, compare samples to Anderson-equivalent strengths, and organize the resulting tracker framework.
+      </p>
+      <p>
+        This section can also host interface ideas, export tables, and structured outputs that make the calibration framework reusable rather than locked inside one experimental run.
       </p>
       <div class="placeholder-panel">
         <strong>Dry-lab placeholder</strong>
-        Add simulation panels, parameter tables, interface mockups, and structured outputs for Module 2 here.
+        Add fitted curves, mapping tables, plate-tracker outputs, and software-backed calibration summaries here.
       </div>
       <a class="module-inline-link" href="../software/index.html">Go to Software</a>
     </div>

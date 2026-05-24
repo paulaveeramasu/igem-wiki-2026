@@ -5,12 +5,12 @@
 {% block page_content %}
 <section class="module-page-hero">
   <div class="section-label">Metlock Module 3</div>
-  <h1 class="section-title">External Zinc Capture + On-Demand Release</h1>
+  <h1 class="section-title">Metallothionein and Display-Based Zinc Binding</h1>
   <p class="lead-copy">
-    Module 3 extends Metlock beyond import into the cell. In plain English, this module explores whether zinc can first be captured outside the cell and then released in a controlled way when recovery is needed.
+    Module 3 is the binding layer of Metlock. In plain English, this module asks how zinc can be captured by dedicated binding proteins, either outside the cell or inside it, so recovery can be compared across different strategies.
   </p>
   <p>
-    The concept centers on an Ag43 surface-display scaffold paired with zinc-binding peptides, creating a front-facing capture layer that broadens how the platform could be used in future biomining workflows.
+    The module focuses on zinc-binding metallothioneins and surface-display-style binding systems, while reusing the same broader assay logic as the rest of the platform. That makes it possible to compare extracellular and intracellular binding approaches instead of treating them as isolated concepts.
   </p>
   <div class="module-page-links">
     <a class="button-primary" href="{{ url_for('pages', page='description') }}">View Project Description</a>
@@ -22,25 +22,25 @@
   <div class="content-panel mb-4">
     <div class="section-heading">
       <div class="section-label">Description</div>
-      <h2 class="section-title">Why surface capture expands the platform.</h2>
+      <h2 class="section-title">How Module 3 expands Metlock beyond import alone.</h2>
     </div>
     <p>
-      If Module 1 is about transport into the cell, Module 3 asks whether zinc can be managed at the surface first. That matters because external capture may offer different practical advantages for handling, recovery, and downstream processing.
+      Module 3 exists because zinc recovery is not only about pulling metal into the cell. A useful platform also needs a way to compare how binding proteins behave when they capture zinc outside the cell versus inside the cell, especially in metal-rich environments where different handling strategies may matter.
     </p>
     <p>
-      At a more technical level, this module explores how an Ag43 display scaffold and zinc-binding peptides could enable a bind-and-release strategy that complements the rest of the Metlock architecture.
+      Technically, this module focuses on zinc-binding metallothioneins and surface-display-style binding systems. By using shared assays and shared comparison logic, Module 3 gives Metlock a way to test extracellular and intracellular binding proteins under one coordinated framework rather than as separate projects.
     </p>
     <div class="module-route-grid">
       <a class="quick-link-card" href="{{ url_for('pages', page='description') }}">
         <span class="quick-link-icon">D</span>
         <h3>Description</h3>
-        <p>Read how external capture fits into the larger modular biomining concept.</p>
+        <p>See how zinc-binding systems fit into the larger Metlock pipeline of capture, import, and calibration.</p>
         <span class="quick-link-meta">Project framing</span>
       </a>
       <a class="quick-link-card" href="{{ url_for('pages', page='human-practices') }}">
         <span class="quick-link-icon">H</span>
         <h3>Human Practices</h3>
-        <p>Connect Module 3 to deployment questions, sustainability, and responsible use.</p>
+        <p>Connect Module 3 to questions of deployment, handling, safety, and use in metal-rich environments.</p>
         <span class="quick-link-meta">Impact context</span>
       </a>
     </div>
@@ -52,26 +52,64 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Results</div>
-        <h2 class="section-title">Where capture and release data will appear.</h2>
+        <h2 class="section-title">Where extracellular and intracellular binding data will be compared.</h2>
       </div>
       <p>
-        This section is designed for peptide-binding comparisons, display validation, release-condition testing, microscopy, and proof-of-concept performance figures.
+        This section is designed to hold the main evidence for Module 3: zinc-binding comparisons, construct validation, display or localization checks, microscopy, and proof-of-concept comparisons between extracellular and intracellular binding approaches.
+      </p>
+      <p>
+        Future results here can show which binding strategy captures zinc more effectively, which one appears easier to validate experimentally, and how those strategies compare under the same broader assay framework used elsewhere in Metlock.
       </p>
       <div class="placeholder-panel">
         <strong>Results placeholder</strong>
-        Add binding data, release tests, construct validation, and interpretation for Module 3 here.
+        Add binding comparisons, localization checks, microscopy panels, metallothionein performance data, and interpretation here.
       </div>
       <a class="module-inline-link" href="{{ url_for('pages', page='results') }}">Go to Results</a>
     </div>
 
+    <div class="graph-card">
+      <div class="graph-header">
+        <div>
+          <p class="section-label mb-2">Graph Space</p>
+          <h3 class="graph-title">Extracellular versus intracellular binding preview</h3>
+        </div>
+        <span class="graph-badge">Placeholder</span>
+      </div>
+      <div class="graph-plot">
+        <div class="graph-line"></div>
+        <div class="graph-line-secondary"></div>
+        <div class="graph-line-tertiary"></div>
+      </div>
+      <div class="caption-box">
+        <strong>Reusable graph slot</strong>
+        Use this card for metallothionein comparisons, binding efficiency plots, or extracellular-versus-intracellular performance summaries.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid two-column">
     <div class="figure-card">
       <div class="section-label">Figure Space</div>
       <div class="figure-card-media module-figure-placeholder">
-        <div class="module-figure-placeholder-copy">Surface-display diagram or capture workflow figure</div>
+        <div class="module-figure-placeholder-copy">Metallothionein binding schematic or display-system workflow figure</div>
       </div>
       <div class="caption-box">
         <strong>Reusable figure slot</strong>
-        Use this card for scaffold diagrams, peptide schematics, release logic, or microscopy panels tied to Module 3.
+        Use this card for protein-binding diagrams, localization schematics, surface-display concepts, or microscopy layouts.
+      </div>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Interpretation Space</div>
+        <h2 class="section-title">What this module helps the team compare.</h2>
+      </div>
+      <p>
+        Module 3 is especially valuable because it lets the team compare different zinc-handling strategies under one platform. Instead of assuming one location or one binding system is best, this module makes those comparisons explicit.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Interpretation placeholder</strong>
+        Add concise summaries of which binding strategies appear strongest, most stable, or most comparable across assays here.
       </div>
     </div>
   </div>
@@ -82,14 +120,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Contributions</div>
-        <h2 class="section-title">What this module could contribute.</h2>
+        <h2 class="section-title">What Module 3 contributes to the Metlock platform.</h2>
       </div>
       <p>
-        Module 3 can contribute design thinking around external capture, release workflows, and surface-display strategies that may be reusable beyond this first zinc-focused implementation.
+        Module 3 contributes a binding-focused perspective to Metlock. It broadens the project from transport and calibration alone into a platform that can compare how zinc is captured, where it is held, and which protein strategies are most promising for recovery-focused work.
+      </p>
+      <p>
+        This module can also contribute metallothionein-focused design logic, comparison workflows, display-system reasoning, and shared assay structures for future teams working on metal-binding proteins.
       </p>
       <div class="placeholder-panel">
         <strong>Contribution placeholder</strong>
-        Add scaffold choices, peptide design lessons, and reusable bind-and-release workflow notes here.
+        Add metallothionein design notes, shared binding assays, display-system lessons, and reusable workflow ideas here.
       </div>
       <a class="module-inline-link" href="{{ url_for('pages', page='contribution') }}">Go to Contribution</a>
     </div>
@@ -97,14 +138,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Wet Lab / Lab Notebook</div>
-        <h2 class="section-title">Experimental build and validation record.</h2>
+        <h2 class="section-title">Construct validation, localization work, and notebook trail.</h2>
       </div>
       <p>
-        This section can collect construct assembly, display validation, microscopy, peptide testing, and notebook checkpoints linked to the external capture concept.
+        This section can hold the practical bench record for Module 3, including cloning notes, metallothionein construct design, display validation, microscopy, localization checks, and notebook entries that explain how extracellular and intracellular binding systems were tested.
+      </p>
+      <p>
+        It is also the right place to document how shared assays were adapted to compare different binding proteins under consistent conditions.
       </p>
       <div class="placeholder-panel">
         <strong>Wet-lab placeholder</strong>
-        Add cloning notes, validation images, surface-display checks, and notebook evidence here.
+        Add cloning notes, localization images, microscopy snapshots, construct validation steps, and notebook checkpoints here.
       </div>
       <a class="module-inline-link" href="{{ url_for('pages', page='lab-notebook') }}">Go to Lab Notebook</a>
     </div>
@@ -112,14 +156,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Dry Lab / Software</div>
-        <h2 class="section-title">Modeling and selection support.</h2>
+        <h2 class="section-title">How software can support binding comparisons.</h2>
       </div>
       <p>
-        Module 3 also benefits from dry-lab support, whether for peptide comparison, selection rationale, release modeling, or future interface design for capture workflows.
+        Module 3 can benefit from dry-lab support in several ways: comparing binding candidates, structuring assay outputs, tracking localization-linked performance, and organizing data so extracellular and intracellular strategies can be interpreted on the same scale.
+      </p>
+      <p>
+        This section can also host selection rationale, comparison dashboards, export tables, or model-backed summaries that help make the binding module easier to compare with the import and calibration modules.
       </p>
       <div class="placeholder-panel">
         <strong>Dry-lab placeholder</strong>
-        Add screening rationale, peptide comparison visuals, release models, and software outputs for Module 3 here.
+        Add candidate-comparison tables, screening logic, binding summaries, and software-backed interpretation outputs here.
       </div>
       <a class="module-inline-link" href="{{ url_for('pages', page='software') }}">Go to Software</a>
     </div>

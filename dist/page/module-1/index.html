@@ -92,12 +92,12 @@
           
 <section class="module-page-hero">
   <div class="section-label">Metlock Module 1</div>
-  <h1 class="section-title">Tunable Zinc Uptake</h1>
+  <h1 class="section-title">pLuxR-ZnuABC Tunable Zinc Import</h1>
   <p class="lead-copy">
-    Module 1 is the entry point for zinc into the Metlock platform. In plain English, this module is about helping cells pull in zinc in a way that can be adjusted instead of left permanently on.
+    Module 1 is the import engine of Metlock. In plain English, this module is about giving cells a controllable way to bring zinc inside only when the team wants that uptake to happen.
   </p>
   <p>
-    More specifically, Module 1 uses an AHL-inducible LuxR / pLux control system to drive ZnuABC, the transporter responsible for zinc uptake. This makes Module 1 the core import layer that the rest of the platform can build around.
+    The design uses a constitutive LuxR helper together with AHL-driven pLuxR expression of ZnuA, ZnuB, and ZnuC. That shared control logic makes zinc import adjustable across induction conditions, which is important for balancing recovery performance with cell health.
   </p>
   <div class="module-page-links">
     <a class="button-primary" href="../engineering/index.html">View Engineering Success</a>
@@ -109,25 +109,25 @@
   <div class="content-panel mb-4">
     <div class="section-heading">
       <div class="section-label">Description</div>
-      <h2 class="section-title">What this module is designed to do.</h2>
+      <h2 class="section-title">How zinc import is controlled on command.</h2>
     </div>
     <p>
-      The purpose of Module 1 is to test whether zinc uptake can be made controllable. Instead of relying on a fixed transport state, the system is designed so that zinc import responds to an external induction signal and can be studied across a range of conditions.
+      Module 1 addresses a simple but important problem: zinc recovery is only useful if the cells can import zinc efficiently without being pushed into stress too quickly. Rather than leaving uptake permanently active, Metlock places import under a tunable induction system so the team can choose when and how strongly the transport machinery is expressed.
     </p>
     <p>
-      At the technical level, this module places ZnuABC under the LuxR / pLux backbone so the team can compare expression strength, transport behavior, and practical assay outcomes as induction changes.
+      In technical terms, the module couples a constitutive LuxR helper with AHL-responsive pLuxR expression of ZnuA, ZnuB, and ZnuC. ZnuA functions as the binding component, ZnuB provides membrane transport, and ZnuC powers the system through ATP-dependent activity. Together, they create a controllable zinc import circuit that can be tested across different AHL levels and compared against growth, viability, depletion, and retention controls.
     </p>
     <div class="module-route-grid">
       <a class="quick-link-card" href="../description/index.html">
         <span class="quick-link-icon">D</span>
         <h3>Description</h3>
-        <p>See how controllable zinc import fits into the broader Metlock platform story.</p>
+        <p>See how controllable zinc import fits into the larger Metlock platform and why Module 1 anchors the workflow.</p>
         <span class="quick-link-meta">Project framing</span>
       </a>
       <a class="quick-link-card" href="../engineering/index.html">
         <span class="quick-link-icon">E</span>
         <h3>Engineering</h3>
-        <p>Follow the design-build-test-learn logic behind the inducible ZnuABC construct.</p>
+        <p>Follow the design-build-test-learn reasoning behind the constitutive LuxR helper and pLuxR-ZnuABC system.</p>
         <span class="quick-link-meta">Design logic</span>
       </a>
     </div>
@@ -139,14 +139,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Results</div>
-        <h2 class="section-title">Where transport performance will be shown.</h2>
+        <h2 class="section-title">Where uptake performance and controls will be compared.</h2>
       </div>
       <p>
-        This section is designed to hold the main evidence for Module 1, including uptake assays, induction-response trends, controls, and comparisons between expected and observed behavior.
+        This section is intended to hold the main evidence for Module 1: zinc depletion trends, growth curves, viability checks, retention measurements, and comparisons across induction conditions. The goal is not just to show uptake, but to show uptake that remains interpretable and safe enough to compare across the platform.
+      </p>
+      <p>
+        Future data here can show how increasing AHL shifts import performance, where transport begins to burden the cells, and how depletion or retention readouts compare to no-induction and control conditions. That makes this section the main bridge between construct design and practical biomining behavior.
       </p>
       <div class="placeholder-panel">
         <strong>Results placeholder</strong>
-        Add uptake curves, transport assay summaries, validation plots, and interpretation for Module 1 here.
+        Add zinc depletion plots, growth and viability comparisons, retention data, and control overlays for Module 1 here.
       </div>
       <a class="module-inline-link" href="../results/index.html">Go to Results</a>
     </div>
@@ -155,7 +158,7 @@
       <div class="graph-header">
         <div>
           <p class="section-label mb-2">Graph Space</p>
-          <h3 class="graph-title">Module 1 uptake and induction preview</h3>
+          <h3 class="graph-title">AHL dose versus zinc import preview</h3>
         </div>
         <span class="graph-badge">Placeholder</span>
       </div>
@@ -166,7 +169,34 @@
       </div>
       <div class="caption-box">
         <strong>Reusable graph slot</strong>
-        Use this card for zinc uptake plots, induction-response comparisons, or control-versus-test transport data.
+        Use this card for zinc depletion curves, viability overlays, import-versus-dose comparisons, or retention summaries.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-grid two-column">
+    <div class="figure-card">
+      <div class="section-label">Figure Space</div>
+      <div class="figure-card-media module-figure-placeholder">
+        <div class="module-figure-placeholder-copy">pLuxR-ZnuABC construct map or assay workflow diagram</div>
+      </div>
+      <div class="caption-box">
+        <strong>Reusable figure slot</strong>
+        Use this card for construct architecture, assay workflow diagrams, or induction-control schematics for Module 1.
+      </div>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Interpretation Space</div>
+        <h2 class="section-title">What the team will compare.</h2>
+      </div>
+      <p>
+        Module 1 is especially useful because it can be interpreted with the same assay logic across multiple conditions. That means future comparisons can focus on where zinc uptake becomes meaningfully stronger, where cells remain healthy, and where the platform begins to show useful separation between transport performance and stress.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Interpretation placeholder</strong>
+        Add concise summaries of high-performing induction windows, control performance, and tradeoffs between zinc recovery and cell fitness here.
       </div>
     </div>
   </div>
@@ -177,14 +207,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Contributions</div>
-        <h2 class="section-title">What this module contributes to the platform.</h2>
+        <h2 class="section-title">What Module 1 contributes to Metlock and beyond.</h2>
       </div>
       <p>
-        Module 1 can contribute reusable parts, assay logic, and design lessons for anyone interested in controllable metal uptake systems.
+        Module 1 contributes the core on-command import logic of Metlock. At the project level, it establishes a reusable framework for comparing metal uptake under inducible regulation rather than relying on fixed or constitutive transport alone.
+      </p>
+      <p>
+        More broadly, this module can contribute reusable parts, control logic, assay design, and interpretation frameworks for other teams interested in inducible transport, metal uptake, or synthetic biology systems that need to balance performance with viability.
       </p>
       <div class="placeholder-panel">
         <strong>Contribution placeholder</strong>
-        Add reusable constructs, workflow improvements, transport assay lessons, or part-level takeaways here.
+        Add reusable construct notes, shared assay logic, transport workflow improvements, and part-level takeaways here.
       </div>
       <a class="module-inline-link" href="../contribution/index.html">Go to Contribution</a>
     </div>
@@ -192,14 +225,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Wet Lab / Lab Notebook</div>
-        <h2 class="section-title">Bench work and experimental record.</h2>
+        <h2 class="section-title">Bench work, assay setup, and notebook trail.</h2>
       </div>
       <p>
-        This is the right place for cloning workflow, transformation outcomes, assay setup, photos, troubleshooting, and notebook summaries connected to Module 1.
+        This section can gather the day-to-day experimental record for Module 1, including cloning plans, transformation attempts, induction setup, zinc depletion measurements, growth monitoring, and retention controls.
+      </p>
+      <p>
+        It is also the right place to show protocol adjustments, troubleshooting decisions, and images or notes that explain how the team moved from construct design into measurable uptake experiments.
       </p>
       <div class="placeholder-panel">
         <strong>Wet-lab placeholder</strong>
-        Add protocol notes, transformation images, assay setup diagrams, and notebook checkpoints here.
+        Add protocol notes, plate images, induction workflow diagrams, growth records, and assay notebook checkpoints here.
       </div>
       <a class="module-inline-link" href="../lab-notebook/index.html">Go to Lab Notebook</a>
     </div>
@@ -207,14 +243,17 @@
     <div class="content-panel">
       <div class="section-heading">
         <div class="section-label">Dry Lab / Software</div>
-        <h2 class="section-title">How modeling supports the uptake module.</h2>
+        <h2 class="section-title">How modeling supports the import module.</h2>
       </div>
       <p>
-        Module 1 also benefits from dry-lab support, especially when comparing expected induction behavior to experimental uptake trends and identifying useful operating ranges.
+        Module 1 benefits from dry-lab support because induction strength, uptake performance, and cell burden all need to be compared in a way that stays consistent across runs. Modeling can help identify useful AHL ranges, compare expected and observed response shapes, and make later modules easier to benchmark.
+      </p>
+      <p>
+        Software content here can include dose-response fitting, import trend summaries, threshold estimates, and comparisons between observed zinc depletion and projected behavior under shared assay conditions.
       </p>
       <div class="placeholder-panel">
         <strong>Dry-lab placeholder</strong>
-        Add fitted curves, parameter comparisons, transport model notes, and software outputs for Module 1 here.
+        Add fitted curves, threshold analyses, model notes, and software outputs that help interpret Module 1 uptake behavior.
       </div>
       <a class="module-inline-link" href="../software/index.html">Go to Software</a>
     </div>
