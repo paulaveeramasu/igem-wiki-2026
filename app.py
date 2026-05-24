@@ -58,7 +58,7 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/page/<page>")
+@app.route("/page/<page>/")
 def pages(page: str):
     if page not in RENDERABLE_PAGES:
         abort(404)
