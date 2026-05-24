@@ -611,6 +611,62 @@ img { max-width: 100%; }
   margin-bottom: 0.3rem;
 }
 
+.workflow-list {
+  max-width: 1050px;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workflow-step {
+  position: relative;
+  padding: 0 0 1.15rem 1.4rem;
+  color: var(--text-muted);
+}
+
+.workflow-step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--green-600);
+}
+
+.workflow-step::after {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 1.15rem;
+  bottom: 0;
+  width: 1px;
+  background: rgba(29, 106, 73, 0.18);
+}
+
+.workflow-step:last-child {
+  padding-bottom: 0;
+}
+
+.workflow-step:last-child::after {
+  display: none;
+}
+
+.workflow-step strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--green-900);
+}
+
+.software-figure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 1050px;
+  margin-top: 1.3rem;
+}
+
 .module-page-links {
   display: flex;
   flex-wrap: wrap;
@@ -806,6 +862,7 @@ footer a:hover, footer a:focus { color: #fff; text-decoration: underline; }
   .reading-page { gap: 1.5rem; }
   .report-panel { padding: 1.2rem; }
   .reading-section .section-heading { margin-bottom: 1rem; }
+  .software-figure-grid { grid-template-columns: 1fr; }
   .simple-callout,
   .simple-figure { margin-top: 1.15rem; }
 }
