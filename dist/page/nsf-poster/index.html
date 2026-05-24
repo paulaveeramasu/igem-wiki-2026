@@ -1,0 +1,236 @@
+<div class="hero nsf-poster">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
+            </div>
+        </div>
+    </div>
+</div><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Static/style.css" rel="stylesheet">
+
+    <title> | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="../module-1/index.html">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="../module-2/index.html">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="../module-3/index.html">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../engineering/index.html">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../human-practices/index.html">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="../members/index.html">Members</a></li>
+            <li><a class="dropdown-item" href="../attributions/index.html">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="../description/index.html">Project Description</a></li>
+            <li><a class="dropdown-item" href="../results/index.html">Results</a></li>
+            <li><a class="dropdown-item" href="../contribution/index.html">Contribution</a></li>
+            <li><a class="dropdown-item" href="../lab-notebook/index.html">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="../software/index.html">Software</a></li>
+            <li><a class="dropdown-item" href="../critical_mineral_conference/index.html">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+<div names>
+    <div class="cols head">
+        <h1>Metlock: A Biomining Library</h1>
+        <h5>Authors: Tristan Crawford, Austin Thrasher, Ethan Beane, Julian Foat, Lindsay Schneider, and Jenna Mueller</h5>
+        <h5>Genetic Engineering Student Design Team (iGEM) at Missouri S&T</h5>
+    </div>
+    <div class="cols nsf-body">
+        <h4>Abstract</h4>
+        <p>Global demand for zinc is rising, but conventional extraction remains energy-intensive, waste-generating, 
+            and geopolitically vulnerable. We propose to develop a modular synthetic-biology platform that engineers 
+            <i>Escherichia coli</i> for selective, tunable sequestration of zinc from low-grade ores and industrial effluents. 
+            The system will:</p>
+        <ol>
+            <li>Utilize engineered intracellular metal-binding proteins that lock the captured zinc within the cytoplasm[5][9].</li>
+            <li>Integrate a LuxR/3OC6-HSL-inducible ZnuABC high-affinity transporter to amplify uptake in response to user-defined cues[2][4].</li>
+        </ol>
+        <p>A standardized genetic toolkit comprising interchangeable promoters, ribosome-binding sites, 
+            regulatory elements, and metal-specific cassettes will be compiled with detailed protocols for 
+            media composition, induction scheduling, and bioreactor operation to ensure reproducibility and 
+            portability. Phase-I milestones include achieving a ≥5-fold increase in zinc capture from ≤0.5 mM 
+            solutions and validating scalability from benchtop to pilot-scale reactors[3] [4]. Success will 
+            deliver an open-source biomining library that enables low-carbon, decentralized recovery of zinc 
+            and lays the groundwork for future expansion to lead, cadmium, and rare-earth elements, 
+            strengthening critical-mineral supply resilience.</p>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-1.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 1:</b> <i>Synthetic operon design illustrating zinc ion sequestration and LuxR/3OC6-HSL 
+            regulation of ZnuABC gene to express zinc transport proteins. Zinc ions are held within the cytoplasm 
+            by endogenous zinc finger proteins.</i></p>
+        <h4>Methods & Toolkit</h4>
+        <ul>
+            <li>Modular genetic toolkit: interchangeable promoters, RBS, regulators</li>
+            <li>LuxR/3OC6-HSL inducible ZnuABC cassette</li>
+            <li>Engineered cytoplasmic binding proteins</li>
+            <li>Standard assembly & media/induction workflow</li>
+        </ul>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-2.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 2:</b> <i>Information flow of ZnuABC mirroring central dogma of biology.</i></p>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-3.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 3:</b> <i>Arranged crystal structures of ZnuA[7], ZnuB[1], and ZnuC[8] with zinc binding sites on ZnuA 
+            highlighted. </i></p>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-4.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 4:</b> <i>Crystal structure of bacterioferretin[6], as an analog to the desired finalized design 
+            of an engineered cytosolic zinc sequestering protein.</i></p>
+        <h4>Benchmarks & Scale-Up: Target Outputs</h4>
+        <ul>
+            <li>≥5-fold zinc uptake vs wild-type capture from ≤0.5 mM solutions</li>
+            <li>Consistent capture in triplicate batches</li>
+            <li>Lab-scale (100 mL) → Pilot-scale (10 L)</li>
+        </ul>
+        <h4>Modeled Data Displays</h4>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-5.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 5:</b> <i>Zinc uptake over time in E. coli expressing iZnuABC under varying induction levels. 
+            If zinc uptake (μM per OD600) is measured over 60 minutes, it may show that the high induction group 
+            demonstrates the greatest zinc uptake, followed by low induction and no induction conditions[9]. 
+            The knockout strain (ΔznuB) exhibits minimal zinc uptake, which would confirm the essential role 
+            of the ZnuB (and therefore ZnuABC) in zinc transport. These results hypothetically show that synthetic 
+            operon iZnuABC expression enhances zinc uptake in an induction-modulated manner.</i></p>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-6.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 6:</b> <i>Modeled total zinc capture in wild-type vs. iZnuABC E. coli. Engineered E. coli 
+            expressing inducible ZnuABC transport system theoretically captures approximately 6-times more zinc 
+            under controlled conditions. This demonstrates the enhanced zinc uptake capacity mediated by iZnuABC 
+            expression, highlighting its potential applications in bioremediation.</i></p>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-7.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 7:</b> <i>Heat map of zinc uptake across a 96-well plate. Each cell corresponds to a well 
+            (rows A-H, columns 1-12) and is shaded by the measured zinc capture (µM), with warmer colors indicating 
+            higher uptake; this visualization would highlight top-performing wells for downstream scale-up.</i></p>
+        <h4>Future Directions & IP</h4>
+        <ul>
+            <li>Expansion to Pb²⁺, Cd²⁺, and other rare-earth metals</li>
+            <li>Automated promoter/RBS tuning for selectivity</li>
+            <li>High-throughput mutagenesis of binding proteins</li>
+            <li>Release of open-source metadata and sequences</li>
+        </ul>
+        <img src="https://static.igem.wiki/teams/5759/logos/nsf-poster/fig-8.webp" style="height: auto; width: 50%; display: block; margin: 0 auto;">
+        <p><b>Figure 8:</b> <i>Proposed progressive deployment of system from strain identification to environmental 
+            deployment for diverse industrial applications ranging from bioremediation to critical mineral processing.</i></p>
+        <h4>Sources</h4>
+        <p>[1] AlphaFold Protein Structure Database. ZnuB protein (<i>Escherichia coli</i>), UniProt ID: P39832. Available from:
+             <a href="https://alphafold.ebi.ac.uk/entry/P39832">https://alphafold.ebi.ac.uk/entry/P39832</a>. Accessed 2025 Aug 
+             4.
+        <br>[2] Bernstein DA, Zittel MC, Keck JL. High-resolution structure of the <i>E.coli</i> RecQ helicase catalytic core. EMBO J. 2003 Oct 1;22(19):4910-21. doi: 10.1093/emboj/cdg500. PMID: 14517231; PMCID: PMC204483.
+        <br>[3] Bird AJ, McCall K, Kramer M, Blankman E, Winge DR, Eide DJ. Zinc fingers can act as Zn2+ sensors to regulate transcriptional activation domain function. EMBO J. 2003 Oct 1;22(19):5137-46. doi: 10.1093/emboj/cdg484. PMID: 14517251; PMCID: PMC204467.
+        <br>[4] Collins CH, Arnold FH, Leadbetter JR. Directed evolution of Vibrio fischeri LuxR for increased sensitivity to a broad spectrum of acyl-homoserine lactones. Mol Microbiol. 2005 Feb;55(3):712-23. doi: 10.1111/j.1365-2958.2004.04437.x. PMID: 15660998.
+        <br>[5] Graham AI, Hunt S, Stokes SL, Bramall N, Bunch J, Cox AG, McLeod CW, Poole RK. Severe zinc depletion of <i>Escherichia coli</i>: roles for high affinity zinc binding by ZinT, zinc transport and zinc-independent proteins. J Biol Chem. 2009 Jul 3;284(27):18377-89. doi: 10.1074/jbc.M109.001503. Epub 2009 Apr 19. PMID: 19377097; PMCID: PMC2709383.
+        <br>[6] Rivera M. Bacterioferritin: Structure, Dynamics, and Protein-Protein Interactions at Play in Iron Storage and Mobilization. Acc Chem Res. 2017 Feb 21;50(2):331-340. doi: 10.1021/acs.accounts.6b00514. Epub 2017 Feb 8. PMID: 28177216; PMCID: PMC5358871.
+        <br>[7] SWISS-MODEL Repository. ZnuA protein (<i>Escherichia coli</i>), UniProt ID: A1AC19. Available from: <a href="https://swissmodel.expasy.org/repository/uniprot/A1AC19">https://swissmodel.expasy.org/repository/uniprot/A1AC19</a>. Accessed 2025 Aug 4.
+        <br>[8] SWISS-MODEL Repository. ZnuC protein (<i>Escherichia coli</i>), Model MD5: 0eb68fb20fe9ce365ac15a74498d040a. Available from: <a href="https://swissmodel.expasy.org/repository/md5/0eb68fb20fe9ce365ac15a74498d040a">https://swissmodel.expasy.org/repository/md5/0eb68fb20fe9ce365ac15a74498d040a</a>. Accessed 2025 Aug 4.
+        <br>[9] Patzer SI, Hantke K. The ZnuABC high-affinity zinc uptake system and its regulator Zur in <i>Escherichia coli</i>. Mol Microbiol. 1998 Jun;28(6):1199-210. doi: 10.1046/j.1365-2958.1998.00883.x. PMID: 9680209.</p>
+    </div>
+</div>
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../../index.html">Home</a>
+            <a href="../description/index.html">Project Description</a>
+            <a href="../software/index.html">Software</a>
+            <a href="../human-practices/index.html">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

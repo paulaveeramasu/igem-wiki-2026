@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="../../Static/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Static/style.css" rel="stylesheet">
+
+    <title>Module 1 | Missouri-Miners - iGEM 2025</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top site-nav">
+  <div class="container">
+    <a class="navbar-brand" href="../../index.html">
+      <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+      <span>
+        <span class="navbar-brand-text">METLOCK</span>
+        <span class="navbar-brand-subtitle">Missouri-Miners iGEM 2025</span>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav left-aligned">
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../../index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-modules" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modules
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-modules">
+            <li><a class="dropdown-item" href="index.html">Module 1: Tunable Zinc Uptake</a></li>
+            <li><a class="dropdown-item" href="../module-2/index.html">Module 2: Predictive Gene Expression Calibration</a></li>
+            <li><a class="dropdown-item" href="../module-3/index.html">Module 3: External Zinc Capture + Release</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../engineering/index.html">Engineering Success</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-pill" href="../human-practices/index.html">Human Practices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-team">
+            <li><a class="dropdown-item" href="../members/index.html">Members</a></li>
+            <li><a class="dropdown-item" href="../attributions/index.html">Attributions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-pill dropdown-toggle" href="#" id="navbar-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-resources">
+            <li><a class="dropdown-item" href="../description/index.html">Project Description</a></li>
+            <li><a class="dropdown-item" href="../results/index.html">Results</a></li>
+            <li><a class="dropdown-item" href="../contribution/index.html">Contribution</a></li>
+            <li><a class="dropdown-item" href="../lab-notebook/index.html">Lab Notebook</a></li>
+            <li><a class="dropdown-item" href="../software/index.html">Software</a></li>
+            <li><a class="dropdown-item" href="../critical_mineral_conference/index.html">Conference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <main class="page-wrapper">
+        <div class="names">
+          
+        </div>
+
+        <div class="container">
+          
+<section class="module-page-hero">
+  <div class="section-label">Metlock Module 1</div>
+  <h1 class="section-title">Tunable Zinc Uptake</h1>
+  <p class="lead-copy">
+    Module 1 is the entry point for zinc into the Metlock platform. In plain English, this module is about helping cells pull in zinc in a way that can be adjusted instead of left permanently on.
+  </p>
+  <p>
+    More specifically, Module 1 uses an AHL-inducible LuxR / pLux control system to drive ZnuABC, the transporter responsible for zinc uptake. This makes Module 1 the core import layer that the rest of the platform can build around.
+  </p>
+  <div class="module-page-links">
+    <a class="button-primary" href="../engineering/index.html">View Engineering Success</a>
+    <a class="button-secondary module-page-secondary" href="../lab-notebook/index.html">Open Lab Notebook</a>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="content-panel mb-4">
+    <div class="section-heading">
+      <div class="section-label">Description</div>
+      <h2 class="section-title">What this module is designed to do.</h2>
+    </div>
+    <p>
+      The purpose of Module 1 is to test whether zinc uptake can be made controllable. Instead of relying on a fixed transport state, the system is designed so that zinc import responds to an external induction signal and can be studied across a range of conditions.
+    </p>
+    <p>
+      At the technical level, this module places ZnuABC under the LuxR / pLux backbone so the team can compare expression strength, transport behavior, and practical assay outcomes as induction changes.
+    </p>
+    <div class="module-route-grid">
+      <a class="quick-link-card" href="../description/index.html">
+        <span class="quick-link-icon">D</span>
+        <h3>Description</h3>
+        <p>See how controllable zinc import fits into the broader Metlock platform story.</p>
+        <span class="quick-link-meta">Project framing</span>
+      </a>
+      <a class="quick-link-card" href="../engineering/index.html">
+        <span class="quick-link-icon">E</span>
+        <h3>Engineering</h3>
+        <p>Follow the design-build-test-learn logic behind the inducible ZnuABC construct.</p>
+        <span class="quick-link-meta">Design logic</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="card-grid two-column mb-4">
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Results</div>
+        <h2 class="section-title">Where transport performance will be shown.</h2>
+      </div>
+      <p>
+        This section is designed to hold the main evidence for Module 1, including uptake assays, induction-response trends, controls, and comparisons between expected and observed behavior.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Results placeholder</strong>
+        Add uptake curves, transport assay summaries, validation plots, and interpretation for Module 1 here.
+      </div>
+      <a class="module-inline-link" href="../results/index.html">Go to Results</a>
+    </div>
+
+    <div class="graph-card">
+      <div class="graph-header">
+        <div>
+          <p class="section-label mb-2">Graph Space</p>
+          <h3 class="graph-title">Module 1 uptake and induction preview</h3>
+        </div>
+        <span class="graph-badge">Placeholder</span>
+      </div>
+      <div class="graph-plot">
+        <div class="graph-line"></div>
+        <div class="graph-line-secondary"></div>
+        <div class="graph-line-tertiary"></div>
+      </div>
+      <div class="caption-box">
+        <strong>Reusable graph slot</strong>
+        Use this card for zinc uptake plots, induction-response comparisons, or control-versus-test transport data.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-shell">
+  <div class="module-stack">
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Contributions</div>
+        <h2 class="section-title">What this module contributes to the platform.</h2>
+      </div>
+      <p>
+        Module 1 can contribute reusable parts, assay logic, and design lessons for anyone interested in controllable metal uptake systems.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Contribution placeholder</strong>
+        Add reusable constructs, workflow improvements, transport assay lessons, or part-level takeaways here.
+      </div>
+      <a class="module-inline-link" href="../contribution/index.html">Go to Contribution</a>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Wet Lab / Lab Notebook</div>
+        <h2 class="section-title">Bench work and experimental record.</h2>
+      </div>
+      <p>
+        This is the right place for cloning workflow, transformation outcomes, assay setup, photos, troubleshooting, and notebook summaries connected to Module 1.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Wet-lab placeholder</strong>
+        Add protocol notes, transformation images, assay setup diagrams, and notebook checkpoints here.
+      </div>
+      <a class="module-inline-link" href="../lab-notebook/index.html">Go to Lab Notebook</a>
+    </div>
+
+    <div class="content-panel">
+      <div class="section-heading">
+        <div class="section-label">Dry Lab / Software</div>
+        <h2 class="section-title">How modeling supports the uptake module.</h2>
+      </div>
+      <p>
+        Module 1 also benefits from dry-lab support, especially when comparing expected induction behavior to experimental uptake trends and identifying useful operating ranges.
+      </p>
+      <div class="placeholder-panel">
+        <strong>Dry-lab placeholder</strong>
+        Add fitted curves, parameter comparisons, transport model notes, and software outputs for Module 1 here.
+      </div>
+      <a class="module-inline-link" href="../software/index.html">Go to Software</a>
+    </div>
+  </div>
+</section>
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.igem.wiki/teams/5759/logos/metlock-logo-no-bg.webp" alt="Metlock logo">
+        <div>
+          <h2>METLOCK</h2>
+          <p class="mb-2">A Missouri-Miners iGEM 2025 project focused on programmable zinc capture, computational design support, and environmentally responsible recovery workflows.</p>
+          <div class="footer-links">
+            <a href="../../index.html">Home</a>
+            <a href="../description/index.html">Project Description</a>
+            <a href="../software/index.html">Software</a>
+            <a href="../human-practices/index.html">Human Practices</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-panel">
+          <h3>Wiki Scope</h3>
+          <p class="mb-0">Built as a structured scientific record for design, testing, modeling, outreach, and documentation across the 2025 competition season.</p>
+        </div>
+        <div class="footer-panel">
+          <h3>Repository</h3>
+          <p class="mb-0">
+            <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p class="mb-2">Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</p>
+      <p>The repository used to create this website is available at <a href="https://gitlab.igem.org/2025/missouri-miners">gitlab.igem.org/2025/missouri-miners</a>.</p>
+    </div>
+  </div>
+</footer>
+    </div>
+
+    <script src="../../Static/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
