@@ -1,12 +1,4 @@
-<div class="hero description">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-lg-12">
-                <!--<h1 class="display-4 text-white mt-5 mb-2">Experiments</h1>-->
-            </div>
-        </div>
-    </div>
-</div><!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -20,7 +12,7 @@
     <link href="../../Static/bootstrap.min.css" rel="stylesheet">
     <link href="../../Static/style.css" rel="stylesheet">
 
-    <title> | Missouri-Miners - iGEM 2025</title>
+    <title>Project Description | Missouri-Miners - iGEM 2025</title>
   </head>
   <body>
     <div class="site-shell">
@@ -98,83 +90,124 @@
 
         <div class="container">
           
+<section class="project-page-hero project-page-hero--calm">
+  <div class="section-label">Project Description</div>
+  <h1 class="section-title">Explaining Metlock as a modular zinc recovery project.</h1>
+  <p class="lead-copy">
+    Metlock is a synthetic biology project built around a simple idea: if zinc recovery could be made more controllable, more selective, and easier to interpret, biology might become a useful partner in metal-rich environments and future biomining workflows.
+  </p>
+  <p>
+    This page is the front-facing overview of the project. It explains the problem, why zinc matters, how the modules connect, and where the platform could go next.
+  </p>
+  <div class="module-page-links">
+    <a class="button-primary" href="../module-1/index.html">Explore the Modules</a>
+    <a class="button-secondary module-page-secondary" href="../human-practices/index.html">View Human Practices</a>
+  </div>
+</section>
 
-<div class="head cols">
-  <h1>Project Descriptions</h1>
-</div>
-<div class="cols"> 
-  <p><i>Metlock</i> targets the environmental and energy burdens of conventional metal recovery by engineering 
-    <i>E. coli</i> to selectively capture Zn²⁺ from ores, industrial waste, and polluted waters. 
-    The project's central objective is a modular, fine-tunable zinc-import system that maximizes 
-    uptake while avoiding cytotoxicity and can be extended to other metals in future iterations. 
-    Our design detaches the native high-affinity ZnuABC transporter from Zur repression and places it under 
-    LuxR/pLuxR control (BBa_K1960004), enabling AHL-dose-dependent expression. Functionally, ZnuA binds Zn²⁺ 
-    in the periplasm, ZnuB translocates it across the inner membrane, and ZnuC powers transport via ATP hydrolysis, 
-    yielding a programmable uptake system for Zn²⁺ influx across an AHL gradient.  
+<div class="report-panel">
+  <div class="reading-page">
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Project Overview</div>
+        <h2 class="section-title">What Metlock is trying to do.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Metlock is a modular synthetic biology platform for zinc recovery and metal-rich environments. Rather than treating zinc handling as one isolated experiment, the project is organized as a small system: one module focuses on import, one on calibration, and one on zinc binding.
+        </p>
+        <p>
+          That modular structure helps the team ask clearer questions. How strongly should zinc uptake be turned on? How can expression be compared across conditions? How can binding be measured in ways that stay interpretable as the project grows? Metlock is built to make those questions easier to answer.
+        </p>
+      </div>
+    </section>
 
-    In parallel, we deploy Plot2Curve (P2C) computational workflows: (i) an AHL induction model calibrated with sfGFP 
-    and (ii) an Anderson-promoter benchmark to set assay AHL set-points, select promoter strengths, and predict 
-    transcription rate, mRNA, and protein trajectories and steady states. These analyses produce pre-registered 
-    deliverables (AHL fit, promoter ladder, and per-condition CSVs) that tighten the design-build-test-learn loop 
-    for our synthetic ZnuABC platform.  </p>
-</div>
-<!--<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #1: Wiki</h4>
-      <p>Describe how and why you chose your iGEM project.</p>
-      <hr />
-      <p>Visit the <a href="https://competition.igem.org/judging/medals">Medals page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Problem Context</div>
+        <h2 class="section-title">Why this problem matters.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Metal recovery is important for industry, technology, and environmental cleanup, but conventional methods can be energy intensive, chemically harsh, and difficult to adapt to smaller or more variable streams. That creates a gap where biological approaches may eventually help by adding selectivity, controllability, or flexibility.
+        </p>
+        <p>
+          Metlock focuses on that gap. The project does not assume biology will replace existing recovery systems outright. Instead, it explores whether engineered cells and shared measurement tools can contribute useful zinc-handling behavior in a way that is more tunable and easier to compare over time.
+        </p>
+      </div>
+      <div class="simple-callout">
+        <strong>Project framing</strong>
+        Metlock is designed as a platform for reasoning about zinc recovery, not only as a single final construct.
+      </div>
+    </section>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What Should this Page Contain?</h2>
-    <hr />
-    <ul>
-      <li>Explain the problem your project addresses and its potential impact.</li>
-      <li>Provide a clear and concise summary of your project's goals and objectives.</li>
-      <li>Detail the specific reasons why your team chose this project.</li>
-      <li>Explain the inspiration behind your project, including any prior research or real-world problems that motivated your team.</li>
-      <li>Use illustrations, diagrams, and other visual aids to enhance understanding.</li>
-      <li>Include relevant scientific background, technical details, and experimental approaches.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr />
-    <ul>
-      <li><a href="https://2024.igem.wiki/heidelberg/description">2024 Heidelberg</a></li>
-      <li><a href="https://2024.igem.wiki/marburg/description">2024 Marburg</a></li>
-      <li><a href="https://2024.igem.wiki/epfl/description">2024 EPFL</a></li>
-      <li><a href="https://2024.igem.wiki/ju-krakow/description">2024 JU-Krakow</a></li>
-      <li><a href="https://2024.igem.wiki/utoronto/description">2024 UToronto</a></li>
-      <li><a href="https://2023.igem.wiki/estonia-tuit/description">2023 Estonia-TUIT</a></li>
-    </ul>
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Why Zinc Recovery Matters</div>
+        <h2 class="section-title">Why zinc is the first focus.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Zinc is a useful starting point because it is both industrially relevant and biologically meaningful. It matters in metal-rich waste streams, environmental contexts, and future discussions of biomining, but it also creates real questions about toxicity, transport, and cellular burden.
+        </p>
+        <p>
+          That makes zinc a good test case for a modular system. If Metlock can help define how to tune uptake, compare expression behavior, and study binding strategies around zinc, the same design logic could later support broader work on related metals.
+        </p>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Metlock’s Modular Approach</div>
+        <h2 class="section-title">How the project is organized.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Module 1 focuses on tunable zinc import using AHL-responsive control of ZnuABC. Module 2 uses sfGFP calibration and promoter comparison to understand expression before moving into more demanding functional proteins. Module 3 explores zinc-binding systems that could support extracellular or intracellular capture strategies.
+        </p>
+        <p>
+          Each module has its own role, but the real value comes from how they connect. The project becomes stronger when import is calibrated, calibration is reusable, and binding strategies can be interpreted against the same broader framework.
+        </p>
+      </div>
+      <div class="simple-figure">
+        <div>
+          <strong>Figure placeholder</strong>
+          Add a platform overview diagram or module relationship figure here.
+        </div>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">How the Three Modules Work Together</div>
+        <h2 class="section-title">A shared project logic rather than separate subprojects.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          The modules are meant to support one another. Calibration helps define safe and interpretable expression windows. Import work provides a functional zinc-handling test. Binding work broadens the possible recovery strategies and gives the team more than one way to think about metal capture.
+        </p>
+        <p>
+          This structure makes Metlock easier to explain to new visitors and easier to extend in future iterations. Instead of one long technical story with no internal structure, the project becomes a coordinated platform with clear roles for each part.
+        </p>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Future Direction</div>
+        <h2 class="section-title">Where the project could go next.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          The long-term value of Metlock lies in reuse. Future work could add more complete experimental datasets, refine calibration logic, compare new binding candidates, or adapt the framework to other metals and other environmental conditions.
+        </p>
+        <p>
+          Even in its current form, the project is already structured to support that growth. The design emphasizes modularity, clearer interpretation, and documentation that future teams can build on rather than replace.
+        </p>
+      </div>
+    </section>
   </div>
 </div>
- 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Tips for Success</h2>
-    <hr />
-    <ul>
-      <li>While providing detailed information, strive for clarity and conciseness.</li>
-      <li>Use summaries and subheadings to organize your content.</li>
-      <li>Utilize visuals to enhance understanding and engagement.</li>
-      <li>Document your research process and sources thoroughly.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr />
-    <p>Cite all relevant research papers, scientific articles, and other sources that informed your project.</p>
-    <p>Create a dedicated "References" section at the end of the page, and use a consistent citation style.</p>
-  </div>
-</div>-->
-
 
         </div>
       </main>

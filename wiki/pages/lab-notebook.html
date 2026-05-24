@@ -1,133 +1,140 @@
 {% extends "layout.html" %}
-  
-{% include "heros/experiments-hero.html"%}
+
+{% block title %}Lab Notebook{% endblock %}
 
 {% block page_content %}
-
-<div class="head cols">
-  <h1>Lab Notebook</h1>
-</div>
-
-<div class="cols">
-  <!-- Stock preparation -->
-  <h3>Resuspended DNA for Stock Solution (7/30/2025)</h3>
-  <p>
-    Resuspended DNA in appropriate buffer for stock solution
-    <span>[nuclease-free Tris-EDTA, pH 8.0, or 10 mM Tris-HCl, pH 8.0]</span>.
+<section class="project-page-hero project-page-hero--calm">
+  <div class="section-label">Lab Notebook</div>
+  <h1 class="section-title">Keeping the wet-lab record practical and fillable.</h1>
+  <p class="lead-copy">
+    The Lab Notebook page should act as a clean running record of experimental work. It needs to be organized enough for future team members to follow, but simple enough that new entries can be added without reworking the page structure each time.
   </p>
-  <ul>
-    <li>Pulse-centrifuged new DNA before suspension.</li>
-    <li>Target concentration: <strong>10 ng/µl</strong>.</li>
-    <li><strong>1,403 ng</strong> resuspended in ~<strong>140 µl</strong>.</li>
-  </ul>
-
-  <!-- 7/30/2025 -->
-  <h3>Transformations — TOP10 &amp; DH5α (7/30/2025)</h3>
-  <p>Prepare aliquots for transformation:</p>
-  <ul>
-    <li>25 µl TOP10 with 2 µl <em>synthetic ZnuABC</em> / clonal vector (7/30/25)</li>
-    <li>25 µl DH5α with 2 µl <em>synthetic ZnuABC</em> / clonal vector (7/30/25)</li>
-    <li>25 µl TOP10 with 2 µl pUC19 (T10 on top) (7/30/25)</li>
-    <li>25 µl DH5α with 2 µl pUC19 (7/30/25)</li>
-  </ul>
-
-  <p>Perform transformation:</p>
-  <ul>
-    <li>Ice: 15 minutes.</li>
-    <li>Heat shock: 42&nbsp;°C for 1 minute (water bath).</li>
-    <li>Return to ice: 5 minutes.</li>
-    <li>Add 100 µl SOC (≈4× cell volume for recovery media).</li>
-    <li>37&nbsp;°C incubation: 45 minutes.</li>
-    <li>Plate and spread with <strong>glass beads</strong>.</li>
-    <li>Incubate at 37&nbsp;°C; check next morning.</li>
-  </ul>
-
-  <figure class="centered-figure">
-    <img src="https://static.igem.wiki/teams/5759/labnotebook/7302025-transformation.webp">
-    <figcaption>  <em>Figure 1:</em> (top left) very successful pUC19 control; (bottom left) few colonies present; (top and bottom right) unsuccessful transformations of the synthetic ZnuABC construct.</figcaption>
-  </figure>
-
-  <!-- 8/2/2025 -->
-  <h3>Transformation — DH5α Retry (8/2/2025)</h3>
-  <p>Prepare aliquot for transformation:</p>
-  <ul>
-    <li>25 µl DH5α with 2 µl <em>synthetic ZnuABC</em> / clonal vector (8/2/25)</li>
-  </ul>
-
-  <p>Perform transformation:</p>
-  <ul>
-    <li>Ice: 15 minutes.</li>
-    <li>Heat shock: 42&nbsp;°C for 1 minute (water bath).</li>
-    <li>Return to ice: 5 minutes.</li>
-    <li>Add 100 µl SOC (≈4× cell volume).</li>
-    <li>37&nbsp;°C incubation: 45 minutes.</li>
-    <li>Plate and spread with <strong>glass beads</strong>.</li>
-    <li>Incubate at 37&nbsp;°C; check next morning.</li>
-  </ul>
-
-
-  <figure class="centered-figure">
-    <img src="https://static.igem.wiki/teams/5759/labnotebook/8022025-transformation.webp">
-    <figcaption>  <em>Figure 2:</em> Unsuccessful transformations of the synthetic ZnuABC construct.</figcaption>
-  </figure>
-  <!-- 8/4/2025 -->
-  <h3>Transformations — BL21 (8/4/2025)</h3>
   <p>
-    Used NanoDrop to measure DNA concentration; tested two plasmid input volumes for BL21 transformations.
+    This version creates a practical notebook format for timeline notes, protocols, controls, and future weekly entries.
   </p>
+  <div class="module-page-links">
+    <a class="button-primary" href="{{ url_for('pages', page='results') }}">View Results</a>
+    <a class="button-secondary module-page-secondary" href="{{ url_for('pages', page='engineering') }}">View Engineering Success</a>
+  </div>
+</section>
 
-  <p>Prepare aliquots for transformation:</p>
-  <ul>
-    <li>
-      BL21 with <em>synthetic ZnuABC</em> (8/4/2025)
-      <ul>
-        <li>Volume: <strong>1 µl</strong> plasmid DNA</li>
-        <li>Concentration: <strong>4 ng/µl</strong></li>
-      </ul>
-    </li>
-    <li>
-      BL21 with <em>synthetic ZnuABC</em> (8/4/2025)
-      <ul>
-        <li>Volume: <strong>10.5 µl</strong> plasmid DNA</li>
-        <li>Concentration: <strong>4 ng/µl</strong></li>
-      </ul>
-    </li>
-  </ul>
+<div class="report-panel">
+  <div class="reading-page">
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Notebook Overview</div>
+        <h2 class="section-title">What this page should help the team do.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          A useful notebook page should document what was done, why it was done, what conditions were used, and what the outcome meant for the next step. It should not only serve as a memory aid, but also as a readable trail for teammates and future reviewers.
+        </p>
+        <p>
+          In practice, this means recording transformations, assay setup, controls, troubleshooting, and any adjustments to planned workflows in a way that stays easy to scan later.
+        </p>
+      </div>
+    </section>
 
-  <p>Perform transformation:</p>
-  <ul>
-    <li>Ice: 15 minutes.</li>
-    <li>Heat shock: 42&nbsp;°C for 1 minute (water bath).</li>
-    <li>Return to ice: 5 minutes.</li>
-    <li>Add 100 µl SOC (≈4× cell volume).</li>
-    <li>37&nbsp;°C incubation: 45 minutes.</li>
-    <li>Plate and spread with <strong>glass beads</strong>.</li>
-    <li>Incubate at 37&nbsp;°C; check next morning.</li>
-  </ul>
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Experimental Timeline</div>
+        <h2 class="section-title">A place to track major milestones.</h2>
+      </div>
+      <ol class="workflow-list">
+        <li class="workflow-step">
+          <strong>Preparation</strong>
+          Record stock preparation, DNA handling, media setup, and other pre-experimental steps.
+        </li>
+        <li class="workflow-step">
+          <strong>Transformation and build work</strong>
+          Note chassis, DNA input, antibiotic selection, incubation conditions, and any immediate outcomes.
+        </li>
+        <li class="workflow-step">
+          <strong>Verification and controls</strong>
+          Track which checks were planned, which were completed, and where results did or did not support moving forward.
+        </li>
+        <li class="workflow-step">
+          <strong>Assays and interpretation</strong>
+          Add assay-day notes, measurement setup, and short statements of what was learned from the run.
+        </li>
+      </ol>
+    </section>
 
-  <figure class="centered-figure">
-    <img src="https://static.igem.wiki/teams/5759/labnotebook/8042025-transformation.webp" style="width: 100%;">
-    <figcaption><em>Figure 3:</em> unsuccessful transformations of synthetic ZnuABC construct.</figcaption>
-  </figure>
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Weekly Log Placeholder</div>
+        <h2 class="section-title">A simple structure for future entries.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Future entries can be added as weekly or experiment-based notes. A strong pattern is: date, objective, conditions, result, interpretation, and next step. That keeps the notebook consistent without forcing every week into an overdesigned layout.
+        </p>
+      </div>
+      <div class="simple-callout">
+        <strong>Entry template</strong>
+        Date. Objective. Methods and conditions. Observations. Interpretation. Next step.
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Wet Lab Workflow</div>
+        <h2 class="section-title">What the notebook should capture during experiments.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          This section can hold concise wet-lab workflow notes: transformation conditions, outgrowth timing, antibiotic concentrations, plate setup, induction conditions, or assay-specific preparation details. The point is not to rewrite every protocol from scratch, but to record what was actually used in this project.
+        </p>
+        <p>
+          When experiments change, the notebook should document the difference clearly so later results make sense in context.
+        </p>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Controls and Verification</div>
+        <h2 class="section-title">What must be tracked carefully.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Controls, verification steps, and troubleshooting checkpoints should be recorded clearly because they determine whether a result is interpretable. Positive controls, selection conditions, colony verification, and follow-up decisions should all have a traceable place in the notebook.
+        </p>
+      </div>
+      <div class="simple-figure">
+        <div>
+          <strong>Figure placeholder</strong>
+          Add plate images, gel images, notebook snapshots, or workflow photos here.
+        </div>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Data Recording Expectations</div>
+        <h2 class="section-title">How to keep future entries useful.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Each entry should make it easy to answer a few basic questions later: what condition was tested, what changed from the last run, what control was included, what was observed, and what the result implied for the next experiment.
+        </p>
+        <p>
+          That level of consistency will make later Results and Engineering pages easier to write because the key experimental decisions will already be documented clearly.
+        </p>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div class="section-heading">
+        <div class="section-label">Next Entries to Add</div>
+        <h2 class="section-title">How the notebook can grow cleanly.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          The next additions should include concise dated entries for transformations, verification attempts, assay setup, and any future calibration or binding experiments. The page is meant to stay practical, so short consistent entries are better than large unstructured blocks of text.
+        </p>
+      </div>
+    </section>
+  </div>
 </div>
-<!--<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What Should this Page Contain?</h2>
-    <hr />
-    <p>Provide comprehensive, step-by-step protocols for all experiments conducted. Include a list of materials, reagents, and equipment used. Specify concentrations, volumes, incubation times, temperatures, and other critical parameters. Document any modifications or optimizations made to standard protocols.</p>
-    <p>Explain the purpose of each experiment and its relevance to your project goals. Describe the experimental design, including controls and replicates. Provide a clear rationale for the chosen methods and approaches.</p>
-    <p>Document any troubleshooting steps taken and optimizations made during the experimental process. Share any lessons learned that could benefit future teams.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr />
-    <ul>
-      <li><a href="https://2024.igem.wiki/heidelberg/experiments">2024 Heidelberg</a></li>
-      <li><a href="https://2024.igem.wiki/marburg/experiments">2024 Marburg</a></li>
-      <li><a href="https://2024.igem.wiki/epfl/experiments">2024 EPFL</a></li>
-      <li><a href="https://2023.igem.wiki/estonia-tuit/experiments">2023 Estonia-TUIT</a></li>
-    </ul>
-  </div>
-</div>-->
-
 {% endblock %}
