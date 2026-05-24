@@ -90,7 +90,7 @@
 
         <div class="container">
           
-<section class="project-page-hero">
+<section class="project-page-hero project-page-hero--calm">
   <div class="section-label">Engineering Success</div>
   <h1 class="section-title">Building Metlock as a modular biomining system.</h1>
   <p class="lead-copy">
@@ -105,192 +105,119 @@
   </div>
 </section>
 
-<section class="section-shell">
-  <div class="content-panel mb-4">
+<div class="reading-page">
+  <section class="reading-section">
     <div class="section-heading">
       <div class="section-label">Engineering Overview</div>
       <h2 class="section-title">One platform, three coordinated layers of control.</h2>
     </div>
-    <div class="card-grid two-column">
-      <div>
-        <p>
-          The engineering goal of Metlock is not only to recover zinc, but to do so in a way that stays tunable, measurable, and extensible. The project is organized so that each module solves a different engineering problem: controlled zinc import, predictable gene-expression calibration, and zinc binding through dedicated protein systems.
-        </p>
-        <p>
-          That structure matters because each module reduces uncertainty for the others. Calibration helps define safe expression windows, import work tests functional uptake under induction, and binding work expands the platform beyond one intracellular strategy.
-        </p>
-      </div>
-      <div class="front-summary-grid">
-        <div class="data-highlight">
-          <div class="data-highlight-label">Platform logic</div>
-          <div class="data-highlight-value">Capture, import, calibrate</div>
-          <div class="data-highlight-copy">The system is being engineered as a pipeline rather than a single construct, so results stay comparable as the project grows.</div>
-        </div>
-        <div class="data-highlight">
-          <div class="data-highlight-label">Engineering priority</div>
-          <div class="data-highlight-value">Control without overload</div>
-          <div class="data-highlight-copy">A central design question is how to strengthen zinc-handling performance while still protecting cell health and interpretability.</div>
-        </div>
+    <div class="text-column">
+      <p>
+        The engineering goal of Metlock is not only to recover zinc, but to do so in a way that stays tunable, measurable, and extensible. The project is organized so that each module solves a different engineering problem: controlled zinc import, predictable gene-expression calibration, and zinc binding through dedicated protein systems.
+      </p>
+      <p>
+        That structure matters because each module reduces uncertainty for the others. Calibration helps define safe expression windows, import work tests functional uptake under induction, and binding work expands the platform beyond one intracellular strategy. Taken together, the modules create an engineering workflow that is easier to interpret, easier to compare, and easier to improve over time.
+      </p>
+      <div class="simple-callout">
+        <strong>Engineering focus</strong>
+        Metlock is being built as a system that can be tuned deliberately, not as a one-off construct that only works under a single condition.
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-shell">
-  <div class="content-panel mb-4">
+  <section class="reading-section">
     <div class="section-heading">
       <div class="section-label">Design-Build-Test-Learn Framework</div>
-      <h2 class="section-title">The engineering cycle guiding the project.</h2>
+      <h2 class="section-title">How the project moves through iteration.</h2>
     </div>
-    <div class="engineering-cycle-grid">
-      <article class="engineering-cycle-card">
-        <div class="module-card-number">Design</div>
-        <h3>Define controllable zinc handling</h3>
-        <p>Metlock begins by identifying which parts of zinc recovery should be made tunable, measurable, and modular before moving into more specialized constructs.</p>
-      </article>
-      <article class="engineering-cycle-card">
-        <div class="module-card-number">Build</div>
-        <h3>Assemble shared control logic</h3>
-        <p>The project reuses core control architecture where possible so module outputs can be interpreted against a common experimental backbone.</p>
-      </article>
-      <article class="engineering-cycle-card">
-        <div class="module-card-number">Test</div>
-        <h3>Compare performance with controls</h3>
-        <p>Assays are organized around growth, viability, zinc depletion, expression range, and binding behavior so results remain comparable across modules.</p>
-      </article>
-      <article class="engineering-cycle-card">
-        <div class="module-card-number">Learn</div>
-        <h3>Refine design windows</h3>
-        <p>Each round is meant to narrow useful operating ranges, improve construct choices, and make future design decisions less dependent on guesswork.</p>
-      </article>
+    <div class="text-column">
+      <p>
+        The design phase begins by deciding which parts of zinc handling should be controllable and which measurements are needed to evaluate success. This leads to a platform that emphasizes induction control, shared assay logic, and clearer comparison between modules rather than isolated experimental snapshots.
+      </p>
+      <p>
+        The build phase translates those decisions into constructs and workflows that can be tested under comparable conditions. The test phase then asks whether the platform behaves as expected across growth, viability, uptake, calibration, or binding readouts. The learn phase uses those results to narrow useful operating windows and guide the next round of design.
+      </p>
+      <p>
+        This page is designed to eventually hold longer DBTL narratives, specific iteration examples, and links to the module pages where the detailed technical evidence lives.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-shell">
-  <div class="content-panel mb-4">
+  <section class="reading-section">
     <div class="section-heading">
       <div class="section-label">Module Integration</div>
-      <h2 class="section-title">How the three modules support one another.</h2>
+      <h2 class="section-title">How the modules support one another.</h2>
     </div>
-    <div class="module-grid">
-      <article class="module-card">
-        <div class="module-card-number">Module 1</div>
-        <h3>Import on command</h3>
-        <p>pLuxR-driven ZnuABC establishes the controllable zinc import layer and creates the main functional uptake test for the platform.</p>
-        <a class="module-card-link" href="../module-1/index.html">Open Module 1</a>
-      </article>
-      <article class="module-card">
-        <div class="module-card-number">Module 2</div>
-        <h3>Calibrate before scaling</h3>
-        <p>sfGFP calibration maps AHL dose to predictable expression strength so functional modules can be compared against safer, better-understood setpoints.</p>
-        <a class="module-card-link" href="../module-2/index.html">Open Module 2</a>
-      </article>
-      <article class="module-card">
-        <div class="module-card-number">Module 3</div>
-        <h3>Expand capture strategies</h3>
-        <p>Binding-focused constructs broaden the platform beyond import alone and help compare extracellular and intracellular zinc-handling approaches.</p>
-        <a class="module-card-link" href="../module-3/index.html">Open Module 3</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section-shell">
-  <div class="card-grid two-column mb-4">
-    <div class="content-panel">
-      <div class="section-heading">
-        <div class="section-label">Key Technical Decisions</div>
-        <h2 class="section-title">Why the architecture is organized this way.</h2>
-      </div>
-      <div class="timeline-grid">
-        <div class="timeline-card">
-          <h3>Shared induction language</h3>
-          <p>Reusing AHL-responsive control across modules creates a more consistent basis for comparison and future redesign.</p>
-        </div>
-        <div class="timeline-card">
-          <h3>Calibration before function</h3>
-          <p>Measuring sfGFP response first reduces uncertainty before the system switches into metal-handling proteins with stronger biological consequences.</p>
-        </div>
-        <div class="timeline-card">
-          <h3>Controls built into interpretation</h3>
-          <p>Growth, viability, depletion, retention, and binding controls are treated as part of engineering logic, not just supporting data.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="figure-card">
-      <div class="section-label">Engineering Visual</div>
-      <div class="figure-card-media module-figure-placeholder">
-        <div class="module-figure-placeholder-copy">Design-build-test-learn diagram, construct map, or system integration figure</div>
-      </div>
-      <div class="caption-box">
-        <strong>Reusable figure slot</strong>
-        Use this area for engineering cycle visuals, construct architecture, assay workflows, or module integration diagrams.
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-shell">
-  <div class="card-grid two-column mb-4">
-    <div class="graph-card">
-      <div class="graph-header">
-        <div>
-          <p class="section-label mb-2">Current Evidence</p>
-          <h3 class="graph-title">Engineering evidence and placeholder results</h3>
-        </div>
-        <span class="graph-badge">Placeholder</span>
-      </div>
-      <div class="graph-plot">
-        <div class="graph-line"></div>
-        <div class="graph-line-secondary"></div>
-        <div class="graph-line-tertiary"></div>
-      </div>
-      <div class="caption-box">
-        <strong>Reusable graph slot</strong>
-        Use this card for induction curves, growth comparisons, zinc depletion summaries, or multi-module engineering performance views.
-      </div>
-    </div>
-
-    <div class="content-panel">
-      <div class="section-heading">
-        <div class="section-label">Current Evidence</div>
-        <h2 class="section-title">Where engineering evidence will accumulate.</h2>
-      </div>
+    <div class="text-column">
       <p>
-        This section is designed to hold the most important project-wide evidence: whether module behavior remains controllable, whether calibration informs later experiments, and whether the platform is becoming more coherent with each iteration.
+        Module 1 establishes controllable zinc import. Module 2 defines how the shared control backbone behaves before the project relies on functional proteins. Module 3 broadens the system by comparing zinc-binding strategies outside and inside the cell. Each module answers a different engineering question, but all three are meant to share logic rather than compete for attention.
       </p>
-      <div class="placeholder-panel">
-        <strong>Evidence placeholder</strong>
-        Add integrated engineering summaries, cross-module comparisons, decision tables, and iteration takeaways here.
+      <p>
+        That integration is what makes the platform useful. Import is easier to interpret when calibration already defines reasonable expression windows, and binding work becomes easier to compare when the rest of the project already uses a consistent measurement framework.
+      </p>
+    </div>
+    <div class="simple-figure">
+      <strong>Figure placeholder</strong>
+      Add a system-integration diagram, DBTL visual, or module relationship schematic here.
+    </div>
+  </section>
+
+  <section class="reading-section">
+    <div class="section-heading">
+      <div class="section-label">Key Technical Decisions</div>
+      <h2 class="section-title">Why the architecture is organized this way.</h2>
+    </div>
+    <div class="text-column">
+      <p>
+        One major decision is the reuse of a shared induction language across modules. This creates a more stable basis for comparison and reduces the risk that each branch of the project becomes difficult to interpret against the others.
+      </p>
+      <p>
+        Another major decision is to calibrate expression before relying fully on functional metal-handling proteins. That keeps the project grounded in measurable, lower-risk expression behavior before moving into designs that may create stronger burdens on the cells.
+      </p>
+      <p>
+        A third decision is to treat controls as part of the engineering logic itself. Growth, viability, depletion, retention, and comparison controls are not separate from the design process; they are part of how the team decides whether a construct is actually useful.
+      </p>
+      <div class="simple-callout">
+        <strong>Decision logic</strong>
+        The engineering story is strongest when design choices can be traced clearly to why they reduce uncertainty or improve comparison.
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-shell">
-  <div class="content-panel">
+  <section class="reading-section">
+    <div class="section-heading">
+      <div class="section-label">Current Evidence / Placeholder Results</div>
+      <h2 class="section-title">Where project-wide engineering evidence will live.</h2>
+    </div>
+    <div class="text-column">
+      <p>
+        This section is intended to hold the higher-level engineering evidence that connects the modules: whether the platform remains controllable, whether calibration improves later decisions, and whether the overall system becomes more coherent with each iteration.
+      </p>
+      <p>
+        Over time, this page can collect summaries of induction behavior, comparative evidence across modules, and concise statements of what each engineering cycle changed in the next round of design.
+      </p>
+    </div>
+    <div class="simple-figure">
+      <strong>Figure placeholder</strong>
+      Add an engineering summary plot, comparison table, or integrated results figure here.
+    </div>
+  </section>
+
+  <section class="reading-section">
     <div class="section-heading">
       <div class="section-label">Next Engineering Steps</div>
-      <h2 class="section-title">What the next design cycle should clarify.</h2>
+      <h2 class="section-title">What the next iteration should clarify.</h2>
     </div>
-    <div class="card-grid three-column">
-      <div class="reflection-box">
-        <strong>Strengthen build validation</strong>
-        Use cleaner construct verification and selection checkpoints so functional testing starts from a more reliable baseline.
-      </div>
-      <div class="reflection-box">
-        <strong>Standardize assay windows</strong>
-        Define a shared set of induction points and control readouts across modules so the platform becomes easier to compare over time.
-      </div>
-      <div class="reflection-box">
-        <strong>Connect modules more tightly</strong>
-        Carry calibration results directly into import and binding decisions so later engineering rounds become more predictive and less trial-and-error driven.
-      </div>
+    <div class="text-column">
+      <p>
+        The next engineering steps should strengthen build validation, standardize assay windows across modules, and connect calibration results more directly to later import and binding decisions. Those improvements would make future results easier to interpret and help the platform move from proof of concept toward a more repeatable biomining workflow.
+      </p>
+      <p>
+        This page is also meant to become the main place for tracking longer engineering narratives as the project grows. As those narratives expand, the structure here should stay readable: clear sections, sustained text flow, and just enough visual support to clarify the story without interrupting it.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
         </div>
       </main>
