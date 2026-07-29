@@ -5,15 +5,15 @@
 {% block page_content %}
 <section class="project-page-hero project-page-hero--calm">
   <div class="section-label">Engineering Success</div>
-  <h1 class="section-title">Building Metlock as a modular biomining system.</h1>
+  <h1 class="section-title">Engineering Metlock through three connected modules.</h1>
   <p class="lead-copy">
-    Engineering Success is where the full project design story comes together. Instead of treating each construct as a disconnected experiment, Metlock is being engineered as a coordinated platform for zinc capture, zinc import, and expression control in metal-rich environments.
+    Metlock is being developed as a modular biomining platform rather than a single isolated construct. This page organizes our engineering work around three connected modules and follows the Design -> Build -> Test -> Learn framework used to evaluate them.
   </p>
   <p>
-    This page follows the broader design-build-test-learn logic across the project, shows how the three modules reinforce one another, and creates a clear place for future figures, engineering-cycle visuals, and evidence as the system matures.
+    Module 2, our AHL-inducible sfGFP reporter characterization workflow, currently provides the clearest quantitative engineering cycle. Modules 1 and 3 are important supporting directions that expand the platform toward zinc uptake and surface-based metal interaction, but they should be presented more cautiously while their evidence base continues to develop.
   </p>
   <div class="module-page-links">
-    <a class="button-primary" href="{{ url_for('pages', page='module-1') }}">View Module 1</a>
+    <a class="button-primary" href="#module-2">Jump to Module 2</a>
     <a class="button-secondary module-page-secondary" href="{{ url_for('pages', page='results') }}">Open Results</a>
   </div>
 </section>
@@ -21,115 +21,249 @@
 <div class="report-panel">
   <div class="reading-page">
     <section class="reading-section">
-    <div class="section-heading">
-      <div class="section-label">Engineering Overview</div>
-      <h2 class="section-title">One platform, three coordinated layers of control.</h2>
-    </div>
-    <div class="text-column">
-      <p>
-        The engineering goal of Metlock is not only to recover zinc, but to do so in a way that stays tunable, measurable, and extensible. The project is organized so that each module solves a different engineering problem: controlled zinc import, predictable gene-expression calibration, and zinc binding through dedicated protein systems.
-      </p>
-      <p>
-        That structure matters because each module reduces uncertainty for the others. Calibration helps define safe expression windows, import work tests functional uptake under induction, and binding work expands the platform beyond one intracellular strategy. Taken together, the modules create an engineering workflow that is easier to interpret, easier to compare, and easier to improve over time.
-      </p>
-      <div class="simple-callout">
-        <strong>Engineering focus</strong>
-        Metlock is being built as a system that can be tuned deliberately, not as a one-off construct that only works under a single condition.
+      <nav class="anchor-nav" aria-label="Engineering sections">
+        <a href="#overview">Overview</a>
+        <a href="#module-1">Module 1</a>
+        <a href="#module-2">Module 2</a>
+        <a href="#module-3">Module 3</a>
+        <a href="#summary">Summary</a>
+      </nav>
+    </section>
+
+    <section class="reading-section" id="overview">
+      <div class="section-heading">
+        <div class="section-label">Intro</div>
+        <h2 class="section-title">One engineering page, three linked directions.</h2>
       </div>
-    </div>
-    </section>
-
-    <section class="reading-section">
-    <div class="section-heading">
-      <div class="section-label">Design-Build-Test-Learn Framework</div>
-      <h2 class="section-title">How the project moves through iteration.</h2>
-    </div>
-    <div class="text-column">
-      <p>
-        The design phase begins by deciding which parts of zinc handling should be controllable and which measurements are needed to evaluate success. This leads to a platform that emphasizes induction control, shared assay logic, and clearer comparison between modules rather than isolated experimental snapshots.
-      </p>
-      <p>
-        The build phase translates those decisions into constructs and workflows that can be tested under comparable conditions. The test phase then asks whether the platform behaves as expected across growth, viability, uptake, calibration, or binding readouts. The learn phase uses those results to narrow useful operating windows and guide the next round of design.
-      </p>
-      <p>
-        This page is designed to eventually hold longer DBTL narratives, specific iteration examples, and links to the module pages where the detailed technical evidence lives.
-      </p>
-    </div>
-    </section>
-
-    <section class="reading-section">
-    <div class="section-heading">
-      <div class="section-label">Module Integration</div>
-      <h2 class="section-title">How the modules support one another.</h2>
-    </div>
-    <div class="text-column">
-      <p>
-        Module 1 establishes controllable zinc import. Module 2 defines how the shared control backbone behaves before the project relies on functional proteins. Module 3 broadens the system by comparing zinc-binding strategies outside and inside the cell. Each module answers a different engineering question, but all three are meant to share logic rather than compete for attention.
-      </p>
-      <p>
-        That integration is what makes the platform useful. Import is easier to interpret when calibration already defines reasonable expression windows, and binding work becomes easier to compare when the rest of the project already uses a consistent measurement framework.
-      </p>
-    </div>
-    <div class="simple-figure">
-      <strong>Figure placeholder</strong>
-      Add a system-integration diagram, DBTL visual, or module relationship schematic here.
-    </div>
-    </section>
-
-    <section class="reading-section">
-    <div class="section-heading">
-      <div class="section-label">Key Technical Decisions</div>
-      <h2 class="section-title">Why the architecture is organized this way.</h2>
-    </div>
-    <div class="text-column">
-      <p>
-        One major decision is the reuse of a shared induction language across modules. This creates a more stable basis for comparison and reduces the risk that each branch of the project becomes difficult to interpret against the others.
-      </p>
-      <p>
-        Another major decision is to calibrate expression before relying fully on functional metal-handling proteins. That keeps the project grounded in measurable, lower-risk expression behavior before moving into designs that may create stronger burdens on the cells.
-      </p>
-      <p>
-        A third decision is to treat controls as part of the engineering logic itself. Growth, viability, depletion, retention, and comparison controls are not separate from the design process; they are part of how the team decides whether a construct is actually useful.
-      </p>
-      <div class="simple-callout">
-        <strong>Decision logic</strong>
-        The engineering story is strongest when design choices can be traced clearly to why they reduce uncertainty or improve comparison.
+      <div class="text-column">
+        <p>
+          Metlock uses three interconnected modules to explore how engineered cells might be tuned for zinc recovery and metal interaction. This page keeps those efforts in one place so judges can quickly see how the project is organized and where the strongest engineering evidence currently sits.
+        </p>
+        <p>
+          All three modules are part of the same broader strategy, but they are not equally developed. Module 2 currently gives the clearest Design -> Build -> Test -> Learn cycle because it can produce quantitative fluorescence measurements and dose-response data. Modules 1 and 3 remain important supporting directions that extend the platform toward inducible zinc uptake and surface-based metal interaction.
+        </p>
+        <div class="simple-callout">
+          <strong>Honest framing</strong>
+          Module 2 is the strongest current engineering cycle. Modules 1 and 3 are still meaningful platform directions, but should be read as developing rather than fully validated.
+        </div>
       </div>
-    </div>
     </section>
 
     <section class="reading-section">
-    <div class="section-heading">
-      <div class="section-label">Current Evidence / Placeholder Results</div>
-      <h2 class="section-title">Where project-wide engineering evidence will live.</h2>
-    </div>
-    <div class="text-column">
-      <p>
-        This section is intended to hold the higher-level engineering evidence that connects the modules: whether the platform remains controllable, whether calibration improves later decisions, and whether the overall system becomes more coherent with each iteration.
-      </p>
-      <p>
-        Over time, this page can collect summaries of induction behavior, comparative evidence across modules, and concise statements of what each engineering cycle changed in the next round of design.
-      </p>
-    </div>
-    <div class="simple-figure">
-      <strong>Figure placeholder</strong>
-      Add an engineering summary plot, comparison table, or integrated results figure here.
-    </div>
+      <div class="section-heading">
+        <div class="section-label">Module Overview</div>
+        <h2 class="section-title">How the three modules fit together.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          The three modules serve different engineering roles within the same platform. Module 1 applies AHL-inducible expression logic toward zinc uptake and storage through the ZnuABC pathway. Module 2 uses an AHL-inducible sfGFP reporter to quantify promoter response and expression behavior, making it the clearest measurable engineering cycle on this page. Module 3 extends the platform toward Ag43-based surface display and future metal interaction at the cell surface.
+        </p>
+        <p>
+          Together, these modules show how Metlock moves from characterization toward application: first measure the inducible system clearly, then apply that logic to zinc uptake, and then extend the platform toward surface-based interaction.
+        </p>
+      </div>
+      <div class="module-overview-list">
+        <div class="module-overview-item">
+          <strong>Module 1</strong>
+          <p><span>Engineering goal:</span> Apply AHL-inducible expression to the ZnuABC pathway so zinc uptake and storage can eventually be tuned rather than treated as fixed behavior.</p>
+          <p><span>Current evidence:</span> Insert zinc uptake assay results here.</p>
+          <p><span>Next engineering step:</span> Insert next design iteration here.</p>
+        </div>
+        <div class="module-overview-item module-overview-item--emphasis">
+          <strong>Module 2</strong>
+          <div class="module-overview-badge">Primary engineering cycle</div>
+          <p><span>Engineering goal:</span> Use sfGFP to quantify how the AHL-inducible system responds across conditions and establish a measurable Design -> Build -> Test -> Learn cycle.</p>
+          <p><span>Current evidence:</span> Insert fluorescence data here.</p>
+          <p><span>Next engineering step:</span> Insert next design iteration here.</p>
+        </div>
+        <div class="module-overview-item">
+          <strong>Module 3</strong>
+          <p><span>Engineering goal:</span> Develop an Ag43-based surface-display direction that expands the platform from internal uptake toward surface-based metal interaction.</p>
+          <p><span>Current evidence:</span> Insert surface display validation here.</p>
+          <p><span>Next engineering step:</span> Insert next design iteration here.</p>
+        </div>
+      </div>
     </section>
 
     <section class="reading-section">
-    <div class="section-heading">
-      <div class="section-label">Next Engineering Steps</div>
-      <h2 class="section-title">What the next iteration should clarify.</h2>
-    </div>
-    <div class="text-column">
-      <p>
-        The next engineering steps should strengthen build validation, standardize assay windows across modules, and connect calibration results more directly to later import and binding decisions. Those improvements would make future results easier to interpret and help the platform move from proof of concept toward a more repeatable biomining workflow.
-      </p>
-      <p>
-        This page is also meant to become the main place for tracking longer engineering narratives as the project grows. As those narratives expand, the structure here should stay readable: clear sections, sustained text flow, and just enough visual support to clarify the story without interrupting it.
-      </p>
-    </div>
+      <div class="section-heading">
+        <div class="section-label">Engineering Logic</div>
+        <h2 class="section-title">How these modules build on each other.</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Module 2 is the clearest starting point because sfGFP allows the inducible system to be measured directly through fluorescence and dose-response behavior. That characterization can then inform Module 1 by helping the team choose expression conditions that are more interpretable before linking the same logic to zinc uptake and storage.
+        </p>
+        <p>
+          Module 3 extends the platform further by asking how the project might move from internal uptake toward surface-based metal interaction. In that sense, the modules do not compete with one another; they build an engineering pathway from characterization, to uptake, to future environmental interaction.
+        </p>
+        </div>
+    </section>
+
+    <section class="reading-section engineering-module" id="module-1">
+      <div class="section-heading">
+        <div class="section-label">Module 1</div>
+        <h2 class="section-title">Zinc Uptake System</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Module 1 focuses on connecting AHL-responsive control to the ZnuABC pathway so zinc uptake can eventually be tuned rather than treated as a fixed background behavior. This is an important platform direction, but it should be presented as a developing engineering branch rather than as the main source of current quantitative evidence.
+        </p>
+      </div>
+      <div class="dbtl-block">
+        <h3>Purpose</h3>
+        <p><!-- Placeholder: explain why inducible zinc uptake matters for the platform. -->Add the module purpose here.</p>
+        <h3>Design</h3>
+        <p><!-- Placeholder: describe pLuxR activation, ZnuABC logic, and planned construct rationale. -->Add design details here.</p>
+        <h3>Build</h3>
+        <p><!-- Placeholder: add cloning, assembly, strain, and construct preparation notes. -->Add build notes here.</p>
+        <h3>Test</h3>
+        <p><!-- Placeholder: add planned or completed uptake-related measurements, controls, and assay plan. -->Add test notes here.</p>
+        <h3>Learn</h3>
+        <p><!-- Placeholder: summarize what Module 1 taught the team, even if results remain preliminary. -->Add learning summary here.</p>
+        <h3>Future Results</h3>
+        <p><!-- Placeholder: specify the data or validation still needed. -->Add future results plan here.</p>
+      </div>
+      <div class="simple-callout">
+        <strong>Data coming soon</strong>
+        Use this area later for the clearest Module 1 learning, control insight, or engineering next step.
+      </div>
+      <div class="simple-figure">
+        <div>
+          <strong>Figure placeholder</strong>
+          Add a zinc uptake workflow, construct schematic, or future graph here.
+        </div>
+      </div>
+    </section>
+
+    <section class="reading-section engineering-module engineering-module--primary" id="module-2">
+      <div class="section-heading">
+        <div class="section-label">Module 2</div>
+        <h2 class="section-title">sfGFP Reporter Characterization</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Module 2 is currently the clearest engineering cycle on the page. By using an AHL-inducible sfGFP reporter, this module can produce quantitative fluorescence measurements, dose-response trends, and expression-strength comparisons that are easier to interpret than the more developmental platform directions.
+        </p>
+        <p>
+          That makes Module 2 the strongest Design -> Build -> Test -> Learn example for judges. It also supports the rest of Metlock by helping define how AHL-responsive expression behaves before later modules depend on more functionally demanding proteins.
+        </p>
+      </div>
+      <div class="dbtl-block dbtl-block--primary">
+        <h3>Purpose</h3>
+        <p><!-- Placeholder: explain why sfGFP is being used as the reporter and how it supports the engineering story. -->Add the module purpose here.</p>
+        <h3>Design</h3>
+        <p><!-- Placeholder: explain the AHL-inducible reporter architecture and why it was chosen. -->Add design details here.</p>
+        <h3>Build</h3>
+        <p><!-- Placeholder: add reporter construct assembly, build notes, and setup details. -->Add build notes here.</p>
+        <h3>Test</h3>
+        <p><!-- Placeholder: describe the experimental fluorescence workflow and plate-reader plan. -->Add test notes here.</p>
+        <h3>Learn</h3>
+        <p><!-- Placeholder: summarize what the fluorescence data or calibration logic taught the team. -->Add learning summary here.</p>
+        <h3>Controls</h3>
+        <p><!-- Placeholder: add negative controls, induction controls, baseline comparisons, and normalization notes. -->Add controls here.</p>
+        <h3>Fluorescence Measurements</h3>
+        <p><!-- Placeholder: insert RFU, RFU/OD, time-course summaries, or planned measurement language. -->Add fluorescence measurement summary here.</p>
+        <h3>AHL Dose-Response Data</h3>
+        <p><!-- Placeholder: insert dose-response interpretation, Hill-type trends, or future plot explanation. -->Add AHL dose-response summary here.</p>
+        <h3>Key Conclusion</h3>
+        <p><!-- Placeholder: add the clearest take-home conclusion for this module. -->Add key conclusion here.</p>
+        <h3>Next Engineering Step</h3>
+        <p><!-- Placeholder: describe how Module 2 results guide the next design iteration. -->Add next step here.</p>
+      </div>
+      <div class="simple-callout simple-callout--primary">
+        <strong>Key learning placeholder</strong>
+        Use this callout for the most important judge-facing engineering takeaway from Module 2.
+      </div>
+      <div class="simple-figure simple-figure--primary">
+        <div>
+          <strong>Graph placeholder</strong>
+          Add fluorescence curves, RFU/OD plots, AHL dose-response data, or expression-band summaries here.
+        </div>
+      </div>
+    </section>
+
+    <section class="reading-section engineering-module" id="module-3">
+      <div class="section-heading">
+        <div class="section-label">Module 3</div>
+        <h2 class="section-title">Ag43 Surface Display</h2>
+      </div>
+      <div class="text-column">
+        <p>
+          Module 3 expands the project toward surface-based metal interaction by using an Ag43 display platform. This is a valuable engineering direction for the larger platform, but like Module 1 it should currently be framed as a developing branch rather than a fully demonstrated result set.
+        </p>
+      </div>
+      <div class="dbtl-block">
+        <h3>Purpose</h3>
+        <p><!-- Placeholder: explain why surface display matters for Metlock and metal interaction. -->Add the module purpose here.</p>
+        <h3>Design</h3>
+        <p><!-- Placeholder: add Ag43 platform logic and why it was chosen. -->Add design details here.</p>
+        <h3>Build</h3>
+        <p><!-- Placeholder: add construct, scaffold, or assembly notes. -->Add build notes here.</p>
+        <h3>Test</h3>
+        <p><!-- Placeholder: add planned or completed display validation and interaction measurements. -->Add test notes here.</p>
+        <h3>Learn</h3>
+        <p><!-- Placeholder: summarize what this direction has taught the team so far. -->Add learning summary here.</p>
+        <h3>Future Results</h3>
+        <p><!-- Placeholder: specify which figures, diagrams, or data should be added later. -->Add future results plan here.</p>
+      </div>
+      <div class="simple-callout">
+        <strong>Next engineering step</strong>
+        Use this area for the clearest forward-looking engineering decision for Module 3.
+      </div>
+      <div class="simple-figure">
+        <div>
+          <strong>Figure placeholder</strong>
+          Add a surface-display diagram, validation image, or future results figure here.
+        </div>
+      </div>
+    </section>
+
+    <section class="reading-section" id="summary">
+      <div class="section-heading">
+        <div class="section-label">Engineering Cycle Summary</div>
+        <h2 class="section-title">A quick judge-facing comparison of the three modules.</h2>
+      </div>
+      <div class="engineering-table-wrap">
+        <table class="engineering-summary-table">
+          <thead>
+            <tr>
+              <th>Module</th>
+              <th>Design</th>
+              <th>Build</th>
+              <th>Test</th>
+              <th>Learn</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Module 1</th>
+              <td>Inducible zinc uptake concept through ZnuABC</td>
+              <td>Supporting platform direction</td>
+              <td>Placeholder for future uptake validation</td>
+              <td>Placeholder for future engineering learning</td>
+              <td><span class="status-pill">Developing</span></td>
+            </tr>
+            <tr class="engineering-summary-table__highlight">
+              <th>Module 2</th>
+              <td>AHL-inducible sfGFP characterization design</td>
+              <td>Reporter system build and calibration workflow</td>
+              <td>Strongest current quantitative testing framework</td>
+              <td>Clearest DBTL evidence and next-step logic</td>
+              <td><span class="status-pill status-pill--primary">Strongest evidence</span></td>
+            </tr>
+            <tr>
+              <th>Module 3</th>
+              <td>Ag43 surface-display platform direction</td>
+              <td>Supporting platform direction</td>
+              <td>Placeholder for display and interaction testing</td>
+              <td>Placeholder for future engineering learning</td>
+              <td><span class="status-pill">Developing</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </div>
 </div>
